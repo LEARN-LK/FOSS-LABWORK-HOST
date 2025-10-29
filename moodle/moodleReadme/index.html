@@ -2669,6 +2669,89 @@ You can effortlessly localize your Moodle site as the software has been translat
 It is a flexible program that supports both 100% online courses and blended learning.
 Moodle constantly updates its security controls to ensure your data is protected from loss, misuse, and unauthorized access.
 It offers cross-browser compatibility and a default mobile-compatible interface.</p>
+<h2> In this guide, we will cover the following areas </h2>
+
+<p><code>Note : This guide was prepared for Moodle version  Moodle 4.0.11+ (Build: 20240104).</code> </p>
+<!-- > [!NOTE]This content will not appear in the rendered Markdown  -->
+
+<h4>   Moodle Admin Guide </h4>
+
+<ul>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/site-admin.md">Site Admin</a></li>
+</ul>
+<!--   * Moodle installation
+     - [Linux](https://github.com/LEARN-LK/lms/blob/master/moodle-install.md)
+     - [Alpine Linux](https://github.com/LEARN-LK/lms/blob/master/Alpine-linux.md) -->
+<ul>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Practice-Moodle-VirtualBox&amp;UTM.md">Practice Moodle in VirtualBox / UTM</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/mdl-language-pack.md">Change Moodle Language Pack</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Customize_Moodle_themes.md">Customize the Moodle themes</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Configuring-Email-Outgoing.md">Configuring Email Outgoing</a></li>
+<li><h4>  External Authentication </h4></li>
+<li>
+<p><a href="https://github.com/LEARN-LK/lms/blob/master/Learn-SSO.md">LIAF SSO - Auth SAML2</a>
+ <!--  * [LIAF SSO - Shiboleth SP](https://github.com/LEARN-LK/lms/blob/master/shiboleth.md)
+   * [O365 Authentication](https://github.com/LEARN-LK/lms/blob/master/authentication.md#-mirosoft-o365--)
+   * [Google Authentication](https://github.com/LEARN-LK/lms/blob/master/authentication.md#google-authentication) --></p>
+</li>
+<li>
+<p><h4>Plugin Installation</h4></p>
+</li>
+</ul>
+<p><strong>Note</strong> If you are facing limitations with upload_max_filesize and post_max_size, please run the following commands in your virtual machine terminal:</p>
+<p><code>sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 128M/g' /etc/php82/php.ini</code></p>
+<p><code>sed -i 's/post_max_size = 8M/post_max_size = 128M/g' /etc/php82/php.ini</code></p>
+<ul>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Install-H5P-plugin.md">Interactive content</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/installVPL.md">Virtual Programming Lab - VPL</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/install-boad.md">Board</a> </li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Workplace-Certificate.md">Workplace Course Certificate</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Checklist-pluging.md">Checklist</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Progress-plugin.md">Completion Progress</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/attendance-plugin.md">Attendance Activity Plugin</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Mass-enrolments.md">Mass Enrolments</a></li>
+</ul>
+<p><code>Note: Enabling Default Moodle Plugins (e.g., “Survey”)If a default plugin (like Survey) is not visible in the “Add an activity or resource” list for teachers, the Moodle administrator should:Navigate to:-Site administration → Plugins → Activity modules → Manage activities</code></p>
+<h4> 02. Moodle Manager/ Faculty Coordinator Guide </h4>
+
+<ul>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/manager.md">Manager / Faculty Coordinator</a></li>
+<li>Add users <a href="https://github.com/LEARN-LK/lms/blob/master/Adding%20users.md#adding-users-">Adding User methods,Enrolling</a></li>
+<li>Create courses <a href="https://github.com/LEARN-LK/lms/blob/master/add.md#-adding-a-course-category-">(Create category,Create courses ,Add bulk course,Delete courses,Automated course backup)</a></li>
+</ul>
+<h4> 03. Teachers Guide</h4>
+
+<ul>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Assignment-activity.md">Adding contents/Assignments</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Quizzes&amp;Questionnaires.md">Quizzes, Questionnaires</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Moodle%20Virtual%20Class%20Room%20(Webinar)%20.md">Moodle Virtual Class Room (Webinar)</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Interactive-content.md">Interactive content</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Forum%20activity.md">Creating and Managing forums</a>
+     <!--* <a href="https://github.com/LEARN-LK/lms/blob/master/Scheduling-activities.md">Scheduling activities</a>--></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Enable-Safe-Exam-Browser.md">Enable Safe Exam Browser</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/SCORM.md">SCORM</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Feedback.md">Feedback</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Survey-activity.md">Surveys</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Attendance-activity.md">Attendance/Reports</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Grading.md">Grading</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/VirtualProgrammingLab-VPL.md">Virtual Programming Lab - VPL</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/mdl-board.md">Board - Plugin</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/course-certificate.md">Workplace Course Certificate</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Checklist.md">Checklist - Plugin</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/completion-progress.md">Completion Progress - plugin</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/bulk_enrolments.md">Bulk Enrolments plugin</a></li>
+</ul>
+<h4> 04. Student Guide</h4>
+
+<!--[Students Guide](https://github.com/LEARN-LK/lms/blob/master/Student-Guide.md)-->
+<ul>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/getting-started.md">Getting Started</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Courses-Assignment-Quiz-Submission.md">Navigating Courses,Submit the Assignment,Quiz Submission</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Submit-Forum.md">Submit the Forum</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/feedback-Survey-Submission.md">feedback activity,Survey Submission</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Join-VCR.md">Join in VCR Class Room</a></li>
+<li><a href="https://github.com/LEARN-LK/lms/blob/master/Safe-Exam-Browser.md">Safe Exam Browser</a></li>
+</ul>
 
 
 
