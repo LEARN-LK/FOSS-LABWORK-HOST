@@ -7,8 +7,13 @@ nav:
   - Home: index.md
   - Moodle:
     - Introduction: moodle/moodleReadme.md
-    - Moodle Admin Guide : moodle/admin/site-admin.md
-    - Manager Faculty Co Ordinator :     
+    - Site Admin:
+      - Moodle Admin Guide: moodle/admin-guide/site-admin.md
+      - Practice Moodle in VirtualBox: moodle/admin-guide/Practice-Moodle-VirtualBox&UTM.md
+      - Moodle language pack: moodle/admin-guide/mdl-language-pack.md
+      - Customize Moodle Themes: moodle/admin-guide/Customize_Moodle_themes.md
+      - Configuring Email Outgoing: moodle/admin-guide/Configuring-Email-Outgoing.md
+    - Manager Faculty Co Ordinator :
       - Moodle Manager: moodle/managerfaculty/manager.md
       - Adding a Course Category: moodle/managerfaculty/add.md
       - Adding users: moodle/managerfaculty/Adding users.md
