@@ -23,7 +23,7 @@ It offers cross-browser compatibility and a default mobile-compatible interface.
  
 <h4>   Moodle Admin Guide </h4>
 
-   * [Site Admin](https://github.com/LEARN-LK/lms/blob/master/site-admin.md)
+   * [Site Admin](moodle/admin-guide/site-admin)
 <!--   * Moodle installation
      - [Linux](https://github.com/LEARN-LK/lms/blob/master/moodle-install.md)
      - [Alpine Linux](https://github.com/LEARN-LK/lms/blob/master/Alpine-linux.md) -->
