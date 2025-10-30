@@ -1,18 +1,27 @@
-/* ==== ONLY TOP-LEVEL MENU ITEMS (collapsed + expanded) ==== */
+/* -------------------------------------------------
+   ONLY TOP-LEVEL MENU ITEMS (Home, Moodle, …)
+   ------------------------------------------------- */
 
-/* 1. Collapsed view (what you see in your screenshot) */
-.md-sidebar--primary .md-nav__list > .md-nav__item > .md-nav__link > .md-ellipsis {
-  font-size: 1.4rem !important;   /* Bigger */
-  font-weight: 600 !important;     /* Bold */
+/* 1. Collapsed view – the text that is visible in the sidebar */
+.md-sidebar--primary .md-nav__list
+  > .md-nav__item:not(.md-nav__item--nested)
+  > .md-nav__link
+  > .md-ellipsis {
+  font-size: 1.35rem !important;   /* ← change this to make it bigger */
+  font-weight: 600 !important;     /* bold */
 }
 
-/* 2. Expanded view (when you click a section) */
-.md-sidebar--primary .md-nav__item--nested > .md-nav__link > .md-ellipsis {
-  font-size: 1.4rem !important;
+/* 2. Expanded view – the clickable top-level item (the label of a nested block) */
+.md-sidebar--primary .md-nav__item--nested
+  > .md-nav__link
+  > .md-ellipsis {
+  font-size: 1.35rem !important;
   font-weight: 600 !important;
 }
 
-/* 3. Active top-level item */
-.md-sidebar--primary .md-nav__item--active > .md-nav__link > .md-ellipsis {
+/* Optional – active top-level item colour */
+.md-sidebar--primary .md-nav__item--active
+  > .md-nav__link
+  > .md-ellipsis {
   color: #1976d2 !important;
 }
