@@ -3,6 +3,8 @@ site_name: FOSS
 theme:
   name: material
 
+extra_css:
+  - stylesheets/custom.css
 
 nav:
   - Home: index.md
