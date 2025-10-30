@@ -27,12 +27,12 @@ It offers cross-browser compatibility and a default mobile-compatible interface.
 <!--   * Moodle installation
      - [Linux](https://github.com/LEARN-LK/lms/blob/master/moodle-install.md)
      - [Alpine Linux](https://github.com/LEARN-LK/lms/blob/master/Alpine-linux.md) -->
-   * [Practice Moodle in VirtualBox / UTM](https://github.com/LEARN-LK/lms/blob/master/Practice-Moodle-VirtualBox&UTM.md)
-   * [Change Moodle Language Pack](https://github.com/LEARN-LK/lms/blob/master/mdl-language-pack.md)
-   * [Customize the Moodle themes](https://github.com/LEARN-LK/lms/blob/master/Customize_Moodle_themes.md)
-   * [Configuring Email Outgoing](https://github.com/LEARN-LK/lms/blob/master/Configuring-Email-Outgoing.md)
+   * [Practice Moodle in VirtualBox / UTM](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Practice-Moodle-VirtualBox&UTM/)
+   * [Change Moodle Language Pack](mdl-language-pack.md)
+   * [Customize the Moodle themes](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Customize_Moodle_themes)
+   * [Configuring Email Outgoing](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Configuring-Email-Outgoing)
    * <h4>  External Authentication </h4>
-   * [LIAF SSO - Auth SAML2](https://github.com/LEARN-LK/lms/blob/master/Learn-SSO.md)
+   * [LIAF SSO - Auth SAML2](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Learn-SSO)
  <!--  * [LIAF SSO - Shiboleth SP](https://github.com/LEARN-LK/lms/blob/master/shiboleth.md)
    * [O365 Authentication](https://github.com/LEARN-LK/lms/blob/master/authentication.md#-mirosoft-o365--)
    * [Google Authentication](https://github.com/LEARN-LK/lms/blob/master/authentication.md#google-authentication) -->
