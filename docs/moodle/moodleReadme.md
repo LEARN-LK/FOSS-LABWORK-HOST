@@ -60,7 +60,7 @@ It offers cross-browser compatibility and a default mobile-compatible interface.
 
 <h4> 02. Moodle Manager/ Faculty Coordinator Guide </h4>
 
-  * [Manager / Faculty Coordinator](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodlemanagerfaculty/manager)
+  * [Manager / Faculty Coordinator](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/managerfaculty/manager)
   * Add users [Adding User methods,Enrolling](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/managerfaculty/Adding%20users#adding-users-)
   * Create courses [(Create category,Create courses ,Add bulk course,Delete courses,Automated course backup)](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/managerfaculty/add#-adding-a-course-category-)
 
