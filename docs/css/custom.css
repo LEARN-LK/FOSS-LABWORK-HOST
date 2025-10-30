@@ -1,8 +1,7 @@
-/* ==== MAIN MENU: BIGGER + BOLD ==== */
-/* Only top-level nav items */
-.md-sidebar--primary .md-nav__item--nested > .md-nav__link,
-.md-sidebar--primary > .md-nav > .md-nav__item > .md-nav__link {
-  font-size: 1.2rem !important;
-  font-weight: 700 !important;
-  text-transform: uppercase;
+
+/* ==== ONLY TOP-LEVEL MENU ITEMS ==== */
+.md-sidebar--primary .md-nav__item--section > .md-nav__link,
+.md-sidebar--primary .md-nav__item:not(.md-nav__item--nested) > .md-nav__link {
+  font-size: 1.25rem !important;   /* Increase size */
+  font-weight: 600 !important;      /* Optional: slightly bold */
 }
