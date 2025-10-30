@@ -28,7 +28,7 @@ It offers cross-browser compatibility and a default mobile-compatible interface.
      - [Linux](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/moodle-install)
      - [Alpine Linux](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Alpine-linux) -->
    * [Practice Moodle in VirtualBox / UTM](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Practice-Moodle-VirtualBox&UTM/)
-   * [Change Moodle Language Pack](mdl-language-pack)
+   * [Change Moodle Language Pack](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/mdl-language-pack)
    * [Customize the Moodle themes](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Customize_Moodle_themes)
    * [Configuring Email Outgoing](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Configuring-Email-Outgoing)
    * <h4>  External Authentication </h4>
