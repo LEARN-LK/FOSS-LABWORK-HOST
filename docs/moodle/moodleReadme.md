@@ -25,17 +25,17 @@ It offers cross-browser compatibility and a default mobile-compatible interface.
 
    * [Site Admin](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/site-admin/)
 <!--   * Moodle installation
-     - [Linux](https://github.com/LEARN-LK/lms/blob/master/moodle-install.md)
-     - [Alpine Linux](https://github.com/LEARN-LK/lms/blob/master/Alpine-linux.md) -->
+     - [Linux](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/moodle-install)
+     - [Alpine Linux](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Alpine-linux) -->
    * [Practice Moodle in VirtualBox / UTM](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Practice-Moodle-VirtualBox&UTM/)
-   * [Change Moodle Language Pack](mdl-language-pack.md)
+   * [Change Moodle Language Pack](mdl-language-pack)
    * [Customize the Moodle themes](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Customize_Moodle_themes)
    * [Configuring Email Outgoing](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Configuring-Email-Outgoing)
    * <h4>  External Authentication </h4>
    * [LIAF SSO - Auth SAML2](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Learn-SSO)
- <!--  * [LIAF SSO - Shiboleth SP](https://github.com/LEARN-LK/lms/blob/master/shiboleth.md)
-   * [O365 Authentication](https://github.com/LEARN-LK/lms/blob/master/authentication.md#-mirosoft-o365--)
-   * [Google Authentication](https://github.com/LEARN-LK/lms/blob/master/authentication.md#google-authentication) -->
+ <!--  * [LIAF SSO - Shiboleth SP](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/shiboleth)
+   * [O365 Authentication](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/authentication#-mirosoft-o365--)
+   * [Google Authentication](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/authentication#google-authentication) -->
    * <h4>Plugin Installation</h4>
 
   **Note** If you are facing limitations with upload_max_filesize and post_max_size, please run the following commands in your virtual machine terminal:
@@ -44,14 +44,14 @@ It offers cross-browser compatibility and a default mobile-compatible interface.
 
 ```  sed -i 's/post_max_size = 8M/post_max_size = 128M/g' /etc/php82/php.ini```
 
-   * [Interactive content](https://github.com/LEARN-LK/lms/blob/master/Install-H5P-plugin.md)
-   * [Virtual Programming Lab - VPL](https://github.com/LEARN-LK/lms/blob/master/installVPL.md)
-   * [Board](https://github.com/LEARN-LK/lms/blob/master/install-boad.md) 
-   * [Workplace Course Certificate](https://github.com/LEARN-LK/lms/blob/master/Workplace-Certificate.md)
-   * [Checklist](https://github.com/LEARN-LK/lms/blob/master/Checklist-pluging.md)
-   * [Completion Progress](https://github.com/LEARN-LK/lms/blob/master/Progress-plugin.md)
-   * [Attendance Activity Plugin](https://github.com/LEARN-LK/lms/blob/master/attendance-plugin.md)
-   * [Mass Enrolments](https://github.com/LEARN-LK/lms/blob/master/Mass-enrolments.md)
+   * [Interactive content](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Install-H5P-plugin)
+   * [Virtual Programming Lab - VPL](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/installVPL)
+   * [Board](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/install-boad) 
+   * [Workplace Course Certificate](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Workplace-Certificate)
+   * [Checklist](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Checklist-pluging)
+   * [Completion Progress](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Progress-plugin)
+   * [Attendance Activity Plugin](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/attendance-plugin)
+   * [Mass Enrolments](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Mass-enrolments)
 
 
     
@@ -60,39 +60,39 @@ It offers cross-browser compatibility and a default mobile-compatible interface.
 
 <h4> 02. Moodle Manager/ Faculty Coordinator Guide </h4>
 
-  * [Manager / Faculty Coordinator](https://github.com/LEARN-LK/lms/blob/master/manager.md)
-  * Add users [Adding User methods,Enrolling](https://github.com/LEARN-LK/lms/blob/master/Adding%20users.md#adding-users-)
-  * Create courses [(Create category,Create courses ,Add bulk course,Delete courses,Automated course backup)](https://github.com/LEARN-LK/lms/blob/master/add.md#-adding-a-course-category-)
+  * [Manager / Faculty Coordinator](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/manager)
+  * Add users [Adding User methods,Enrolling](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Adding%20users#adding-users-)
+  * Create courses [(Create category,Create courses ,Add bulk course,Delete courses,Automated course backup)](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/add#-adding-a-course-category-)
 
 
 
 <h4> 03. Teachers Guide</h4>
 
-   * [Adding contents/Assignments](https://github.com/LEARN-LK/lms/blob/master/Assignment-activity.md)
-   * [Quizzes, Questionnaires](https://github.com/LEARN-LK/lms/blob/master/Quizzes&Questionnaires.md)
-   * [Moodle Virtual Class Room (Webinar)](https://github.com/LEARN-LK/lms/blob/master/Moodle%20Virtual%20Class%20Room%20(Webinar)%20.md)
-   * [Interactive content](https://github.com/LEARN-LK/lms/blob/master/Interactive-content.md)
-   * [Creating and Managing forums](https://github.com/LEARN-LK/lms/blob/master/Forum%20activity.md)
-     <!--* [Scheduling activities](https://github.com/LEARN-LK/lms/blob/master/Scheduling-activities.md)-->
-   * [Enable Safe Exam Browser](https://github.com/LEARN-LK/lms/blob/master/Enable-Safe-Exam-Browser.md)
-   * [SCORM](https://github.com/LEARN-LK/lms/blob/master/SCORM.md)
-   * [Feedback](https://github.com/LEARN-LK/lms/blob/master/Feedback.md)
-   * [Surveys](https://github.com/LEARN-LK/lms/blob/master/Survey-activity.md)
-   * [Attendance/Reports](https://github.com/LEARN-LK/lms/blob/master/Attendance-activity.md)
-   * [Grading](https://github.com/LEARN-LK/lms/blob/master/Grading.md)
-   * [Virtual Programming Lab - VPL](https://github.com/LEARN-LK/lms/blob/master/VirtualProgrammingLab-VPL.md)
-   * [Board - Plugin](https://github.com/LEARN-LK/lms/blob/master/mdl-board.md)
-   * [Workplace Course Certificate](https://github.com/LEARN-LK/lms/blob/master/course-certificate.md)
-   * [Checklist - Plugin](https://github.com/LEARN-LK/lms/blob/master/Checklist.md)
-   * [Completion Progress - plugin](https://github.com/LEARN-LK/lms/blob/master/completion-progress.md)
-   * [Bulk Enrolments plugin](https://github.com/LEARN-LK/lms/blob/master/bulk_enrolments.md)
+   * [Adding contents/Assignments](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Assignment-activity)
+   * [Quizzes, Questionnaires](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Quizzes&Questionnaires)
+   * [Moodle Virtual Class Room (Webinar)](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Moodle%20Virtual%20Class%20Room%20(Webinar)%20)
+   * [Interactive content](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Interactive-content)
+   * [Creating and Managing forums](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Forum%20activity)
+     <!--* [Scheduling activities](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Scheduling-activities)-->
+   * [Enable Safe Exam Browser](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Enable-Safe-Exam-Browser)
+   * [SCORM](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/SCORM)
+   * [Feedback](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Feedback)
+   * [Surveys](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Survey-activity)
+   * [Attendance/Reports](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Attendance-activity)
+   * [Grading](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Grading)
+   * [Virtual Programming Lab - VPL](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/VirtualProgrammingLab-VPL)
+   * [Board - Plugin](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/mdl-board)
+   * [Workplace Course Certificate](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/course-certificate)
+   * [Checklist - Plugin](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Checklist)
+   * [Completion Progress - plugin](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/completion-progress)
+   * [Bulk Enrolments plugin](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/bulk_enrolments)
      
 <h4> 04. Student Guide</h4>
 
-   <!--[Students Guide](https://github.com/LEARN-LK/lms/blob/master/Student-Guide.md)-->
-   * [Getting Started](https://github.com/LEARN-LK/lms/blob/master/getting-started.md)
-   * [Navigating Courses,Submit the Assignment,Quiz Submission](https://github.com/LEARN-LK/lms/blob/master/Courses-Assignment-Quiz-Submission.md)
-   * [Submit the Forum](https://github.com/LEARN-LK/lms/blob/master/Submit-Forum.md)
-   * [feedback activity,Survey Submission](https://github.com/LEARN-LK/lms/blob/master/feedback-Survey-Submission.md)
-   * [Join in VCR Class Room](https://github.com/LEARN-LK/lms/blob/master/Join-VCR.md)
-   * [Safe Exam Browser](https://github.com/LEARN-LK/lms/blob/master/Safe-Exam-Browser.md)
+   <!--[Students Guide](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Student-Guide)-->
+   * [Getting Started](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/getting-started)
+   * [Navigating Courses,Submit the Assignment,Quiz Submission](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Courses-Assignment-Quiz-Submission)
+   * [Submit the Forum](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Submit-Forum)
+   * [feedback activity,Survey Submission](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/feedback-Survey-Submission)
+   * [Join in VCR Class Room](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Join-VCR)
+   * [Safe Exam Browser](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Safe-Exam-Browser)
