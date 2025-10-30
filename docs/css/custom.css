@@ -1,7 +1,20 @@
 
-/* ==== ONLY TOP-LEVEL MENU ITEMS ==== */
+/* ==== ONLY TOP-LEVEL MENU ITEMS (collapsed + expanded) ==== */
+
+/* --- Collapsed view (what you see in the screenshot) --- */
+.md-sidebar--primary .md-nav__list > .md-nav__item > .md-nav__link {
+  font-size: 1.3rem !important;   /* Bigger */
+  font-weight: 600 !important;     /* Bold */
+}
+
+/* --- Expanded view (when you click a section) --- */
 .md-sidebar--primary .md-nav__item--section > .md-nav__link,
 .md-sidebar--primary .md-nav__item:not(.md-nav__item--nested) > .md-nav__link {
-  font-size: 1.25rem !important;   /* Increase size */
-  font-weight: 600 !important;      /* Optional: slightly bold */
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+}
+
+/* Optional: Active item highlight */
+.md-sidebar--primary .md-nav__item--active > .md-nav__link {
+  color: #1976d2 !important;
 }
