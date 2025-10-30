@@ -1,0 +1,55 @@
+<h2>Bulk Enrolments plugin</h2>
+
+Bulk enrolments allows you to enrol students and add them to groups in a Moodle course using an excel file containing the students' email address or userid. Before you start, you will require an excel file containing a complete list of the students' email address or userids in the first column. Subsequent columns contain the names of any groups you want to add each student to.
+
+<h4>Create your CSV</h4>
+
+In order to upload your students successfully, you will need to create a CSV file with the students details. CSVs are simple to create - one way is in a spreadsheet package, making sure to save it as a .csv file type. At minimum, your CSV file should contain one column for the main student identifier, usually their email address but it can also be their userid, or student ID number. Ensure you have column labels - this is because Moodle anticipates these and so ignores the first row of CSV file. In other words, don't put any actual student data in your file's top row. If you are using email then put 'email', if you are using user IDs then put 'userid'. If you want to enrol the students into Groups, include a second column which gives the group name for each student. Be careful to type these exactly. Give it a column heading 'group'. You can add subsequent groups in subsequent columns.
+
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/bulk/bulk_upload_csv.webp" style="max-width: 100%;width: 50%;">
+
+<h4>Create your CSV using google forms (Alternative method)</h4>
+
+<ul><li>Step 1: Create a google form to get the usernames</li>
+<li>Step 2: View the responses from 'Responses' menu (Figure 1)</li>
+ 
+  <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/bulk/regform.png" style="max-width: 100%;width: 50%;">
+<li>Step 3: Go to the three dots menu (Figure 2)</li>
+ 
+  <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/bulk/responses.png" style="max-width: 100%;width: 50%;">
+<li>Step 4: Click save as CSV (Figure 3)</li>
+
+  <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/bulk/save_as_csv.png" style="max-width: 100%;width: 50%;">
+<li>Step 5: Use the CSV file as the input for next step <b>(Please note first column is timestamp in google form)</b></li></ul>
+
+<h4>Enrol the Students</h4>
+
+In the Settings block on your course, under Course administration, click Users > Bulk enrolments.
+
+<!-- Select Choose a file and upload your CSV file. Make sure Role to assign is left as student. 
+Set First column contains to reflect they type of data you have used in your spreadsheet, either the students' email address, userid or ID number. If you need to create groups, ensure Create group(s) if needed is set to Yes. If you would like to create groupings in your course, based on the groups that the students will been placed into, ensure Create grouping(s) if needed is kept to yes. If you do not want to create groupings, set this to No. To receive an email report confirming which students have been enrolled and which groups they have been placed into, keep Send me a mail report set to Yes. Click Enrol them to my course. Check the students have been enrolled in their groups by going to the Settings menu and under Course Administration click on Users then Groups. You should see the groups listed, followed by the number of students in each group in brackets. You can also bulk unenrol students from your course by clicking on Bulk unenrolments in the block, and following the instructions above. -->
+
+
+
+
+
+ - Step 1: Go to the course and select participants tab. **[4]**
+ - Step 2: Click on the down arrow in enrolled users. **[5]**
+ - Step 3: Click on bulk enrolments. **[6]**
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/bulk/bulk_enroll1.png" style="max-width: 100%;width: 50%;">
+  
+ - Step 4: Click choose a file **[7]**.
+    
+ <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/bulk/bulk_enroll2.png" style="max-width: 100%;width: 50%;">
+  
+ - Step 5: Click on **browse [8]** and select your CSV file. Click on upload.
+
+ <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/bulk/bulk_enroll3.png" style="max-width: 100%;width: 50%;">
+
+ - Step 6: Scroll through the bulk enrolments page, go to mapping section and select the relevant column for the username. **[9]** If the column is not relevant or empty select respective column as none. If you need groupings, you can select relevant options.
+
+ - Step 7: Click on Enrol them to my course **[10]**
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/bulk/bulk_enroll5.png" style="max-width: 100%;width: 50%;">
