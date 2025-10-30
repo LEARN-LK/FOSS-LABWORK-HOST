@@ -31,7 +31,7 @@ To configure outgoing email in Moodle, follow these steps:
 
 ### 5. **Save Changes**
 
-  <img src="https://github.com/LEARN-LK/lms/blob/master/img/001-mail-config.png" style="max-width: 100%;width: 100%;">
+  <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/001-mail-config.png" style="max-width: 100%;width: 100%;">
 
 
    - Click **Save changes** to apply your settings.
@@ -42,3 +42,4 @@ To configure outgoing email in Moodle, follow these steps:
    - Check the inbox of the test email to confirm the email was received.
 
 After completing these steps, Moodle should be able to send emails for notifications, password resets, and other communications.
+

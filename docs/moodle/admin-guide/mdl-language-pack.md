@@ -14,8 +14,9 @@
 6. Set **Default language** to **Sinhala (si) or Tamil (ta_lk)**.
 7. Click **Save changes**.
 8. Change the **Language**
-<img src="https://github.com/LEARN-LK/lms/blob/master/img/lan.png" alt="image" style="max-width: 100%;width: 300px;">
-<img src="https://github.com/LEARN-LK/lms/blob/master/img/lan2.png" alt="image" style="max-width: 100%;width: 300px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/lan.png" alt="image" style="max-width: 100%;width: 300px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/lan2.png" alt="image" style="max-width: 100%;width: 300px;">
+
 
 
 ---

@@ -7,7 +7,7 @@
    - Search for "**Board**" and select the appropriate plugin page .
    - Download the latest version of the plugin in a ZIP format.
 
-<img src="https://github.com/LEARN-LK/lms/blob/master/img/board-01.png">
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/board-01.png">
 
 2. **Upload the Plugin:**
    - Log in to your Moodle site as an administrator.
@@ -30,3 +30,5 @@
 
 6. **Test the Plugin:**
    - After setting up, it’s a good idea to test the Board activity by adding some posts and checking if everything functions as expected.
+
+

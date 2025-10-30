@@ -8,7 +8,7 @@
 1. **Download the Plugin**:
    - Go to the Moodle Plugin Directory and download the latest version of the **Completion Progress** plugin as a zip file or go directly to the [Moodle Plugin Directory](https://moodle.org/plugins/block_completion_progress)
 
-<img src="https://github.com/LEARN-LK/lms/blob/master/img/completion-progress-01.png">
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/completion-progress-01.png">
      
 2. **Install the Plugin in Moodle**:
    - Log in to Moodle as an administrator.

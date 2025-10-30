@@ -10,7 +10,7 @@
 1. **Download the Plugin**:
    - Go to the Moodle Plugin Directory and download the latest version of the **Mass Enrolments** plugin as a zip file or go directly to the [Moodle Plugin Directory](https://moodle.org/plugins/local_mass_enroll)
 
-<img src="https://github.com/LEARN-LK/lms/blob/master/img/mass-enrolment.png">
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/mass-enrolment.png">
      
 2. **Install the Plugin in Moodle**:
    - Log in to Moodle as an administrator.
@@ -22,4 +22,5 @@
    - After installation, Moodle will list the plugin under **Site Administration > Plugins > Plugins overview** in the **Local plugins** section. If you see **Mass enrolments** here, the plugin is successfully installed and ready for use.
 
 ---
+
 
