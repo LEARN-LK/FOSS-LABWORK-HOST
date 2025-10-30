@@ -23,27 +23,25 @@ nav:
       - Moodle-Virtual-Class-Room-(Webinar): moodle/TeachersGuide/Moodle-Virtual-Class-Room-(Webinar).md
       - Interactive Content: moodle/TeachersGuide/Interactive-content.md
       - Creating and Managing Forum: moodle/TeachersGuide/Forum-activity.md
-      - Enable Safe Exam Browser: moodle/TeachersGuide/
-      - SCORM: moodle/TeachersGuide/SCORM
-      - Feedback: moodle/TeachersGuide/Feedback
-      - Surveys: moodle/TeachersGuide/Surveys-activity
-      - Attendance/Reports: moodle/TeachersGuide/Attendance-activity
-      - Grading: moodle/TeachersGuide/Grading
-      - Virtual Programming Lab - VPL: moodle/TeachersGuide/VirtualProgrammingLab_VPL
-      - Board - Plugin: moodle/TeachersGuide/mdl-board
-      - Workplace Course Certificate: moodle/TeachersGuide/course-certificate
-      - Checklist - Plugin: moodle/TeachersGuide/Checklist
-      - Completion Progress - plugin: moodle/TeachersGuide/Completion-progress
-      - Bulk Enrolments plugin: moodle/TeachersGuide/bulk_enrolments
-
-      
-    - Student Guide: moodle/StudentGuide/getting-started.
-      - Navigating Courses,Submit the Assignment,Quiz Submission: moodle/StudentGuide/Courses-Assignment-Quiz-Submission
-      - Submit the Forum: moodle/StudentGuide/Submit-Forum
-      - Feedback activity,Survey Submission: moodle/StudentGuide/feedback-Survey-Submission
-      - Join in VCR Class Room: moodle/StudentGuide/Join-VCR
-      - Safe Exam Browser: moodle/StudentGuide/Safe-Exam-Browser
-
+      - Enable Safe Exam Browser: moodle/TeachersGuide/Enable-Safe-Exam-Browser.md
+      - SCORM: moodle/TeachersGuide/SCORM.md
+      - Feedback: moodle/TeachersGuide/Feedback.md
+      - Surveys: moodle/TeachersGuide/Surveys-activity.md
+      - Attendance/Reports: moodle/TeachersGuide/Attendance-activity.md
+      - Grading: moodle/TeachersGuide/Grading.md
+      - Virtual Programming Lab - VPL: moodle/TeachersGuide/VirtualProgrammingLab_VPL.md
+      - Board - Plugin: moodle/TeachersGuide/mdl-board.md
+      - Workplace Course Certificate: moodle/TeachersGuide/course-certificate.md
+      - Checklist - Plugin: moodle/TeachersGuide/Checklist.md
+      - Completion Progress - plugin: moodle/TeachersGuide/Completion-progress.md
+      - Bulk Enrolments plugin: moodle/TeachersGuide/bulk_enrolments.md
+    - Student Guide: 
+      - Getting Start: moodle/StudentGuide/getting-started.md
+      - Navigating Courses,Submit the Assignment,Quiz Submission: moodle/StudentGuide/Courses-Assignment-Quiz-Submission.md
+      - Submit the Forum: moodle/StudentGuide/Submit-Forum.md
+      - Feedback activity,Survey Submission: moodle/StudentGuide/feedback-Survey-Submission.md
+      - Join in VCR Class Room: moodle/StudentGuide/Join-VCR.md
+      - Safe Exam Browser: moodle/StudentGuide/Safe-Exam-Browser.md
   - DSpace: 
     - Introduction: dspace/README.md
     - Site Admin: dspace/siteadmin.md
