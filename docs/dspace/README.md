@@ -83,12 +83,12 @@ You can track how often your content is viewed or downloaded, helping you unders
 
 
 
-1. [Create Community, Sub-Community & Collection](https://learn-lk.github.io/FOSS-LABWORK-HOST/dspace/siteadmin)
-2. [Community admin/Faculty Admin), Collections admin/Department Admin)](https://learn-lk.github.io/FOSS-LABWORK-HOST/dspace/Community&Collection-Admin)
-3. [Add Users to Each Role in DSpace](https://learn-lk.github.io/FOSS-LABWORK-HOST/dspace/AddUserstoDSpace)
-4. [Submitter](https://learn-lk.github.io/FOSS-LABWORK-HOST/dspace/Submitter)
-5. [Reviewer/Editor/FinalEditor](https://learn-lk.github.io/FOSS-LABWORK-HOST/dspace/reviewer_editor_finalEditor)
-6. [Steps to Integrate ORCID Sandbox to DSpace](https://learn-lk.github.io/FOSS-LABWORK-HOST/dspace/Integrate-ORCID-Sandbox)
+1. [Create Community, Sub-Community & Collection](https://learn-lk.github.io/FOSS-LABWORK-HOST/dspace/siteadmin/)
+2. [Community admin/Faculty Admin), Collections admin/Department Admin)](https://learn-lk.github.io/FOSS-LABWORK-HOST/dspace/Community&Collection-Admin/)
+3. [Add Users to Each Role in DSpace](https://learn-lk.github.io/FOSS-LABWORK-HOST/dspace/AddUserstoDSpace/)
+4. [Submitter](https://learn-lk.github.io/FOSS-LABWORK-HOST/dspace/Submitter/)
+5. [Reviewer/Editor/FinalEditor](https://learn-lk.github.io/FOSS-LABWORK-HOST/dspace/reviewer_editor_finalEditor/)
+6. [Steps to Integrate ORCID Sandbox to DSpace](https://learn-lk.github.io/FOSS-LABWORK-HOST/dspace/Integrate-ORCID-Sandbox/)
 
 
 
