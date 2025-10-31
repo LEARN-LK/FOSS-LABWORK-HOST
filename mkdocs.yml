@@ -16,10 +16,20 @@ nav:
       - Moodle language pack: moodle/admin-guide/mdl-language-pack.md
       - Customize Moodle Themes: moodle/admin-guide/Customize_Moodle_themes.md
       - Configuring Email Outgoing: moodle/admin-guide/Configuring-Email-Outgoing.md
+      - External Authentication: moodle/admin-guide/Learn-SSO.md
+      - Plugin Installation: 
+        - Interactive content: moodle/admin-guide/Install-H5P-plugin.md
+        - Virtual Programming Lab - VPL: moodle/admin-guide/installVPL.md
+        - Board: moodle/admin-guide/install-boad.md
+        - Workplace Course Certificate: moodle/admin-guide/Workplace-Certificate.md
+        - Checklist: moodle/admin-guide/Checklist-pluging.md 
+        - Completion Progress: moodle/admin-guide/Progress-plugin.md
+        - Attendance Activity Plugin: moodle/admin-guide/attendance-plugin.md
+        - Mass Enrolments: moodle/admin-guide/Mass-enrolments.md
     - Manager Faculty Co Ordinator :
       - Moodle Manager: moodle/managerfaculty/manager.md
+      - Adding users: moodle/managerfaculty/Adding-users.md
       - Adding a Course Category: moodle/managerfaculty/add.md
-      - Adding users: moodle/managerfaculty/Adding users.md
     - Teacher:
       - Assignments: moodle/TeachersGuide/Assignment-activity.md
       - Quizzes & Questionnaires: moodle/TeachersGuide/Quizzes&Questionnaires.md
@@ -29,14 +39,14 @@ nav:
       - Enable Safe Exam Browser: moodle/TeachersGuide/Enable-Safe-Exam-Browser.md
       - SCORM: moodle/TeachersGuide/SCORM.md
       - Feedback: moodle/TeachersGuide/Feedback.md
-      - Surveys: moodle/TeachersGuide/Surveys-activity.md
+      - Surveys: moodle/TeachersGuide/Survey-activity.md
       - Attendance/Reports: moodle/TeachersGuide/Attendance-activity.md
       - Grading: moodle/TeachersGuide/Grading.md
-      - Virtual Programming Lab - VPL: moodle/TeachersGuide/VirtualProgrammingLab_VPL.md
+      - Virtual Programming Lab - VPL: moodle/TeachersGuide/VirtualProgrammingLab-VPL.md
       - Board - Plugin: moodle/TeachersGuide/mdl-board.md
       - Workplace Course Certificate: moodle/TeachersGuide/course-certificate.md
       - Checklist - Plugin: moodle/TeachersGuide/Checklist.md
-      - Completion Progress - plugin: moodle/TeachersGuide/Completion-progress.md
+      - Completion Progress - plugin: moodle/TeachersGuide/completion-progress.md
       - Bulk Enrolments plugin: moodle/TeachersGuide/bulk_enrolments.md
     - Student Guide: 
       - Getting Start: moodle/StudentGuide/getting-started.md
