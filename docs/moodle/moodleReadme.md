@@ -17,7 +17,7 @@ It offers cross-browser compatibility and a default mobile-compatible interface.
 
 <h2> In this guide, we will cover the following areas </h2>
 
- `Note : This guide was prepared for Moodle version  Moodle 4.0.11+ (Build: 20240104).` 
+ `Note : This guide was prepared for Moodle version  Moodle 4.5.` 
 
  <!-- > [!NOTE]This content will not appear in the rendered Markdown  -->
  
@@ -38,11 +38,6 @@ It offers cross-browser compatibility and a default mobile-compatible interface.
    * [Google Authentication](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/authentication#google-authentication) -->
    * <h4>Plugin Installation</h4>
 
-  **Note** If you are facing limitations with upload_max_filesize and post_max_size, please run the following commands in your virtual machine terminal:
-
-```  sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 128M/g' /etc/php82/php.ini```
-
-```  sed -i 's/post_max_size = 8M/post_max_size = 128M/g' /etc/php82/php.ini```
 
    * [Interactive content](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Install-H5P-plugin)
    * [Virtual Programming Lab - VPL](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/installVPL)
