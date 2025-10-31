@@ -37,7 +37,7 @@
 * Open your browser and navigate to your institution's Indico login page.
 * Below the login form, click on:
 
-  **➡ *"If you do not have an Indico account yet, you can create one here."***
+    **➡ *"If you do not have an Indico account yet, you can create one here."***
 <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/create-acc-00.png" width="430">
 
 ---
@@ -47,12 +47,12 @@
 * You will be redirected to a page to begin the registration.
 * Enter your **email address [1]**.
 * Complete the **CAPTCHA [2]** (if shown).
-* Then click on:
+  * Then click on:
 
-  <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/create-acc-01.png" width="430">
-  <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/create-acc-02.png" width="430">
-
-  **“Send me a verification email” [3]**
+    <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/create-acc-01.png" width="430">
+    <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/create-acc-02.png" width="430">
+    
+    **“Send me a verification email” [3]**
 
 This sends a confirmation email to the address you provided.
 
@@ -74,17 +74,18 @@ This sends a confirmation email to the address you provided.
 
 * After clicking the link, you'll be directed to complete your profile:
 
-  * **Email address** (pre-filled)
-  * **First name**
-  * **Last name**
-  * **Affiliation** (e.g., University name)
-  * **Username** (your login name)
-  * **Password**
+*  * **Email address** (pre-filled)
+*  * **First name**
+*  * **Last name**
+*  * **Affiliation** (e.g., University name)
+*  * **Username** (your login name)
+*  * **Password**
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/create-acc-04.png" width="430">
+
 * When done, click:
 
-  **“Create my Indico profile” [6]**
+    **“Create my Indico profile” [6]**
 
 ---
 
@@ -92,8 +93,8 @@ This sends a confirmation email to the address you provided.
 
 * Once the profile is created, you’ll see the message:
 
-  **“You have successfully registered your Indico profile.” [7]**
-<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/create-acc-05.png" width="430">
+    **“You have successfully registered your Indico profile.” [7]**
+    <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/create-acc-05.png" width="430">
   
 
 * Click on **“your profile”** to review or update personal settings.
@@ -105,36 +106,34 @@ This sends a confirmation email to the address you provided.
 
 ###  Step-by-Step:
 
-1. **Go to the Indico portal**
+1\. **Go to the Indico portal**
    Example: [https://wsindico.learn.ac.lk](https://wsindico.learn.ac.lk/)
 
-2. Click **Login** (top-right)
+2\. Click **Login** (top-right)
   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/sso-login-01.png" width="630">
 
-4. Select **Login using your institution**
+3\. Select **Login using your institution**
 
-   > You will be redirected to: `https://idp.learn.ac.lk`
-<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/sso-login-02.png" width="230">
+  > You will be redirected to: `https://idp.learn.ac.lk`
+   
+  <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/sso-login-02.png" width="230">
 
-
-5. Select your university from the dropdown (if prompted)
+4\. Select your university from the dropdown (if prompted)
 
    <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/sso-login-03.png" width="430">
 
+5\. Login with your **institutional email/password** (EduID)
 
-6. Login with your **institutional email/password** (EduID)
 <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/sso-login-04.png" width="430">
 
-   
+6\. If this is your first time:
 
-7. If this is your first time:
+* * You’ll be redirected back to Indico
+* * Click **“Create new Indico profile”**
+* * Your name and email will be filled automatically
+* * Fill in any missing info (e.g., affiliation)
 
-   * You’ll be redirected back to Indico
-   * Click **“Create new Indico profile”**
-   * Your name and email will be filled automatically
-   * Fill in any missing info (e.g., affiliation)
-
-9. Click **Create Profile** 
+7\. Click **Create Profile** 
 
 > From now on, you will log in with your university account — no password needed for Indico itself.
 
@@ -156,6 +155,7 @@ This sends a confirmation email to the address you provided.
 | Uses University Email    | Yes                       | Optional                         |
 | Needs Admin Approval     | No                        | Maybe (if auto-register disabled)|
 | Login Method             | Institutional credentials | Username & password              |
+
 ---
 
 
@@ -175,35 +175,34 @@ Keeping your Indico profile updated ensures accurate participant records, certif
 
 ###  Step-by-Step Guide
 
-1. **Login** to your Indico account
+1\. **Login** to your Indico account
    → Visit: `https://wsindico.learn.ac.lk/` and sign in
 
-2. **Click your name [1]** at the top-right corner
+2\. **Click your name [1]** at the top-right corner
 
-3. From the dropdown menu, select **“My Profile [2]”**
+3\. From the dropdown menu, select **“My Profile [2]”**
 
     <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/update-profile-01.png" width="430">
-  
 
-4. In the profile page click setting **[3]** > update the following fields as needed **[4]**:
+4\. In the profile page click setting **[3]** > update the following fields as needed **[4]**:
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/update-profile-02.png" width="430">
-
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/update-profile-02.png" width="430">
+   
    *  **Full Name**
    *  **Affiliation** (e.g., University or Organization)
    *  **Phone Number**
 
- <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/update-profile-03.png" width="430">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/update-profile-03.png" width="430">
 
   *  **Profile Picture [5,6]** (optional)
-<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/update-profile-04.png" width="430">
+
+  <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/update-profile-04.png" width="430">
 
    *  **Language and Timezone [7]** (use `Asia/Colombo`)
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/update-profile-05.png" width="430">
-
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/update-profile-05.png" width="430">
      
-5. Click **“Save Changes”** at the bottom of the form
+5\. Click **“Save Changes”** at the bottom of the form
 
 ---
 

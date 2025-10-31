@@ -11,7 +11,7 @@ nav:
   - Moodle:
     - Introduction: moodle/moodleReadme.md
     - Site Admin:
-      - Moodle Admin Guide: moodle/admin-guide/site-admin.md
+      - Moodle Admin Guide: moodle/admin-guide/site-Admin.md
       - Practice Moodle in VirtualBox: moodle/admin-guide/Practice-Moodle-VirtualBox&UTM.md
       - Moodle language pack: moodle/admin-guide/mdl-language-pack.md
       - Customize Moodle Themes: moodle/admin-guide/Customize_Moodle_themes.md
@@ -44,7 +44,7 @@ nav:
       - Grading: moodle/TeachersGuide/Grading.md
       - Virtual Programming Lab - VPL: moodle/TeachersGuide/VirtualProgrammingLab-VPL.md
       - Board - Plugin: moodle/TeachersGuide/mdl-board.md
-      - Workplace Course Certificate: moodle/TeachersGuide/course-certificate.md
+      - Workplace Course Certificate: moodle/TeachersGuide/course-Certificate.md
       - Checklist - Plugin: moodle/TeachersGuide/Checklist.md
       - Completion Progress - plugin: moodle/TeachersGuide/completion-progress.md
       - Bulk Enrolments plugin: moodle/TeachersGuide/bulk_enrolments.md
@@ -57,12 +57,12 @@ nav:
       - Safe Exam Browser: moodle/StudentGuide/Safe-Exam-Browser.md
   - DSpace: 
     - Introduction: dspace/README.md
-    - Site Admin: dspace/siteadmin.md
-    - Add Users and Assign Roles: dspace/AddUserstoDSpace.md
+    - Site Admin(Create Community,Sub-Community,Collectio): dspace/siteadmin.md
     - Community and Collection Admin Roles: dspace/Community&Collection-Admin.md
-    - ORCID Sandbox + DSpace integration: dspace/Integrate-ORCID-Sandbox.md
-    - Reviewer & Editors: dspace/reviewer_editor_finalEditor.md
+    - Add Users and Assign Roles: dspace/AddUserstoDSpace.md
     - Submitter: dspace/Submitter.md
+    - Reviewer & Editors: dspace/reviewer_editor_finalEditor.md
+    - ORCID Sandbox + DSpace integration: dspace/Integrate-ORCID-Sandbox.md
   - WordPress:
     - Build Your Own Website: wordpress/build-website.md
     - Practice WordPress: wordpress/Practice-Wordpress.md
@@ -71,11 +71,11 @@ nav:
     - Introduction: indico/README.md
     - Conference Planing : indico/GeneralConferencePlanningProcess.md
     - Indico Setup:
-      - Admin: indico/Indico Setup/admin.md
-      - Event Configurations: indico/Indico Setup/AddEventDeadlinesandScheduleConfiguration.md
-      - Assign Organizers & Permissions: indico/Indico Setup/AddEventManagersAndAssignPermissions.md
-      - Accounts & Profiles: indico/Indico Setup/create-account&update-profile.md
-      - Event Creation: indico/Indico Setup/CreateConferenceEvent.md
+      - Admin: indico/indico-setup/Admin.md
+      - Event Configurations: indico/indico-setup/AddEventDeadlinesandScheduleConfiguration.md
+      - Assign Organizers & Permissions: indico/indico-setup/AddEventManagersAndAssignPermissions.md
+      - Accounts & Profiles: indico/indico-setup/CreateAccountAndUpdateProfile.md
+      - Event Creation: indico/indico-setup/CreateConferenceEvent.md
   - VCR:
     - Audio & Captions: 
       - Auto Captions: vcr/Audio&Captions/auto-caption.md
