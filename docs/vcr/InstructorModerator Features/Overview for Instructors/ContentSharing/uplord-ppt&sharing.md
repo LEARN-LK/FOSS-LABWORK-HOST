@@ -14,7 +14,7 @@
 
    <img src="https://raw.githubusercontent.com/LEARN-LK/VCR/main/img/add-ppt-01.png" alt="image" style="max-width: 100%;width: 500px;">
 
-2. **Click on the Room Name [1](Not the Start Button)**
+2. **Click on the Room Name [1]**
    This opens the **Room Details Page**.
 
 3. **Click the “Presentation [2]” Tab**

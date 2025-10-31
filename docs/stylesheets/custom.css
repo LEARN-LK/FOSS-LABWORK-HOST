@@ -3,7 +3,9 @@
    ------------------------------------------------- */
 
 /* Capitalize the main navigation items */
-.md-nav__link {
+.md-nav__icon .md-icon {
+  /* 
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bold; 
+  */
 }
