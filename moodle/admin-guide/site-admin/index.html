@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../../moodleReadme/">
+      
+      
+        <link rel="next" href="../Practice-Moodle-VirtualBox%26UTM/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>Site admin - FOSS</title>
+        <title>Moodle Admin Guide - FOSS</title>
       
     
     
@@ -96,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Site admin
+              Moodle Admin Guide
             
           </span>
         </div>
@@ -211,18 +215,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -238,7 +244,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Moodle
@@ -272,18 +278,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -299,7 +307,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Site Admin
@@ -310,10 +318,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../site-Admin.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Moodle Admin Guide
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -324,6 +352,171 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-site-administrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Site Administrator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Site Administrator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#role-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Role Definition:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-responsibilities-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Responsibilities &amp; Capabilities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Main Responsibilities &amp; Capabilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-site-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      A. Site Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-plugin-and-extension-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      B. Plugin and Extension Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-user-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      C. User Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-course-category-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      D. Course &amp; Category Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-enrollment-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      E. Enrollment Methods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-roles-and-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      F. Roles and Permissions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-backup-and-restore" class="md-nav__link">
+    <span class="md-ellipsis">
+      G. Backup and Restore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-system-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      H. System Maintenance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-security-privacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      I. Security &amp; Privacy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j-reports-and-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      J. Reports and Logs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#k-messaging-and-notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      K. Messaging and Notifications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-area-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Access Area Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3653,7 +3846,7 @@
 
 
 
-  <h1>Site admin</h1>
+  <h1>Moodle Admin Guide</h1>
 
 <h2 id="1-site-administrator">1. Site Administrator</h2>
 <h3 id="role-definition"><strong>Role Definition</strong>:</h3>
