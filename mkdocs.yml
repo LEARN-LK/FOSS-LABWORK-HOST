@@ -11,7 +11,7 @@ nav:
   - Moodle:
     - Introduction: moodle/moodleReadme.md
     - Site Admin:
-      - Moodle Admin Guide: moodle/admin-guide/site-Admin.md
+      - Moodle Admin Guide: moodle/admin-guide/site-admin.md
       - Practice Moodle in VirtualBox: moodle/admin-guide/Practice-Moodle-VirtualBox&UTM.md
       - Moodle language pack: moodle/admin-guide/mdl-language-pack.md
       - Customize Moodle Themes: moodle/admin-guide/Customize_Moodle_themes.md
