@@ -1,0 +1,4856 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Configuring-Email-Outgoing/">
+      
+      
+        <link rel="next" href="../Install-H5P-plugin/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>External Authentication - FOSS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2a3383ac.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#liaf-sso-auth-saml2-recommended" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="FOSS" class="md-header__button md-logo" aria-label="FOSS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FOSS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              External Authentication
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="FOSS" class="md-nav__button md-logo" aria-label="FOSS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    FOSS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Moodle
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Moodle
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../moodleReadme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Site Admin
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Site Admin
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../site-Admin.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moodle Admin Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Practice-Moodle-VirtualBox%26UTM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Practice Moodle in VirtualBox
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mdl-language-pack/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moodle language pack
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Customize_Moodle_themes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Customize Moodle Themes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Configuring-Email-Outgoing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuring Email Outgoing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    External Authentication
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    External Authentication
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01-installing-the-auth_saml2-plugin-for-moodle" class="md-nav__link">
+    <span class="md-ellipsis">
+      01 - Installing the auth_saml2 Plugin for Moodle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="01 - Installing the auth_saml2 Plugin for Moodle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-take-administrative-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      i. Take Administrative Control:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-locate-and-install-the-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      ii. Locate and Install the Plugin:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-confirm-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      iii. Confirm Installation:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-if-you-having-this-kind-of-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      iv. if you having this kind of error:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v-follow-this-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      v. follow this Step :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vi-confirm-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vi. Confirm Installation:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vii-review-installation-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vii. Review Installation Log:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viii-check-plugin-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viii .Check Plugin Status:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ix-note-content-type-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      ix Note Content Type Installation:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-verify-auth_saml2-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      x Verify Auth_SAML2 Settings:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02configure-the-moodle-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      02.Configure the Moodle core.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="02.Configure the Moodle core.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#021-add-following-line-to-the-moodle-configphp" class="md-nav__link">
+    <span class="md-ellipsis">
+      02.1 Add following line to the Moodle config.php
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="02.1 Add following line to the Moodle config.php">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-access-the-moodle-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      i. Access the Moodle Server:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-locate-the-moodle-configuration-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      ii. Locate the Moodle Configuration File:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-edit-the-configuration-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      iii. Edit the Configuration File:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-add-the-configuration-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      iv. Add the Configuration Setting:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v-save-and-exit-the-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      v. Save and Exit the Editor:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vi-restart-the-web-server-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      vi. Restart the Web Server (Optional):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#022-edit-the-modulephp" class="md-nav__link">
+    <span class="md-ellipsis">
+      02.2. Edit the module.php
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="02.2. Edit the module.php">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-access-the-moodle-server_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      i. Access the Moodle Server:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-navigate-to-the-saml2-plugin-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      ii.. Navigate to the SAML2 Plugin Directory:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-open-the-modulephp-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      iii. Open the module.php File:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-find-and-edit-the-required-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      iv. Find and Edit the Required Line:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v-save-and-exit-the-editor_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      v. Save and Exit the Editor:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#023-edit-authsaml2configconfigphp-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      02.3. EDIT auth/saml2/config/config.php file
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="02.3. EDIT auth/saml2/config/config.php file">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-navigate-to-the-saml2-plugin-configuration-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      i. Navigate to the SAML2 Plugin Configuration Directory:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-open-the-configphp-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      ii. Open the config.php File:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-add-the-tempdir-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      iii. Add the tempdir Configuration:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-save-and-exit-the-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      iv. Save and Exit the Editor:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03moodle-ui-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      03.Moodle UI Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="03.Moodle UI Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#031-enable-and-configure-saml2-authentication-in-moodle" class="md-nav__link">
+    <span class="md-ellipsis">
+      03.1 enable and configure SAML2 authentication in Moodle:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="03.1 enable and configure SAML2 authentication in Moodle:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-log-in-to-moodle-as-an-administrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      i. Log in to Moodle as an Administrator:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-navigate-to-manage-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      ii. Navigate to Manage Authentication:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-enable-saml2-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      iii. Enable SAML2 Authentication:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-access-saml2-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      iv. Access SAML2 Settings:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v-configure-saml2-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      v. Configure SAML2 Settings:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vi-access-data-mapping-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      vi. Access Data Mapping Settings:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vii-set-data-mapping-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      vii. Set Data Mapping Fields:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viii-save-the-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      viii. Save the Configuration:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-generate-moodle-saml2-certificate-and-register-with-liaf" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Generate Moodle SAML2 certificate and register with LIAF
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Generate Moodle SAML2 certificate and register with LIAF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-navigate-to-saml2-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      i. Navigate to SAML2 Settings:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-generate-the-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      ii. Generate the Certificate:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-download-sp-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      iii. Download SP Metadata:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-register-at-liaf" class="md-nav__link">
+    <span class="md-ellipsis">
+      iv. Register at LIAF:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04-steps-for-logging-into-moodle-using-liaf-sso" class="md-nav__link">
+    <span class="md-ellipsis">
+      04 Steps for logging into Moodle using LIAF SSO
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_7" id="__nav_2_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Plugin Installation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Plugin Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Install-H5P-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interactive content
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installVPL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Virtual Programming Lab - VPL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install-boad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Board
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Workplace-Certificate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Workplace Course Certificate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Checklist-pluging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Checklist
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Progress-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Completion Progress
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../attendance-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Attendance Activity Plugin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Mass-enrolments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mass Enrolments
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Manager Faculty Co Ordinator
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Manager Faculty Co Ordinator
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../managerfaculty/manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moodle Manager
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../managerfaculty/Adding-users/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Adding users
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../managerfaculty/add/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Adding a Course Category
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Teacher
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Teacher
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Assignment-activity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Assignments
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Quizzes%26Questionnaires/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quizzes & Questionnaires
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Moodle-Virtual-Class-Room-%28Webinar%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moodle-Virtual-Class-Room-(Webinar)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Interactive-content/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interactive Content
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Forum-activity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating and Managing Forum
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Enable-Safe-Exam-Browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Enable Safe Exam Browser
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/SCORM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SCORM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Survey-activity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Surveys
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Attendance-activity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Attendance/Reports
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Grading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grading
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/VirtualProgrammingLab-VPL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Virtual Programming Lab - VPL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/mdl-board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Board - Plugin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/course-Certificate.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Workplace Course Certificate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Checklist - Plugin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/completion-progress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Completion Progress - plugin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/bulk_enrolments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bulk Enrolments plugin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Student Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Student Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../StudentGuide/getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Start
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../StudentGuide/Courses-Assignment-Quiz-Submission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigating Courses,Submit the Assignment,Quiz Submission
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../StudentGuide/Submit-Forum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Submit the Forum
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../StudentGuide/feedback-Survey-Submission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Feedback activity,Survey Submission
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../StudentGuide/Join-VCR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Join in VCR Class Room
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../StudentGuide/Safe-Exam-Browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Safe Exam Browser
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    DSpace
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            DSpace
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dspace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dspace/siteadmin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Site Admin(Create Community,Sub-Community,Collectio)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dspace/Community%26Collection-Admin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Community and Collection Admin Roles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dspace/AddUserstoDSpace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Add Users and Assign Roles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dspace/Submitter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Submitter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dspace/reviewer_editor_finalEditor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reviewer & Editors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dspace/Integrate-ORCID-Sandbox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ORCID Sandbox + DSpace integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    WordPress
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            WordPress
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wordpress/build-website/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build Your Own Website
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wordpress/Practice-Wordpress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Practice WordPress
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wordpress/Site-Backup%26Restore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Site-Backup & Restore
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Indico
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Indico
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../indico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../indico/GeneralConferencePlanningProcess/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conference Planing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Indico Setup
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Indico Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../indico/indico-setup/Admin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Admin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../indico/indico-setup/AddEventDeadlinesandScheduleConfiguration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Event Configurations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../indico/indico-setup/AddEventManagersAndAssignPermissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Assign Organizers & Permissions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../indico/indico-setup/CreateAccountAndUpdateProfile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Accounts & Profiles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../indico/indico-setup/CreateConferenceEvent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Event Creation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    VCR
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            VCR
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Audio & Captions
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Audio & Captions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Audio%26Captions/auto-caption/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Auto Captions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Audio%26Captions/closed-caption/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Closed Captions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Engagement Tools
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Engagement Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Engagement%20Tools/breakout-room/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Breakout Rooms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Engagement%20Tools/polling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Polling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Instructor Moderator Features
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Instructor Moderator Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Co-Host/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Co-Host
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/visual-assessment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visual Assessment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3" id="__nav_6_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Overview for Instructors (moderatorpresenter)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Overview for Instructors (moderatorpresenter)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_1" id="__nav_6_3_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Content Sharing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Content Sharing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/ContentSharing/Sharing-External-Video%26whiteboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sharing External Video
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/ContentSharing/uplord-ppt%26sharing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Upload a Presentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_2" id="__nav_6_3_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Engagement Tools
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Engagement Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Engagement%20Tools/breakout-room/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Breakout Rooms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Engagement%20Tools/polling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Polling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_3" id="__nav_6_3_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Monitoring & Reporting
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Monitoring & Reporting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Monitoring%26Reporting/participants-list%26dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    participant list
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_4" id="__nav_6_3_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Other Features
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Other Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Other%20Features/fittopage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fit to Page
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Other%20Features/Moodle%20Virtual%20Class%20Room%20%28Webinar%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moodle Virtual Class Room (Webinar)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_5" id="__nav_6_3_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Participant Control
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Participant Control
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Participant%20Control/visual-assessment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visual Assessment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Participant%20Control/Webinar-mood/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Webinar Style Room
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_6" id="__nav_6_3_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Room Management
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Room Management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Room%20Management/Co-Host/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Co-Host
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Room%20Management/start%26Ending-room/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Start a Room/Session
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Room%20Management/waitingRoom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Waiting Room (Guest Policy)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_7" id="__nav_6_3_3_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Integrations & Streaming
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Integrations & Streaming
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Integrations%26Streaming/Moodle%20Virtual%20Class%20Room%20%28Webinar%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moodle Virtual Class Room (Webinar)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_4" id="__nav_6_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Presentation & Content Sharing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Presentation & Content Sharing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/ContentSharing/Sharing-External-Video%26whiteboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sharing External Video
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/ContentSharing/uplord-ppt%26sharing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Upload a Presentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_5" id="__nav_6_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Reports & Analytics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Reports & Analytics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Monitoring%26Reporting/participants-list%26dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    participant list
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_6" id="__nav_6_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Room & Session Management
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Room & Session Management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Room%26Session%20Management/Create%26DeleteRoom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Create a vCR Room
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Room%26Session%20Management/signintoVCR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sign in to vCR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    LTUBE
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            LTUBE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ltube/enduserguide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    End User Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    OpenShot
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            OpenShot
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openshot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openshot/User-interface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    User Interface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openshot/NewProject%26Importing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Starting a New Project & Importing Media
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openshot/EnhancingVideo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Editing Workflow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openshot/export-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Exporting Video
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01-installing-the-auth_saml2-plugin-for-moodle" class="md-nav__link">
+    <span class="md-ellipsis">
+      01 - Installing the auth_saml2 Plugin for Moodle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="01 - Installing the auth_saml2 Plugin for Moodle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-take-administrative-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      i. Take Administrative Control:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-locate-and-install-the-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      ii. Locate and Install the Plugin:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-confirm-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      iii. Confirm Installation:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-if-you-having-this-kind-of-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      iv. if you having this kind of error:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v-follow-this-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      v. follow this Step :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vi-confirm-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vi. Confirm Installation:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vii-review-installation-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vii. Review Installation Log:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viii-check-plugin-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viii .Check Plugin Status:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ix-note-content-type-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      ix Note Content Type Installation:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-verify-auth_saml2-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      x Verify Auth_SAML2 Settings:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02configure-the-moodle-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      02.Configure the Moodle core.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="02.Configure the Moodle core.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#021-add-following-line-to-the-moodle-configphp" class="md-nav__link">
+    <span class="md-ellipsis">
+      02.1 Add following line to the Moodle config.php
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="02.1 Add following line to the Moodle config.php">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-access-the-moodle-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      i. Access the Moodle Server:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-locate-the-moodle-configuration-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      ii. Locate the Moodle Configuration File:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-edit-the-configuration-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      iii. Edit the Configuration File:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-add-the-configuration-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      iv. Add the Configuration Setting:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v-save-and-exit-the-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      v. Save and Exit the Editor:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vi-restart-the-web-server-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      vi. Restart the Web Server (Optional):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#022-edit-the-modulephp" class="md-nav__link">
+    <span class="md-ellipsis">
+      02.2. Edit the module.php
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="02.2. Edit the module.php">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-access-the-moodle-server_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      i. Access the Moodle Server:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-navigate-to-the-saml2-plugin-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      ii.. Navigate to the SAML2 Plugin Directory:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-open-the-modulephp-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      iii. Open the module.php File:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-find-and-edit-the-required-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      iv. Find and Edit the Required Line:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v-save-and-exit-the-editor_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      v. Save and Exit the Editor:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#023-edit-authsaml2configconfigphp-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      02.3. EDIT auth/saml2/config/config.php file
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="02.3. EDIT auth/saml2/config/config.php file">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-navigate-to-the-saml2-plugin-configuration-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      i. Navigate to the SAML2 Plugin Configuration Directory:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-open-the-configphp-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      ii. Open the config.php File:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-add-the-tempdir-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      iii. Add the tempdir Configuration:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-save-and-exit-the-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      iv. Save and Exit the Editor:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03moodle-ui-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      03.Moodle UI Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="03.Moodle UI Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#031-enable-and-configure-saml2-authentication-in-moodle" class="md-nav__link">
+    <span class="md-ellipsis">
+      03.1 enable and configure SAML2 authentication in Moodle:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="03.1 enable and configure SAML2 authentication in Moodle:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-log-in-to-moodle-as-an-administrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      i. Log in to Moodle as an Administrator:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-navigate-to-manage-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      ii. Navigate to Manage Authentication:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-enable-saml2-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      iii. Enable SAML2 Authentication:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-access-saml2-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      iv. Access SAML2 Settings:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v-configure-saml2-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      v. Configure SAML2 Settings:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vi-access-data-mapping-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      vi. Access Data Mapping Settings:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vii-set-data-mapping-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      vii. Set Data Mapping Fields:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viii-save-the-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      viii. Save the Configuration:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-generate-moodle-saml2-certificate-and-register-with-liaf" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Generate Moodle SAML2 certificate and register with LIAF
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Generate Moodle SAML2 certificate and register with LIAF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-navigate-to-saml2-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      i. Navigate to SAML2 Settings:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-generate-the-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      ii. Generate the Certificate:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-download-sp-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      iii. Download SP Metadata:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-register-at-liaf" class="md-nav__link">
+    <span class="md-ellipsis">
+      iv. Register at LIAF:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04-steps-for-logging-into-moodle-using-liaf-sso" class="md-nav__link">
+    <span class="md-ellipsis">
+      04 Steps for logging into Moodle using LIAF SSO
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="liaf-sso-auth-saml2-recommended">LIAF SSO - Auth SAML2 (Recommended)</h1>
+<p>LIAF SSO facilitates Moodle admins to get rid of need of creating student/staff user account manually. The people can access the Moodle site either by their <a href="https://eduid.lk/">eduID</a> or their campus credentials.</p>
+<p>The document describes the way to implement the <a href="https://fds.ac.lk/?entityID=https%3A%2F%2Fmdqtest.learn.ac.lk%2Fmoodle%2Fauth%2Fsaml2%2Fsp%2Fmetadata.php&amp;return=https%3A%2F%2Fmdqtest.learn.ac.lk%2Fmoodle%2Fauth%2Fsaml2%2Fsp%2Fmodule.php%2Fsaml%2Fsp%2FdiscoResponse%3FAuthID%3D_d74a632720fb9ac65e78981fcf2cb59df22ff2e252%253Ahttps%253A%252F%252Fmdqtest.learn.ac.lk%252Fmoodle%252Fauth%252Fsaml2%252Fsp%252Fmodule.php%252Fsaml%252Fsp%252Flogin%252Fmdqtest.learn.ac.lk%253FReturnTo%253Dhttps%25253A%25252F%25252Fmdqtest.learn.ac.lk%25252Fmoodle%25252Fauth%25252Fsaml2%25252Flogin.php%25253Fwants%252526idp%25253Dc20fdc0a583f7d847e917aa67c86089a%252526passive%25253Doff&amp;returnIDParam=idpentityid">LIAF Single Sign-On (SSO)</a>   for Moodle.</p>
+<!-- The LIAF SSO document describes how to implement Single Sign-On (SSO) for their Learning Management System (LMS). It likely provides instructions on configuring and integrating SSO, enabling users to access the LMS with a single set of login credentials across various systems. This approach improves user convenience and security by minimizing the need to remember multiple passwords and simplifying the authentication process.-->
+
+<p><strong><em>Tested and verified on</em></strong> </p>
+<ul>
+<li>OS version : Ubuntu 22.04</li>
+<li>php version : 8.1.2</li>
+<li>Moodle Version : 4.3</li>
+</ul>
+<h2 id="01-installing-the-auth_saml2-plugin-for-moodle">01 - Installing the auth_saml2 Plugin for Moodle</h2>
+<p>Use the following steps for the installation of the auth_saml2 plugin via the Moodle site interface:</p>
+<!-- **i.** Take administrative control of your Moodle installation.
+* Navigate to Site Administration in the admin menu > click on Plugins, and select the option to install plugins. Next > click on the button labeled "Install plugins from the Moodle plugins directory."
+**ii.**  At this moment you might be required to log in to your moodle.org account. Locate the auth_saml2 plugin page and press Install now button.
+**iii.**  On the next screen, click I want to install the plugin on the following site (the site with auth_saml2 is required).  -->
+
+<h4 id="i-take-administrative-control">i. Take Administrative Control:</h4>
+<ul>
+<li>Navigate to Site Administration in the admin menu.</li>
+<li>Click on Plugins.</li>
+<li>Select the option to install plugins.</li>
+<li>Next, click on the button labeled "Install plugins from the Moodle plugins directory."</li>
+</ul>
+<h4 id="ii-locate-and-install-the-plugin">ii. Locate and Install the Plugin:</h4>
+<ul>
+<li>(Optional) You might be prompted to log in to your moodle.org account.</li>
+<li>Locate the auth_saml2 plugin page and press the Install now button.</li>
+</ul>
+<h4 id="iii-confirm-installation">iii. Confirm Installation:</h4>
+<ul>
+<li>On the next screen, click I want to install the plugin on the following site (the site with auth_saml2 is required).</li>
+</ul>
+<h4 id="iv-if-you-having-this-kind-of-error">iv. if you having this kind of error:</h4>
+<blockquote>
+<p>[!NOTE]
+There is a request to install plugin Auth_SAML2 from the Moodle plugins directory on this site. However, the location /var/www/html/moodle/mod is not writable. You need to give write access for the web server user to the location, then press the continue button to repeat the check.</p>
+</blockquote>
+<h4 id="v-follow-this-step">v. follow this Step :</h4>
+<pre><code>sudo chown -R www-data:www-data /var/www/html/moodle/auth
+sudo chmod -R 755 /var/www/html/moodle/auth
+</code></pre>
+
+<!-- **vi.**  You'll be redirected back to your site; confirm the installation by clicking on "Continue."
+
+**vii.**  Review the installation log and look for any error messages. Afterward, click "Continue" again.
+
+**viii.**  You are now on the Plugins check page. Confirm that the Auth_SAML2 plugin status is set to "To be installed." Continue by clicking the button labeled "Upgrade Moodle database now" (Note: This process may take some time).
+
+**ix.**  You should now see a message from the Auth_SAML2 plugin. Take note of whether the content types were automatically installed. If not, proceed to the next section on uploading and creating content. Click "Continue" when you are ready to proceed.
+
+**x.**  Verify the Auth_SAML2 Settings and press Save changes. The default settings should be fine for most sites. -->
+
+<h4 id="vi-confirm-installation">Vi. Confirm Installation:</h4>
+<ul>
+<li>You'll be redirected back to your site.</li>
+<li>Click "Continue."</li>
+</ul>
+<h4 id="vii-review-installation-log">Vii. Review Installation Log:</h4>
+<ul>
+<li>Review the installation log for any error messages.</li>
+<li>Click "Continue."</li>
+</ul>
+<h4 id="viii-check-plugin-status">Viii .Check Plugin Status:</h4>
+<ul>
+<li>You are now on the Plugins check page.</li>
+<li>Confirm that the Auth_SAML2 plugin status is set to "To be installed."</li>
+<li>Click "Upgrade Moodle database now."</li>
+</ul>
+<h4 id="ix-note-content-type-installation">ix Note Content Type Installation:</h4>
+<ul>
+<li>You should see a message from the Auth_SAML2 plugin.</li>
+<li>Note whether the content types were automatically installed.</li>
+<li>Click "Continue."</li>
+</ul>
+<h4 id="x-verify-auth_saml2-settings">x Verify Auth_SAML2 Settings:</h4>
+<ul>
+<li>Verify the Auth_SAML2 Settings.</li>
+<li>Click "Save changes."</li>
+</ul>
+<h2 id="02configure-the-moodle-core">02.Configure the Moodle core.</h2>
+<h3 id="021-add-following-line-to-the-moodle-configphp">02.1 Add following line to the Moodle config.php</h3>
+<p>To add the configuration setting <code>$CFG-&gt;auth_saml2_disco_url</code> in your Moodle configuration file, follow these steps:</p>
+<h4 id="i-access-the-moodle-server">i. <strong>Access the Moodle Server:</strong></h4>
+<ul>
+<li>Use SSH or direct access to your Moodle server to open a terminal.</li>
+</ul>
+<h4 id="ii-locate-the-moodle-configuration-file">ii. <strong>Locate the Moodle Configuration File:</strong></h4>
+<ul>
+<li>The Moodle configuration file is usually named <code>config.php</code> and is located in the root directory of your Moodle installation (typically <code>/var/www/html/moodle/</code>).</li>
+</ul>
+<h4 id="iii-edit-the-configuration-file">iii. <strong>Edit the Configuration File:</strong></h4>
+<ul>
+<li>
+<p>Open the <code>config.php</code> file with a text editor such as <code>nano</code> or <code>vim</code>:</p>
+<p><code>bash
+ sudo nano /var/www/html/moodle/config.php</code>
+ or
+ <code>bash
+ sudo vim /var/www/html/moodle/config.php</code></p>
+</li>
+</ul>
+<h4 id="iv-add-the-configuration-setting">iv. <strong>Add the Configuration Setting:</strong></h4>
+<ul>
+<li>Add the following line:
+     <code>php
+     $CFG-&gt;auth_saml2_disco_url = 'https://fds.ac.lk';</code></li>
+</ul>
+<h4 id="v-save-and-exit-the-editor">v. <strong>Save and Exit the Editor:</strong></h4>
+<ul>
+<li>If you are using <code>nano</code>, press <code>CTRL + X</code>, then <code>Y</code> to confirm the changes, and <code>Enter</code> to save.</li>
+<li>If you are using <code>vim</code>, press <code>ESC</code>, type <code>:wq</code>, and press <code>Enter</code> to save and exit.</li>
+</ul>
+<h4 id="vi-restart-the-web-server-optional">vi. <strong>Restart the Web Server (Optional):</strong></h4>
+<ul>
+<li>Although not always necessary, it's a good idea to restart your web server to ensure all changes are applied:
+     <code>bash
+     sudo systemctl restart apache2</code>
+     or
+     <code>bash
+     sudo systemctl restart httpd</code></li>
+</ul>
+<h2 id="022-edit-the-modulephp">02.2. Edit the <code>module.php</code></h2>
+<p>file in your Moodle installation and change the required file path, follow these steps:</p>
+<h4 id="i-access-the-moodle-server_1">i. <strong>Access the Moodle Server:</strong></h4>
+<ul>
+<li>Use SSH or direct access to connect to your Linux server where Moodle is installed.</li>
+</ul>
+<h4 id="ii-navigate-to-the-saml2-plugin-directory">ii.. <strong>Navigate to the SAML2 Plugin Directory:</strong></h4>
+<ul>
+<li>
+<p>Use the <code>cd</code> command to navigate to the directory where the <code>module.php</code> file is located:</p>
+<p><code>bash
+ cd /var/www/html/moodle/auth/saml2/sp/</code></p>
+</li>
+<li>
+<p>Adjust the path if your Moodle installation is located in a different directory.</p>
+</li>
+</ul>
+<h4 id="iii-open-the-modulephp-file">iii. <strong>Open the <code>module.php</code> File:</strong></h4>
+<ul>
+<li>
+<p>Open the <code>module.php</code> file using a text editor such as <code>nano</code> or <code>vim</code>:</p>
+<p><code>bash
+ sudo nano module.php</code>
+ or
+ <code>bash
+ sudo vim module.php</code></p>
+</li>
+</ul>
+<h4 id="iv-find-and-edit-the-required-line">iv. <strong>Find and Edit the Required Line:</strong></h4>
+<ul>
+<li>
+<p>Look for the following line in the <code>module.php</code> file:</p>
+<p><code>php
+ require($CFG-&gt;dirroot.'/auth/saml2/.extlib/simplesamlphp/www/module.php');</code>
+   - Change it to:
+ <code>php
+ require($CFG-&gt;dirroot.'/auth/saml2/.extlib/simplesamlphp/public/module.php');</code>
+   - Ensure the change is exact, with no additional spaces or errors.</p>
+</li>
+</ul>
+<h4 id="v-save-and-exit-the-editor_1">v. <strong>Save and Exit the Editor:</strong></h4>
+<ul>
+<li>If you are using <code>nano</code>, press <code>CTRL + X</code>, then <code>Y</code> to confirm the changes, and <code>Enter</code> to save.</li>
+<li>If you are using <code>vim</code>, press <code>ESC</code>, type <code>:wq</code>, and press <code>Enter</code> to save and exit.</li>
+</ul>
+<h3 id="023-edit-authsaml2configconfigphp-file">02.3. EDIT <code>auth/saml2/config/config.php</code> file</h3>
+<p>To add the line <code>'tempdir' =&gt; '/var/moodledata',</code> to the <code>auth/saml2/config/config.php</code> file in your Moodle installation, follow these steps:</p>
+<h4 id="i-navigate-to-the-saml2-plugin-configuration-directory">i. <strong>Navigate to the SAML2 Plugin Configuration Directory:</strong></h4>
+<ul>
+<li>Use the <code>cd</code> command to navigate to the directory where the <code>config.php</code> file is located:
+     <code>bash
+     cd /var/www/html/moodle/auth/saml2/config/</code></li>
+</ul>
+<h4 id="ii-open-the-configphp-file">ii. <strong>Open the <code>config.php</code> File:</strong></h4>
+<ul>
+<li>Open the <code>config.php</code> file using a text editor such as <code>nano</code> or <code>vim</code>:
+     <code>bash
+     sudo nano config.php</code>
+     or
+     <code>bash
+     sudo vim config.php</code></li>
+</ul>
+<h4 id="iii-add-the-tempdir-configuration">iii. <strong>Add the <code>tempdir</code> Configuration:</strong></h4>
+<ul>
+<li>Look through the file to see if the <code>'tempdir'</code> setting is already present.</li>
+<li>
+<p>If it is not present, add the following line within the array structure (usually within a section defining various settings):</p>
+<p><code>php
+ 'tempdir' =&gt; '/var/moodledata',</code></p>
+</li>
+<li>
+<p>Ensure you place this line correctly within the configuration array, following the syntax of the existing entries. Typically, it should be added within the array like so:</p>
+<p><code>php
+ return array(
+     'setting1' =&gt; 'value1',
+     'setting2' =&gt; 'value2',
+     'tempdir'  =&gt; '/var/moodledata',
+     // Other settings...
+ );</code>
+   - If the line already exists, you don't need to add it again.</p>
+</li>
+</ul>
+<h4 id="iv-save-and-exit-the-editor">iv. <strong>Save and Exit the Editor:</strong></h4>
+<ul>
+<li>If you are using <code>nano</code>, press <code>CTRL + X</code>, then <code>Y</code> to confirm the changes, and <code>Enter</code> to save.</li>
+<li>If you are using <code>vim</code>, press <code>ESC</code>, type <code>:wq</code>, and press <code>Enter</code> to save and exit.</li>
+</ul>
+<h2 id="03moodle-ui-configuration">03.Moodle UI Configuration</h2>
+<h3 id="031-enable-and-configure-saml2-authentication-in-moodle">03.1 enable and configure SAML2 authentication in Moodle:</h3>
+<h4 id="i-log-in-to-moodle-as-an-administrator">i. <strong>Log in to Moodle as an Administrator:</strong></h4>
+<ul>
+<li>Open your web browser and log in to your Moodle site using an account with administrative privileges.</li>
+</ul>
+<h4 id="ii-navigate-to-manage-authentication">ii. <strong>Navigate to Manage Authentication:</strong></h4>
+<ul>
+<li>From the Moodle dashboard, go to:
+     <code>Site Administration -&gt; Plugins -&gt; Manage Authentication</code></li>
+</ul>
+<h4 id="iii-enable-saml2-authentication">iii. <strong>Enable SAML2 Authentication:</strong></h4>
+<ul>
+<li>On the "Manage Authentication" page, scroll down to find the "SAML2" authentication method.</li>
+<li>Click the eye icon (👁️) next to "SAML2" to enable it if it is not already enabled.</li>
+</ul>
+<h4 id="iv-access-saml2-settings">iv. <strong>Access SAML2 Settings:</strong></h4>
+<ul>
+<li>After enabling SAML2, click on the "Settings" link next to the SAML2 authentication method to configure its settings.</li>
+</ul>
+<h4 id="v-configure-saml2-settings">v. <strong>Configure SAML2 Settings:</strong></h4>
+<ul>
+<li>Set the following values in the SAML2 settings page:<ul>
+<li><strong>IdP metadata xml:</strong>
+   <code>https://fr.ac.lk/signedmetadata/metadata.xml</code></li>
+<li><strong>IdP label override:</strong>
+   <code>LEARN SSO</code></li>
+<li><strong>Federation Discovery Service:</strong><br />
+   Find the option to make Federation Discovery Service active from the list of available IdPs and ensure it is enabled.</li>
+<li><strong>Enable logging to file:</strong></li>
+<li>Select <code>Yes</code> to enable logging.</li>
+<li><strong>Auto create users:</strong></li>
+<li>Select <code>Yes</code> to allow the automatic creation of users.</li>
+<li><strong>Mapping IdP:</strong></li>
+<li>Set this to <code>uid</code>.</li>
+<li><strong>Attempt IdP Signout:</strong></li>
+<li>Set this to <code>No</code>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="vi-access-data-mapping-settings">vi. <strong>Access Data Mapping Settings:</strong></h4>
+<ul>
+<li>Scroll down the SAML2 settings page until you find the <strong>Data mapping</strong> section.</li>
+</ul>
+<h4 id="vii-set-data-mapping-fields">vii. <strong>Set Data Mapping Fields:</strong></h4>
+<ul>
+<li>Configure the following mappings:<ul>
+<li><strong>Username:</strong></li>
+<li>Set the field to <code>uid</code>.</li>
+<li>Check the box to lock this field, ensuring it cannot be changed by users.</li>
+<li><strong>First name:</strong></li>
+<li>Set the field to <code>givenName</code>.</li>
+<li>Check the box to lock this field.</li>
+<li><strong>Last name:</strong></li>
+<li>Set the field to <code>sn</code>.</li>
+<li>Check the box to lock this field.</li>
+<li><strong>Email address:</strong></li>
+<li>Set the field to <code>mail</code>.</li>
+<li>Check the box to lock this field.</li>
+</ul>
+</li>
+</ul>
+<h4 id="viii-save-the-configuration">viii. <strong>Save the Configuration:</strong></h4>
+<ul>
+<li>Once all the settings are configured, scroll down and click the "Save changes" button to apply the changes.</li>
+<li></li>
+</ul>
+<h3 id="32-generate-moodle-saml2-certificate-and-register-with-liaf">3.2  Generate Moodle SAML2 certificate and register with LIAF</h3>
+<p>To generate a certificate, download SP metadata, and register it at LIAF for your Moodle site's SAML2 configuration, follow these steps:</p>
+<h4 id="i-navigate-to-saml2-settings">i. <strong>Navigate to SAML2 Settings:</strong></h4>
+<ul>
+<li>From the Moodle dashboard, go to:
+     <code>Site Administration -&gt; Plugins -&gt; Authentication -&gt; SAML2</code></li>
+<li>This will take you to the settings page for the SAML2 authentication method.</li>
+</ul>
+<h4 id="ii-generate-the-certificate">ii. <strong>Generate the Certificate:</strong></h4>
+<ul>
+<li>In the SAML2 settings page, scroll down to the <strong>Generate Certificate</strong> section.</li>
+<li>Click the <strong>Generate</strong> button to create the certificate.</li>
+</ul>
+<h4 id="iii-download-sp-metadata">iii. <strong>Download SP Metadata:</strong></h4>
+<ul>
+<li>After generating the certificate, locate the option to download the Service Provider (SP) metadata file.</li>
+<li>Click the link to <strong>Download SP Metadata</strong> and save the file to your computer.</li>
+</ul>
+<h4 id="iv-register-at-liaf">iv. <strong>Register at LIAF:</strong></h4>
+<ul>
+<li>Visit the LIAF (Lanka Identity and Access Federation) registration page:
+     <code>https://liaf.ac.lk/#join</code></li>
+<li>Follow the instructions on the LIAF site to register your Service Provider. This will typically involve:<ul>
+<li>Filling out an application form.</li>
+<li>Uploading the SP metadata file you downloaded in the previous step.</li>
+</ul>
+</li>
+<li>After submitting your registration, your campus will need to sign the LIAF Service Provider application.</li>
+</ul>
+<h2 id="04-steps-for-logging-into-moodle-using-liaf-sso">04 Steps for logging into Moodle using LIAF SSO</h2>
+<ul>
+<li><strong>Browse to the Moodle URL</strong>: Visit the specified Moodle URL (Your Domain).</li>
+<li><strong>Select the Login Button</strong>: Click the login button located in the top right corner of the screen.</li>
+<li><strong>Choose LIAF SSO</strong>: You'll be redirected to a login page. Select the "LIAF SSO" login button.</li>
+<li><strong>Choose Your Institution</strong>: If your institution is part of a federation, use the dropdown button to select your specific institution.</li>
+<li><strong>Enter Credentials</strong>: Enter your institutional username and password.</li>
+<li><strong>Login</strong>: Click the "Login" or "Sign In" button. Your institution's authentication system will verify your identity.</li>
+<li><strong>Access Moodle</strong>: After successful authentication, you will be logged into your Moodle account.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

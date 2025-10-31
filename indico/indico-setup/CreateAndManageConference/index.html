@@ -1,0 +1,4450 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>CreateAndManageConference - FOSS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2a3383ac.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#d-build-the-timetable" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="FOSS" class="md-header__button md-logo" aria-label="FOSS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FOSS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CreateAndManageConference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="FOSS" class="md-nav__button md-logo" aria-label="FOSS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    FOSS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Moodle
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Moodle
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/moodleReadme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Site Admin
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Site Admin
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/admin-guide/site-Admin.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moodle Admin Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/admin-guide/Practice-Moodle-VirtualBox%26UTM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Practice Moodle in VirtualBox
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/admin-guide/mdl-language-pack/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moodle language pack
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/admin-guide/Customize_Moodle_themes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Customize Moodle Themes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/admin-guide/Configuring-Email-Outgoing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuring Email Outgoing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/admin-guide/Learn-SSO/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    External Authentication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_7" id="__nav_2_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Plugin Installation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Plugin Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/admin-guide/Install-H5P-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interactive content
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/admin-guide/installVPL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Virtual Programming Lab - VPL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/admin-guide/install-boad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Board
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/admin-guide/Workplace-Certificate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Workplace Course Certificate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/admin-guide/Checklist-pluging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Checklist
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/admin-guide/Progress-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Completion Progress
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/admin-guide/attendance-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Attendance Activity Plugin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/admin-guide/Mass-enrolments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mass Enrolments
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Manager Faculty Co Ordinator
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Manager Faculty Co Ordinator
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/managerfaculty/manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moodle Manager
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/managerfaculty/Adding-users/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Adding users
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/managerfaculty/add/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Adding a Course Category
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Teacher
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Teacher
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/TeachersGuide/Assignment-activity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Assignments
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/TeachersGuide/Quizzes%26Questionnaires/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quizzes & Questionnaires
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/TeachersGuide/Moodle-Virtual-Class-Room-%28Webinar%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moodle-Virtual-Class-Room-(Webinar)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/TeachersGuide/Interactive-content/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interactive Content
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/TeachersGuide/Forum-activity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating and Managing Forum
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/TeachersGuide/Enable-Safe-Exam-Browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Enable Safe Exam Browser
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/TeachersGuide/SCORM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SCORM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/TeachersGuide/Feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/TeachersGuide/Survey-activity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Surveys
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/TeachersGuide/Attendance-activity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Attendance/Reports
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/TeachersGuide/Grading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grading
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/TeachersGuide/VirtualProgrammingLab-VPL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Virtual Programming Lab - VPL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/TeachersGuide/mdl-board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Board - Plugin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/TeachersGuide/course-Certificate.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Workplace Course Certificate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/TeachersGuide/Checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Checklist - Plugin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/TeachersGuide/completion-progress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Completion Progress - plugin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/TeachersGuide/bulk_enrolments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bulk Enrolments plugin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Student Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Student Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/StudentGuide/getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Start
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/StudentGuide/Courses-Assignment-Quiz-Submission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigating Courses,Submit the Assignment,Quiz Submission
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/StudentGuide/Submit-Forum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Submit the Forum
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/StudentGuide/feedback-Survey-Submission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Feedback activity,Survey Submission
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/StudentGuide/Join-VCR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Join in VCR Class Room
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moodle/StudentGuide/Safe-Exam-Browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Safe Exam Browser
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    DSpace
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            DSpace
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dspace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dspace/siteadmin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Site Admin(Create Community,Sub-Community,Collectio)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dspace/Community%26Collection-Admin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Community and Collection Admin Roles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dspace/AddUserstoDSpace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Add Users and Assign Roles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dspace/Submitter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Submitter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dspace/reviewer_editor_finalEditor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reviewer & Editors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dspace/Integrate-ORCID-Sandbox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ORCID Sandbox + DSpace integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    WordPress
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            WordPress
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wordpress/build-website/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build Your Own Website
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wordpress/Practice-Wordpress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Practice WordPress
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wordpress/Site-Backup%26Restore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Site-Backup & Restore
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Indico
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Indico
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GeneralConferencePlanningProcess/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conference Planing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Indico Setup
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Indico Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Admin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Admin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AddEventDeadlinesandScheduleConfiguration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Event Configurations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AddEventManagersAndAssignPermissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Assign Organizers & Permissions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CreateAccountAndUpdateProfile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Accounts & Profiles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CreateConferenceEvent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Event Creation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    VCR
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            VCR
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Audio & Captions
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Audio & Captions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Audio%26Captions/auto-caption/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Auto Captions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Audio%26Captions/closed-caption/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Closed Captions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Engagement Tools
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Engagement Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Engagement%20Tools/breakout-room/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Breakout Rooms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Engagement%20Tools/polling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Polling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Instructor Moderator Features
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Instructor Moderator Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Co-Host/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Co-Host
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/visual-assessment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visual Assessment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3" id="__nav_6_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Overview for Instructors (moderatorpresenter)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Overview for Instructors (moderatorpresenter)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_1" id="__nav_6_3_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Content Sharing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Content Sharing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/ContentSharing/Sharing-External-Video%26whiteboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sharing External Video
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/ContentSharing/uplord-ppt%26sharing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Upload a Presentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_2" id="__nav_6_3_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Engagement Tools
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Engagement Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Engagement%20Tools/breakout-room/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Breakout Rooms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Engagement%20Tools/polling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Polling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_3" id="__nav_6_3_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Monitoring & Reporting
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Monitoring & Reporting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Monitoring%26Reporting/participants-list%26dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    participant list
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_4" id="__nav_6_3_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Other Features
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Other Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Other%20Features/fittopage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fit to Page
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Other%20Features/Moodle%20Virtual%20Class%20Room%20%28Webinar%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moodle Virtual Class Room (Webinar)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_5" id="__nav_6_3_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Participant Control
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Participant Control
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Participant%20Control/visual-assessment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visual Assessment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Participant%20Control/Webinar-mood/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Webinar Style Room
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_6" id="__nav_6_3_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Room Management
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Room Management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Room%20Management/Co-Host/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Co-Host
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Room%20Management/start%26Ending-room/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Start a Room/Session
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Room%20Management/waitingRoom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Waiting Room (Guest Policy)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_7" id="__nav_6_3_3_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Integrations & Streaming
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Integrations & Streaming
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Integrations%26Streaming/Moodle%20Virtual%20Class%20Room%20%28Webinar%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moodle Virtual Class Room (Webinar)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_4" id="__nav_6_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Presentation & Content Sharing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Presentation & Content Sharing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/ContentSharing/Sharing-External-Video%26whiteboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sharing External Video
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/ContentSharing/uplord-ppt%26sharing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Upload a Presentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_5" id="__nav_6_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Reports & Analytics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Reports & Analytics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Monitoring%26Reporting/participants-list%26dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    participant list
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_6" id="__nav_6_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Room & Session Management
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Room & Session Management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Room%26Session%20Management/Create%26DeleteRoom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Create a vCR Room
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vcr/Room%26Session%20Management/signintoVCR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sign in to vCR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    LTUBE
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            LTUBE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ltube/enduserguide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    End User Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    OpenShot
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            OpenShot
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openshot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openshot/User-interface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    User Interface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openshot/NewProject%26Importing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Starting a New Project & Importing Media
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openshot/EnhancingVideo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Editing Workflow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openshot/export-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Exporting Video
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#d-build-the-timetable" class="md-nav__link">
+    <span class="md-ellipsis">
+      D. Build the Timetable
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="D. Build the Timetable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-build-the-timetable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step-by-Step: Build the Timetable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-national-research-conference-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: National Research Conference 2025
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Materials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speaker-chair-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speaker &amp; Chair Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-enable-call-for-abstracts" class="md-nav__link">
+    <span class="md-ellipsis">
+      E. Enable Call for Abstracts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#announcement-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Announcement [3]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submission-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Submission Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allow-editing-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allow Editing [4]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contribution-submitters-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contribution Submitters [5]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authorized-submitters-6-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authorized Submitters [6] (Optional)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instructions-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructions [7]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Step
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-f-create-a-registration-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step F: Create a Registration Form
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step F: Create a Registration Form">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purpose:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step-by-Step Guide
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-navigate-to-registration-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Navigate to Registration Module
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-click-create-a-new-registration-form-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Click "Create a New Registration Form [2]"
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Click &#34;Create a New Registration Form [2]&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initial-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Initial Settings:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-design-the-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Design the Form
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Design the Form">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-form-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➕ Add Form Fields:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-set-form-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Set Form Settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-enable-and-share" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Enable and Share
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-enable-payments-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      G. Enable Payments (Optional)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-add-rooms-venues" class="md-nav__link">
+    <span class="md-ellipsis">
+      H. Add Rooms &amp; Venues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#purpose_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purpose:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-guide_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step-by-Step Guide
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-navigate-to-the-rooms-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Navigate to the Rooms Module
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heres-how-to-handle-this-situation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Here's how to handle this situation:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Here&#39;s how to handle this situation:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-use-the-venueroom-fields-in-the-event-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Option 1: Use the Venue/Room fields in the Event Settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-venue-room-in-event-settings-manual-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update Venue &amp; Room in Event Settings (Manual Entry)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-add-a-new-room" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Add a New Room
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Add a New Room">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-room-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Room Configuration:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-assign-rooms-to-session-blocks-in-the-timetable" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Assign Rooms to Session Blocks in the Timetable
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Assign Rooms to Session Blocks in the Timetable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-promote-the-conference" class="md-nav__link">
+    <span class="md-ellipsis">
+      I. Promote the Conference
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j-monitor-manage-the-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      J. Monitor &amp; Manage the Event
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#k-end-and-archive-the-conference" class="md-nav__link">
+    <span class="md-ellipsis">
+      K. End and Archive the Conference
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>CreateAndManageConference</h1>
+
+<h2 id="d-build-the-timetable">D. Build the Timetable</h2>
+<p>The <strong>Timetable</strong> is the heart of your Indico conference. It allows you to define and organize the full event structure—sessions, presentations, breaks, and speaker slots.</p>
+<hr />
+<h3 id="step-by-step-build-the-timetable">Step-by-Step: Build the Timetable</h3>
+<ol>
+<li><strong>Go to your Event</strong> → Click <strong>Management Area</strong></li>
+<li>Navigate to the <strong>Timetable  [1]</strong> tab</li>
+</ol>
+<p><img src="https://github.com/LEARN-LK/Indico/blob/main/img/timetable-1.png" width="230"></p>
+<ol>
+<li>
+<p>Click <strong>Add new session block [2]</strong></p>
+</li>
+<li>
+<p>Enter:</p>
+<ul>
+<li><strong>Title</strong>: e.g., “Opening Ceremony”</li>
+<li><strong>Date &amp; Time</strong>: e.g., <strong>July 24, 2025, 08:30 AM</strong></li>
+<li><strong>Location</strong>: Main Auditorium</li>
+<li>Click <strong>Create</strong></li>
+</ul>
+</li>
+</ol>
+<p><img src="https://github.com/LEARN-LK/Indico/blob/main/img/timetable-2.png" width="530">
+<img src="https://github.com/LEARN-LK/Indico/blob/main/img/timetable-addnewsession-3.png" width="530"></p>
+<ol>
+<li>
+<p>Inside that session block, click <strong>Add contribution [3]</strong></p>
+</li>
+<li>
+<p>Fill in:</p>
+<ul>
+<li><strong>Title</strong>: e.g., “Welcome Speech”</li>
+<li><strong>Speaker</strong>: e.g., Prof. Ruwan Abeysekera</li>
+<li><strong>Duration</strong>: e.g., 30 minutes</li>
+<li>Conveners: If not available, you can:</li>
+<li>Add Myselfe</li>
+<li>Add from Search</li>
+<li>Enter Manually</li>
+<li>Click <strong>Create</strong></li>
+</ul>
+</li>
+</ol>
+<p><img src="https://github.com/LEARN-LK/Indico/blob/main/img/timetable-addnewsession-4.png" width="530"></p>
+<ol>
+<li>Repeat for all sessions, talks, and panels</li>
+<li>Optionally, upload slides or materials for each contribution</li>
+</ol>
+<hr />
+<h3 id="example-national-research-conference-2025">Example: National Research Conference 2025</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Date</strong></th>
+<th><strong>Time</strong></th>
+<th><strong>Session Block</strong></th>
+<th><strong>Contribution</strong></th>
+<th><strong>Speaker</strong></th>
+<th><strong>Location</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>July 24, 2025</td>
+<td>08:30 – 09:30</td>
+<td>Opening Ceremony</td>
+<td>Welcome Speech</td>
+<td>Prof. Ruwan Abeysekera</td>
+<td>Main Auditorium</td>
+</tr>
+<tr>
+<td>July 24, 2025</td>
+<td>09:30 – 10:30</td>
+<td>Keynote Session 1</td>
+<td>Future of AI in Research</td>
+<td>Dr. Anoma Perera</td>
+<td>Main Auditorium</td>
+</tr>
+<tr>
+<td>July 24, 2025</td>
+<td>11:00 – 13:00</td>
+<td>Parallel Track: Science</td>
+<td>4 Paper Presentations</td>
+<td>Various Authors</td>
+<td>Hall A</td>
+</tr>
+<tr>
+<td>July 24, 2025</td>
+<td>13:00 – 13:30</td>
+<td>Break</td>
+<td>Lunch Break</td>
+<td>—</td>
+<td>Cafeteria</td>
+</tr>
+<tr>
+<td>July 24, 2025</td>
+<td>13:30 – 15:30</td>
+<td>Parallel Track: Tech</td>
+<td>5 Paper Presentations</td>
+<td>Various Authors</td>
+<td>Hall B</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="materials">Materials</h3>
+<ul>
+<li>
+<p>Upload presentations, research papers, or session videos:</p>
+</li>
+<li>
+<p>Go to the contribution → Click <strong>Materials</strong></p>
+</li>
+<li>Click <strong>Upload files</strong></li>
+</ul>
+<hr />
+<h3 id="speaker-chair-management">Speaker &amp; Chair Management</h3>
+<ul>
+<li>Add multiple speakers if needed</li>
+<li>Assign <strong>Session Chair</strong> during session creation or editing</li>
+<li>Indicate time allocation and breaks clearly</li>
+</ul>
+<hr />
+<h3 id="e-enable-call-for-abstracts">E. Enable Call for Abstracts</h3>
+<p>Once you’re inside your event:</p>
+<blockquote>
+<p>Go to <strong>Management Area</strong> → <strong>Call for Abstracts [1]</strong> → <strong>Click the gear icon [2] ⚙️</strong></p>
+</blockquote>
+<p><img src="https://github.com/LEARN-LK/Indico/blob/main/img/abstract-01.png" width="230">
+<img src="https://github.com/LEARN-LK/Indico/blob/main/img/abstract-02.png" width="430"></p>
+<p>Then you'll see the screen you uploaded. Here's how to configure it:</p>
+<hr />
+<h3 id="announcement-3"><strong>Announcement [3]</strong></h3>
+<p><img src="https://github.com/LEARN-LK/Indico/blob/main/img/abstract-03.png" width="630"></p>
+<ul>
+<li>Add a message here for all potential abstract submitters.</li>
+<li>Example:</li>
+</ul>
+<p><code>We welcome abstracts related to Science, Technology, and Humanities for NRC 2025. Please ensure your submission is original and aligns with our tracks.</code></p>
+<hr />
+<h3 id="submission-options">Submission Options</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Recommendation for NRC 2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Multiple tracks</strong></td>
+<td>ON – Allow choosing from multiple research tracks</td>
+</tr>
+<tr>
+<td><strong>Require tracks</strong></td>
+<td>ON – Must pick a track (Science/Tech/Humanities)</td>
+</tr>
+<tr>
+<td><strong>Require contrib. type</strong></td>
+<td>OFF (Optional – only enable if you use types)</td>
+</tr>
+<tr>
+<td><strong>Allow attachments</strong></td>
+<td>ON – Allow upload of files (PDF, DOC)</td>
+</tr>
+<tr>
+<td><strong>Allow speakers</strong></td>
+<td>ON – Allow submitters to tag a speaker</td>
+</tr>
+<tr>
+<td><strong>Require a speaker</strong></td>
+<td>ON – Force them to pick at least one speaker</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="allow-editing-4"><strong>Allow Editing [4]</strong></h3>
+<p>Choose who can edit the abstract after submission:</p>
+<ul>
+<li>Recommended: <strong>All involved people (submitter, authors, speakers)</strong></li>
+</ul>
+<hr />
+<h3 id="contribution-submitters-5"><strong>Contribution Submitters [5]</strong></h3>
+<p>Who can submit contributions <em>after</em> abstract is accepted:</p>
+<ul>
+<li>Recommended: <strong>Speakers, authors, and co-authors</strong></li>
+</ul>
+<hr />
+<h3 id="authorized-submitters-6-optional"><strong>Authorized Submitters [6]</strong> (Optional)</h3>
+<p>This allows <strong>specific users</strong> to bypass the regular submission deadline.</p>
+<p>Example:</p>
+<ul>
+<li>Add committee members who need to upload late abstracts</li>
+<li>Click <strong>Add</strong> → choose User/Group/Event Role</li>
+</ul>
+<hr />
+<h3 id="instructions-7"><strong>Instructions [7]</strong></h3>
+<p>This appears right before the submission form.</p>
+<p>Example:</p>
+<pre><code>1. Submit your abstract before July 15, 2025.
+2. Use formal academic language and keep it under 300 words.
+3. Upload supporting documents (if required).
+4. Select the appropriate track (Science, Tech, Humanities).
+</code></pre>
+<hr />
+<h3 id="final-step">Final Step</h3>
+<p>Click <strong>Save [8]</strong> at the bottom once you're done.</p>
+<hr />
+<h2 id="step-f-create-a-registration-form">Step F: Create a Registration Form</h2>
+<h3 id="purpose">Purpose:</h3>
+<p>Collect participant details, manage attendance, and optionally enable payment.</p>
+<hr />
+<h3 id="step-by-step-guide"><strong>Step-by-Step Guide</strong></h3>
+<h3 id="1-navigate-to-registration-module"><strong>1. Navigate to Registration Module</strong></h3>
+<p>Go to your event → Management Area → <strong>Registration [1]</strong></p>
+<p><img src="https://github.com/LEARN-LK/Indico/blob/main/img/registration-form-01.png" width="230"></p>
+<hr />
+<h3 id="2-click-create-a-new-registration-form-2"><strong>2. Click "Create a New Registration Form [2]"</strong></h3>
+<p><img src="https://github.com/LEARN-LK/Indico/blob/main/img/registration-form-02.png" width="630"></p>
+<p>You'll see the screen just like your screenshot.</p>
+<h4 id="initial-settings">⚙️ Initial Settings:</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Title [3]</strong></td>
+<td>Name of the form</td>
+<td>NRC 2025 Participant Registration</td>
+</tr>
+<tr>
+<td><strong>Visibility to participants [4]</strong></td>
+<td>Who can see the participant list</td>
+<td>Recommended: <em>Hide all participants</em></td>
+</tr>
+<tr>
+<td><strong>Visibility to everyone [5]</strong></td>
+<td>Whether non-participants can see the list</td>
+<td>Recommended: <em>Hide all participants</em></td>
+</tr>
+<tr>
+<td><strong>Visibility duration [6]</strong></td>
+<td>How long the list is visible</td>
+<td>Leave as default (Permanent or adjust later)</td>
+</tr>
+<tr>
+<td><strong>Retention period [7]</strong></td>
+<td>How long data is stored</td>
+<td>Optional (set to 4–12 weeks or indefinite)</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://github.com/LEARN-LK/Indico/blob/main/img/registration-form-03.png" width="630"></p>
+<p>Click <strong>Create [8]</strong> to continue.</p>
+<hr />
+<h3 id="3-design-the-form"><strong>3. Design the Form</strong></h3>
+<p>Once the form is created, Then select <strong>Registration Form Configure [9]</strong> settings.</p>
+<p><img src="https://github.com/LEARN-LK/Indico/blob/main/img/registration-form-04.png" width="630"></p>
+<h4 id="add-form-fields">➕ Add Form Fields:</h4>
+<ul>
+<li><strong>Name</strong> <em>(required)</em></li>
+<li><strong>Email</strong></li>
+<li><strong>Affiliation / University</strong></li>
+<li><strong>Presenter?</strong> <em>(Yes/No radio button)</em></li>
+<li><strong>Mobile Number</strong></li>
+<li><strong>Dietary/Accessibility Requirements</strong></li>
+<li><strong>Upload Student/Staff ID</strong> <em>(if needed)</em></li>
+</ul>
+<p><img src="https://github.com/LEARN-LK/Indico/blob/main/img/registration-form-05.png" width="630"></p>
+<hr />
+<h3 id="4-set-form-settings"><strong>4. Set Form Settings</strong></h3>
+<p>Click the <strong>Start now or schedule opening</strong> in the registration form:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Example Configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Registration opens</strong></td>
+<td>Jul 1, 2025</td>
+</tr>
+<tr>
+<td><strong>Registration closes</strong></td>
+<td>Jul 23, 2025</td>
+</tr>
+</tbody>
+</table>
+<!--| **Max participants**       | 300                                  |
+| **Moderated registration** | Enabled if manual approval is needed | -->
+
+<h2 id="_1"><img src="https://github.com/LEARN-LK/Indico/blob/main/img/registration-form-06.png" width="630"></h2>
+<h3 id="5-enable-and-share"><strong>5. Enable and Share</strong></h3>
+<p>After designing and configuring:</p>
+<ul>
+<li>Click <strong>Enable Registration</strong></li>
+<li>Share the registration link with your participants</li>
+</ul>
+<p>Link will be like:
+<code>https://indico.learn.ac.lk/event/1/registration/1/</code></p>
+<hr />
+<h3 id="g-enable-payments-optional">G. Enable Payments (Optional)</h3>
+<ol>
+<li>Go to the <strong>Payments</strong> tab</li>
+<li>
+<p>Enable:</p>
+</li>
+<li>
+<p><strong>Offline payments</strong> (e.g., bank deposit)</p>
+</li>
+<li><strong>Online</strong> options like Stripe or PayPal (if configured)</li>
+<li>Set <strong>pricing tiers</strong> for students, staff, and external participants</li>
+</ol>
+<hr />
+<h3 id="h-add-rooms-venues">H. Add Rooms &amp; Venues</h3>
+<h3 id="purpose_1">Purpose:</h3>
+<p>Define the physical or virtual locations where your sessions will take place and link them to session blocks in the timetable.</p>
+<hr />
+<h3 id="step-by-step-guide_1"><strong>Step-by-Step Guide</strong></h3>
+<h3 id="1-navigate-to-the-rooms-module"><strong>1. Navigate to the Rooms Module</strong></h3>
+<ol>
+<li>
+<p><strong>Open your Event</strong>
+   Go to your event (e.g., <em>National Research Conference 2025</em>)</p>
+</li>
+<li>
+<p><strong>Enter Management Area</strong>
+   Click the <strong>gear icon</strong> at the top right of the page to open the <strong>Management Area</strong></p>
+</li>
+<li>
+<p><strong>Go to "Rooms" Module</strong>
+   In the left-hand sidebar, scroll down to the <strong>“Reports”</strong> section
+   Click on <strong>“Rooms”</strong></p>
+</li>
+<li>
+<p><strong>Click "Add Room"</strong></p>
+</li>
+</ol>
+<hr />
+<h3 id="heres-how-to-handle-this-situation">Here's how to handle this situation:</h3>
+<h4 id="option-1-use-the-venueroom-fields-in-the-event-settings">🛠️ Option 1: Use the <strong>Venue/Room fields</strong> in the Event Settings</h4>
+<p>Even if the <strong>Rooms module</strong> is not visible, you can still <strong>manually add the venue and room name</strong> in the event’s <strong>main Settings section</strong>:</p>
+<hr />
+<h3 id="update-venue-room-in-event-settings-manual-entry"><strong>Update Venue &amp; Room in Event Settings (Manual Entry)</strong></h3>
+<ol>
+<li>Go to your Event (e.g., <em>National Research Conference 2025</em>)</li>
+<li>Click the <strong>gear icon</strong> (Management area)</li>
+<li>Under the <strong>Settings</strong> tab:</li>
+<li>Click the <strong>pencil icon</strong> next to the <strong>Room</strong> field </li>
+</ol>
+<hr />
+<h3 id="2-add-a-new-room"><strong>2. Add a New Room</strong></h3>
+<p>Click <strong>“Add Room”</strong> or <strong>“+ New Room”</strong>, then fill in the details:</p>
+<h4 id="example-room-configuration">Example Room Configuration:</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Room Name</strong></td>
+<td>Main Auditorium</td>
+</tr>
+<tr>
+<td><strong>Site</strong></td>
+<td>University of Colombo</td>
+</tr>
+<tr>
+<td><strong>Building</strong></td>
+<td>Faculty of Science Block A</td>
+</tr>
+<tr>
+<td><strong>Floor</strong></td>
+<td>Ground</td>
+</tr>
+<tr>
+<td><strong>Room Number</strong></td>
+<td>101</td>
+</tr>
+<tr>
+<td><strong>Capacity</strong></td>
+<td>300</td>
+</tr>
+<tr>
+<td><strong>Available Equipment</strong></td>
+<td>Projector<br> Microphones<br> Wi-Fi</td>
+</tr>
+<tr>
+<td><strong>Location Map URL</strong> <em>(optional)</em></td>
+<td>[Add Google Maps or image link]</td>
+</tr>
+</tbody>
+</table>
+<p>Click <strong>Save</strong> once all details are added.</p>
+<p>Repeat this step for all rooms (e.g., Seminar Room A, Online Zoom Room, Workshop Lab 1).</p>
+<hr />
+<h3 id="3-assign-rooms-to-session-blocks-in-the-timetable"><strong>3. Assign Rooms to Session Blocks in the Timetable</strong></h3>
+<p>To associate rooms with your scheduled sessions:</p>
+<h4 id="steps">Steps:</h4>
+<ol>
+<li>Go to your event → <strong>Timetable</strong></li>
+<li>Click on the <strong>session block</strong> you want to assign a room to</li>
+<li>Click the <strong>Edit</strong> (pencil) icon</li>
+<li>Choose the room from the <strong>Location</strong> dropdown</li>
+<li>Save</li>
+</ol>
+<h4 id="example">Example:</h4>
+<ul>
+<li><strong>Session:</strong> Research Presentations – Day 1</li>
+<li><strong>Time:</strong> 9:00 AM – 12:00 PM</li>
+<li><strong>Room:</strong> Main Auditorium</li>
+</ul>
+<hr />
+<h3 id="i-promote-the-conference">I. Promote the Conference</h3>
+<ul>
+<li>Make the event <strong>Public</strong> (if open to external attendees)</li>
+<li>Share the event link:
+   <code>https://indico.learn.ac.lk/event/1</code></li>
+<li>
+<p>Enable:</p>
+</li>
+<li>
+<p><strong>Calendar export (.ics)</strong></p>
+</li>
+<li><strong>Email updates</strong> to attendees</li>
+</ul>
+<hr />
+<h3 id="j-monitor-manage-the-event">J. Monitor &amp; Manage the Event</h3>
+<ul>
+<li>
+<p>Review:</p>
+</li>
+<li>
+<p><strong>Registrations</strong> → Export participant list to Excel</p>
+</li>
+<li><strong>Abstract status</strong> → Accept or reject submissions</li>
+<li><strong>Speaker materials</strong> → Slides, papers, and media uploads</li>
+<li>
+<p>Send:</p>
+</li>
+<li>
+<p>Confirmation emails</p>
+</li>
+<li>Session reminders</li>
+</ul>
+<hr />
+<h3 id="k-end-and-archive-the-conference">K. End and Archive the Conference</h3>
+<ul>
+<li>
+<p>Close:</p>
+</li>
+<li>
+<p><strong>Abstract submission</strong></p>
+</li>
+<li><strong>Registration</strong></li>
+<li>Upload final materials to <strong>Materials</strong> tab</li>
+<li>
+<p>Generate and distribute:</p>
+</li>
+<li>
+<p><strong>Certificates</strong> (if plugin enabled)</p>
+</li>
+<li><strong>Feedback forms</strong></li>
+<li>Change visibility to <strong>Archived</strong></li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

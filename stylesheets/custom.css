@@ -1,0 +1,11 @@
+/* -------------------------------------------------
+   ONLY TOP-LEVEL MENU ITEMS (Home, Moodle, …)
+   ------------------------------------------------- */
+
+/* Capitalize the main navigation items */
+.md-nav__icon .md-icon {
+  /* 
+  text-transform: uppercase;
+  font-weight: bold; 
+  */
+}

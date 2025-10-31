@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../../moodleReadme/">
-      
-      
-        <link rel="next" href="../Practice-Moodle-VirtualBox%26UTM/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +16,7 @@
     
     
       
-        <title>Moodle Admin Guide - FOSS</title>
+        <title>Site admin - FOSS</title>
       
     
     
@@ -42,6 +38,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../../stylesheets/custom.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -98,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Moodle Admin Guide
+              Site admin
             
           </span>
         </div>
@@ -213,20 +211,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -242,7 +238,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Moodle
@@ -276,20 +272,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -305,7 +299,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Site Admin
@@ -316,30 +310,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Moodle Admin Guide
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../site-Admin.md" class="md-nav__link">
         
   
   
@@ -350,171 +324,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-site-administrator" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Site Administrator
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Site Administrator">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#role-definition" class="md-nav__link">
-    <span class="md-ellipsis">
-      Role Definition:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#main-responsibilities-capabilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      Main Responsibilities &amp; Capabilities
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Main Responsibilities &amp; Capabilities">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a-site-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      A. Site Configuration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#b-plugin-and-extension-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      B. Plugin and Extension Management
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c-user-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      C. User Management
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#d-course-category-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      D. Course &amp; Category Management
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#e-enrollment-methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      E. Enrollment Methods
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#f-roles-and-permissions" class="md-nav__link">
-    <span class="md-ellipsis">
-      F. Roles and Permissions
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#g-backup-and-restore" class="md-nav__link">
-    <span class="md-ellipsis">
-      G. Backup and Restore
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#h-system-maintenance" class="md-nav__link">
-    <span class="md-ellipsis">
-      H. System Maintenance
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#i-security-privacy" class="md-nav__link">
-    <span class="md-ellipsis">
-      I. Security &amp; Privacy
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#j-reports-and-logs" class="md-nav__link">
-    <span class="md-ellipsis">
-      J. Reports and Logs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#k-messaging-and-notifications" class="md-nav__link">
-    <span class="md-ellipsis">
-      K. Messaging and Notifications
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#access-area-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Access Area Summary
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -612,6 +421,259 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Learn-SSO/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    External Authentication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_7" id="__nav_2_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Plugin Installation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Plugin Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Install-H5P-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interactive content
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installVPL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Virtual Programming Lab - VPL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install-boad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Board
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Workplace-Certificate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Workplace Course Certificate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Checklist-pluging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Checklist
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Progress-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Completion Progress
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../attendance-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Attendance Activity Plugin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Mass-enrolments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mass Enrolments
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -688,12 +750,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../managerfaculty/add/" class="md-nav__link">
+      <a href="../../managerfaculty/Adding-users/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Adding a Course Category
+    Adding users
     
   </span>
   
@@ -711,12 +773,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../managerfaculty/Adding%20users/" class="md-nav__link">
+      <a href="../../managerfaculty/add/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Adding users
+    Adding a Course Category
     
   </span>
   
@@ -803,35 +865,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../TeachersGuide/Forum-activity/" class="md-nav__link">
+      <a href="../../TeachersGuide/Quizzes%26Questionnaires/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Forum
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../TeachersGuide/Interactive-content/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Interactive Content
+    Quizzes & Questionnaires
     
   </span>
   
@@ -872,12 +911,311 @@
   
   
     <li class="md-nav__item">
-      <a href="../../TeachersGuide/Quizzes%26Questionnaires/" class="md-nav__link">
+      <a href="../../TeachersGuide/Interactive-content/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Quizzes & Questionnaires
+    Interactive Content
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Forum-activity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating and Managing Forum
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Enable-Safe-Exam-Browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Enable Safe Exam Browser
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/SCORM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SCORM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Survey-activity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Surveys
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Attendance-activity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Attendance/Reports
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Grading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grading
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/VirtualProgrammingLab-VPL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Virtual Programming Lab - VPL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/mdl-board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Board - Plugin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/course-Certificate.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Workplace Course Certificate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/Checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Checklist - Plugin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/completion-progress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Completion Progress - plugin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TeachersGuide/bulk_enrolments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bulk Enrolments plugin
     
   </span>
   
@@ -902,9 +1240,20 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../StudentGuide/getting-started/" class="md-nav__link">
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -913,7 +1262,157 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Student Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../StudentGuide/getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Start
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../StudentGuide/Courses-Assignment-Quiz-Submission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigating Courses,Submit the Assignment,Quiz Submission
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../StudentGuide/Submit-Forum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Submit the Forum
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../StudentGuide/feedback-Survey-Submission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Feedback activity,Survey Submission
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../StudentGuide/Join-VCR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Join in VCR Class Room
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../StudentGuide/Safe-Exam-Browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Safe Exam Browser
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -999,30 +1498,7 @@
   
   
   <span class="md-ellipsis">
-    Site Admin
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../dspace/AddUserstoDSpace/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Add Users and Assign Roles
+    Site Admin(Create Community,Sub-Community,Collectio)
     
   </span>
   
@@ -1063,12 +1539,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dspace/Integrate-ORCID-Sandbox/" class="md-nav__link">
+      <a href="../../../dspace/AddUserstoDSpace/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ORCID Sandbox + DSpace integration
+    Add Users and Assign Roles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dspace/Submitter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Submitter
     
   </span>
   
@@ -1109,12 +1608,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dspace/Submitter/" class="md-nav__link">
+      <a href="../../../dspace/Integrate-ORCID-Sandbox/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Submitter
+    ORCID Sandbox + DSpace integration
     
   </span>
   
@@ -1375,7 +1874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../indico/Indico%20Setup/admin/" class="md-nav__link">
+      <a href="../../../indico/indico-setup/Admin/" class="md-nav__link">
         
   
   
@@ -1398,7 +1897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../indico/Indico%20Setup/AddEventDeadlinesandScheduleConfiguration/" class="md-nav__link">
+      <a href="../../../indico/indico-setup/AddEventDeadlinesandScheduleConfiguration/" class="md-nav__link">
         
   
   
@@ -1421,7 +1920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../indico/Indico%20Setup/AddEventManagersAndAssignPermissions/" class="md-nav__link">
+      <a href="../../../indico/indico-setup/AddEventManagersAndAssignPermissions/" class="md-nav__link">
         
   
   
@@ -1444,7 +1943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../indico/Indico%20Setup/create-account%26update-profile/" class="md-nav__link">
+      <a href="../../../indico/indico-setup/CreateAccountAndUpdateProfile/" class="md-nav__link">
         
   
   
@@ -1467,7 +1966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../indico/Indico%20Setup/CreateConferenceEvent/" class="md-nav__link">
+      <a href="../../../indico/indico-setup/CreateConferenceEvent/" class="md-nav__link">
         
   
   
@@ -3154,7 +3653,7 @@
 
 
 
-  <h1>Moodle Admin Guide</h1>
+  <h1>Site admin</h1>
 
 <h2 id="1-site-administrator">1. Site Administrator</h2>
 <h3 id="role-definition"><strong>Role Definition</strong>:</h3>
