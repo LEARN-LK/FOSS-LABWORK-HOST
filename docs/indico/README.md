@@ -62,7 +62,7 @@ It is the **most powerful and feature-rich event type** in Indico and is ideal f
  * - B (Site Admin Task) [Create Category for University](indico-setup/Admin)
  * - C [Create the Conference Event](indico-setup/CreateConferenceEvent)
  * - D [Add Event Managers and Assign Permissions](indico-setup/AddEventManagersAndAssignPermissions)
- * - E [Add Event Dates, Deadlines, and Schedule Configuration](indico-setup/AddEventDeadlinesandScheduleConfiguration)
+ * - E [Add Event Dates, Deadlines, and Schedule Configuration](indico-setup/AddEventDeadlinesAndScheduleConfiguration)
  * - F [Registration Module](indico-setup/RegistrationModule)
  * - G [Setup Email Notifications](indico-setup/EmailNotifications)
  * - H [Add Contributions (Sessions, Presentations)](indico-setup/AddContributions)

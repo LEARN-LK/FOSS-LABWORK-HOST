@@ -71,11 +71,18 @@ nav:
     - Introduction: indico/README.md
     - Conference Planing : indico/GeneralConferencePlanningProcess.md
     - Indico Setup:
-      - Admin: indico/indico-setup/Admin.md
-      - Event Configurations: indico/indico-setup/AddEventDeadlinesandScheduleConfiguration.md
-      - Assign Organizers & Permissions: indico/indico-setup/AddEventManagersAndAssignPermissions.md
       - Accounts & Profiles: indico/indico-setup/CreateAccountAndUpdateProfile.md
+      - Admin Tasks: indico/indico-setup/Admin.md
       - Event Creation: indico/indico-setup/CreateConferenceEvent.md
+      - Assign Organizers & Permissions: indico/indico-setup/AddEventManagersAndAssignPermissions.md
+      - Event Configurations: indico/indico-setup/AddEventDeadlinesAndScheduleConfiguration.md
+      - Registration Module: indico/indico-setup/RegistrationModule.md
+      - Email Notifications: indico/indico-setup/EmailNotifications.md
+      - Add Contributions: indico/indico-setup/AddContributions.md
+      - Paper Submission: indico/indico-setup/UploadPresentation.md
+      - Certificate: indico/indico-setup/Certificate.md
+      - Room Booking: indico/indico-setup/RoomBooking.md
+      - Feedback Form: indico/indico-setup/Feedback.md
   - VCR:
     - Audio & Captions: 
       - Auto Captions: vcr/Audio&Captions/auto-caption.md
