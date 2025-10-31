@@ -58,13 +58,17 @@ To organize conferences by university and faculty/department structure, the LEAR
 
 2. Click the **⚙️ gear icon** (top-right).
 
-3. In the sidebar, go to **Protection**. <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/Category-03.png" width="730">
+3. In the sidebar, go to **Protection**. 
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/Category-03.png" width="730">
 
-4. Under **Category Protection > Permissions**, click **Add User**. <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/category-07.png" width="430">
+4. Under **Category Protection > Permissions**, click **Add User**. 
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/category-07.png" width="430">
 
-5. Search by name or email (e.g., `Dr. Silva`) – user must have an Indico account. <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/category-04.png" width="730">
+5. Search by name or email (e.g., `Dr. Silva`) – user must have an Indico account. 
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/category-04.png" width="730">
 
-6. Assign them the role of **Manager**. <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/category-05.png" width="330">
+6. Assign them the role of **Manager**. 
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/category-05.png" width="330">
 
 7. Click **Save**.
 

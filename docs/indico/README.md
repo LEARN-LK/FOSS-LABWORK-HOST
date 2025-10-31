@@ -35,6 +35,7 @@ It is the **most powerful and feature-rich event type** in Indico and is ideal f
 * Scientific paper submission and review
 
 > Unlike **Lectures** or **Meetings**, a **Conference** supports multiple parallel tracks, abstract reviewing, registration forms, and public promotion.
+
 ---
 
 ##  Key Features of Indico Conferences
@@ -54,22 +55,22 @@ It is the **most powerful and feature-rich event type** in Indico and is ideal f
   * **Reports & Exporting** - Download Excel/CSV lists for abstracts, registrations, and participants  
 ---
 
-* [General Conference Process](https://raw.githubusercontent.com/LEARN-LK/Indico/main/GeneralConferencePlanningProcess.md)
-* indico Site Url: https://wsindico.learn.ac.lk/
+* [General Conference Process](GeneralConferencePlanningProcess)
+* indico Site Url: [https://wsindico.learn.ac.lk/](https://wsindico.learn.ac.lk/)
 * Indico Setup
-  - A [Creating an Indico Account (with/without Shibboleth)](https://raw.githubusercontent.com/LEARN-LK/Indico/main/create-account%26update-profile.md)
-  - B (Site Admin Task) [Create Category for University](https://raw.githubusercontent.com/LEARN-LK/Indico/main/admin.md)
-  - C [Create the Conference Event](https://raw.githubusercontent.com/LEARN-LK/Indico/main/CreateConferenceEvent.md)
-  - D [Add Event Managers and Assign Permissions](https://raw.githubusercontent.com/LEARN-LK/Indico/main/AddEventManagersAndAssignPermissions.md)
-  - E [Add Event Dates, Deadlines, and Schedule Configuration](https://raw.githubusercontent.com/LEARN-LK/Indico/main/AddEventDeadlinesandScheduleConfiguration.md)
-  - F [Registration Module](https://raw.githubusercontent.com/LEARN-LK/Indico/main/registration-Module.md)
-  - G [Setup Email Notifications](https://raw.githubusercontent.com/LEARN-LK/Indico/main/Email-Notifications.md)
-  - H [Add Contributions (Sessions, Presentations)](https://raw.githubusercontent.com/LEARN-LK/Indico/main/AddContributions.md)
-  - I [Paper submission](https://raw.githubusercontent.com/LEARN-LK/Indico/main/Upload-Presentation.md)
-  - J [Customize Certificates and Generate Participation Documents](https://raw.githubusercontent.com/LEARN-LK/Indico/main/certificate.md)
-  - K [Room Booking and Timetable Synchronization](https://raw.githubusercontent.com/LEARN-LK/Indico/main/room-booking.md)
-  - L [Feedback Form](https://raw.githubusercontent.com/LEARN-LK/Indico/main/feedback.md)
-  <!-- - [How to Create and Manage a Conference in Indico](https://raw.githubusercontent.com/LEARN-LK/Indico/main/Create%26Manage-Conference.md) -->
+ * - A [Creating an Indico Account (with/without Shibboleth)](indico-setup/CreateAccountAndUpdateProfile)
+ * - B (Site Admin Task) [Create Category for University](indico-setup/Admin)
+ * - C [Create the Conference Event](indico-setup/CreateConferenceEvent)
+ * - D [Add Event Managers and Assign Permissions](indico-setup/AddEventManagersAndAssignPermissions)
+ * - E [Add Event Dates, Deadlines, and Schedule Configuration](indico-setup/AddEventDeadlinesandScheduleConfiguration)
+ * - F [Registration Module](indico-setup/RegistrationModule)
+ * - G [Setup Email Notifications](indico-setup/EmailNotifications)
+ * - H [Add Contributions (Sessions, Presentations)](indico-setup/AddContributions)
+ * - I [Paper submission](indico-setup/UploadPresentation)
+ * - J [Customize Certificates and Generate Participation Documents](indico-setup/Certificate)
+ * - K [Room Booking and Timetable Synchronization](indico-setup/RoomBooking)
+ * - L [Feedback Form](indico-setup/Feedback)
+  <!-- - [How to Create and Manage a Conference in Indico](indico-setup/Create%26Manage-Conference) -->
 
 
 

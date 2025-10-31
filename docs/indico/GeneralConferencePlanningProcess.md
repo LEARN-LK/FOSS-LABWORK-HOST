@@ -8,8 +8,8 @@
 
 2. **Create sub-categories** under it:
 
-   * `Faculty of Computing` (under University of Peradeniya)
-   * `Department of Computer Science` (under Faculty of Computing)
+    * - `Faculty of Computing` (under University of Peradeniya)
+    * - `Department of Computer Science` (under Faculty of Computing)
 
 3. **Assign a Category Manager** (e.g., **Dr. Silva**) specifically to:
    ➤ `Department of Computer Science`
