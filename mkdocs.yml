@@ -57,12 +57,12 @@ nav:
       - Safe Exam Browser: moodle/StudentGuide/Safe-Exam-Browser.md
   - DSpace: 
     - Introduction: dspace/README.md
-    - Site Admin: dspace/siteadmin.md
-    - Add Users and Assign Roles: dspace/AddUserstoDSpace.md
+    - Site Admin(Create Community,Sub-Community,Collectio): dspace/siteadmin.md
     - Community and Collection Admin Roles: dspace/Community&Collection-Admin.md
-    - ORCID Sandbox + DSpace integration: dspace/Integrate-ORCID-Sandbox.md
-    - Reviewer & Editors: dspace/reviewer_editor_finalEditor.md
+    - Add Users and Assign Roles: dspace/AddUserstoDSpace.md
     - Submitter: dspace/Submitter.md
+    - Reviewer & Editors: dspace/reviewer_editor_finalEditor.md
+    - ORCID Sandbox + DSpace integration: dspace/Integrate-ORCID-Sandbox.md
   - WordPress:
     - Build Your Own Website: wordpress/build-website.md
     - Practice WordPress: wordpress/Practice-Wordpress.md
