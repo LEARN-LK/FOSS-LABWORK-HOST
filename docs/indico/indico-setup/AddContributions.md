@@ -14,12 +14,12 @@ Contributions (e.g., talks, posters, papers) are the core components of your con
 **Management Area → Contributions → Add new**
 
 1. In the **Management Area**, go to **Contributions [1]**.
-<img src="https://github.com/LEARN-LK/Indico/blob/main/img/add-contribution-02.png" width="530">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/add-contribution-02.png" width="530">
    
 3. Click **Add new [2]** to create a contribution manually.
 4. Fill in the fields:
 
-<img src="https://github.com/LEARN-LK/Indico/blob/main/img/add-contribution-01.png" width="530">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/add-contribution-01.png" width="530">
    
    - **Title [3]**: E.g., *“AI in Medical Imaging”*
    - **Speakers [7]**: Add presenter(s) with Indico accounts (e.g., email or name).
@@ -43,12 +43,12 @@ Contributions (e.g., talks, posters, papers) are the core components of your con
 
 1. Go to the **Timetable [1]** section in the Management Area to organize your program.
 
-   <img src="https://github.com/LEARN-LK/Indico/blob/main/img/timetable-01.png" width="530">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/timetable-01.png" width="530">
 2. Click **Add new [2] → Session block [2]** to create a session  (e.g., "AI & Data Science" on Day 1).
    - Set the **session title [3]** , start time **[4]**, and duration **[5]**.
    - Click **Save [7]** to create the block.
 
-<img src="https://github.com/LEARN-LK/Indico/blob/main/img/timetable-02.png" width="530">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/timetable-02.png" width="530">
 
 ---
 

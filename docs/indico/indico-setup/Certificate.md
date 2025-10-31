@@ -15,7 +15,7 @@
 4. Click **➕ Add New [2]** to create a new document.
 5. Choose **Certificate of Attendance (V1) [3]** from the available options.
 
- <img src="https://github.com/LEARN-LK/Indico/blob/main/img/certificate-01.png" width="830">
+ <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/certificate-01.png" width="830">
 
 ---
 
@@ -40,7 +40,7 @@ You’ll now see several customizable fields. Here's what each field does, with 
 | **Place of Signature (3rd)** | (Optional) Name and title of a third signatory. | `Mr. R. Gunasekara\nConference Secretary`                                                                                                  |
 
 ---
-<img src="https://github.com/LEARN-LK/Indico/blob/main/img/certificatipn-03.png" width="530">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/certificatipn-03.png" width="530">
 
 
 ### **Step 3: Save the Template**
@@ -64,7 +64,7 @@ You’ll now see several customizable fields. Here's what each field does, with 
 
 3. Under **List of Registration Forms**, locate and click on **NRC 2025 Participant Registration [2]**.
 
-   <img src="https://github.com/LEARN-LK/Indico/blob/main/img/sent-certificate-1.png" width="530">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/sent-certificate-1.png" width="530">
 
 
 5. Click the **Registrations [3]** link to view the list of registered participants.
@@ -74,13 +74,13 @@ You’ll now see several customizable fields. Here's what each field does, with 
    *  Select **all participants  [4]**
    *  Or select **individual participants** by checking the boxes.
 
- <img src="https://github.com/LEARN-LK/Indico/blob/main/img/sent-certificate-2.png" width="530">
+ <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/sent-certificate-2.png" width="530">
  
 7. Click the **Action** dropdown (usually found above the list or in the toolbar).
 
 8. Choose **Generate Document [5]**.
 
- <img src="https://github.com/LEARN-LK/Indico/blob/main/img/sent-certificate-3.png" width="530">
+ <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/sent-certificate-3.png" width="530">
 
 ---
 

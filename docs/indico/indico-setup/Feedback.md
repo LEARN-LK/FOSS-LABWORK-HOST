@@ -10,7 +10,7 @@
 * On the event page, click the **Management** tab *(gear icon in the top-right)*.
 * In the left sidebar, scroll down and select **Surveys [1]**.
 
-  <img src="https://github.com/LEARN-LK/Indico/blob/main/img/feedback-01.png" width="60%">
+  <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/feedback-01.png" width="60%">
 
 ### 3. **Create a New Survey**
 
@@ -18,7 +18,7 @@
 
 ### 4. **Set Survey Details**
 
-<img src="https://github.com/LEARN-LK/Indico/blob/main/img/feedback-05.png" width="60%">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/feedback-05.png" width="60%">
 
 * **Title 2.1**: *Feedback Form – National Research Conference 2025*
 * **Description 2.2**: *We value your feedback to improve future events. Please take a few minutes to complete this form.*
@@ -34,15 +34,15 @@
 
 * click on `Feedback Form – National Research Conference 2025' **Manage [3]** button
 
-<img src="https://github.com/LEARN-LK/Indico/blob/main/img/feedback-02.png" width="60%">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/feedback-02.png" width="60%">
   
 * Then Click on **Prepare questinanarize [4]** buttion
 
-<img src="https://github.com/LEARN-LK/Indico/blob/main/img/feedback-03.png" width="60%">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/feedback-03.png" width="60%">
 
 In the survey editor : "Add Question **[5]**"
 
-<img src="https://github.com/LEARN-LK/Indico/blob/main/img/feedback-04.png" width="60%">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/feedback-04.png" width="60%">
   
 * Click **Add question** *(+ icon)* for each of the following:
 
@@ -56,11 +56,11 @@ In the survey editor : "Add Question **[5]**"
 
 * Click **"Switch to the Display view [1]"**.
 
-  <img src="https://github.com/LEARN-LK/Indico/blob/main/img/feedback-07.png" width="60%">
+  <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/feedback-07.png" width="60%">
   
 * in the slide bar Select "**Servery [2]**"
 
-   <img src="https://github.com/LEARN-LK/Indico/blob/main/img/feedback-08.png" width="60%">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/feedback-08.png" width="60%">
   
 * Test the form by filling in sample answers, then discard the test.
 
@@ -68,7 +68,7 @@ In the survey editor : "Add Question **[5]**"
 
 * Click **Open Nuw button**.
 
-   <img src="https://github.com/LEARN-LK/Indico/blob/main/img/feedback-09.png" width="60%">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/feedback-09.png" width="60%">
   
 * The survey will now appear as **Open** during the set availability period.
 
@@ -77,5 +77,5 @@ In the survey editor : "Add Question **[5]**"
 
 * During or after the event, go to **Surveys** →  select your feedback form **Manage** → **View responses**.
 
-   <img src="https://github.com/LEARN-LK/Indico/blob/main/img/feedback-10.png" width="60%">
-  <img src="https://github.com/LEARN-LK/Indico/blob/main/img/feedback-11.png" width="60%">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/feedback-10.png" width="60%">
+  <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/feedback-11.png" width="60%">

@@ -13,13 +13,13 @@ Collect participant details, manage attendance, and optionally enable payment.
 
 Go to your event → Management Area → **Registration [1]**
 
-<img src="https://github.com/LEARN-LK/Indico/blob/main/img/registration-form-01.png" width="230">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/registration-form-01.png" width="230">
 
 ---
 
 ### **2. Click "Create a New Registration Form [2]"**
 
-<img src="https://github.com/LEARN-LK/Indico/blob/main/img/registration-form-02.png" width="630">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/registration-form-02.png" width="630">
 
 
 You'll see the screen just like your screenshot.
@@ -34,7 +34,7 @@ You'll see the screen just like your screenshot.
 | **Visibility duration [6]**        | How long the list is visible              | Leave as default (Permanent or adjust later) |
 | **Retention period [7]**           | How long data is stored                   | Optional (set to 4–12 weeks or indefinite)   |
 
-<img src="https://github.com/LEARN-LK/Indico/blob/main/img/registration-form-03.png" width="630">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/registration-form-03.png" width="630">
 
  Click **Create [8]** to continue.
 
@@ -44,7 +44,7 @@ You'll see the screen just like your screenshot.
 
 Once the form is created, Then select **Registration Form Configure [9]** settings.
 
-<img src="https://github.com/LEARN-LK/Indico/blob/main/img/registration-form-04.png" width="630">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/registration-form-04.png" width="630">
 
 #### ➕ Add Form Fields:
 
@@ -56,7 +56,7 @@ Once the form is created, Then select **Registration Form Configure [9]** settin
 * **Dietary/Accessibility Requirements**
 * **Upload Student/Staff ID** *(if needed)*
 
-<img src="https://github.com/LEARN-LK/Indico/blob/main/img/registration-form-05.png" width="630">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/registration-form-05.png" width="630">
 
 ---
 
@@ -71,7 +71,7 @@ Click the **Start now or schedule opening** in the registration form:
 <!--| **Max participants**       | 300                                  |
 | **Moderated registration** | Enabled if manual approval is needed | -->
 
-<img src="https://github.com/LEARN-LK/Indico/blob/main/img/registration-form-06.png" width="630">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/registration-form-06.png" width="630">
 ---
 
 ### **5. Enable and Share**

@@ -18,26 +18,26 @@
 2. In the left sidebar, scroll down and click **Room bookings**.
 3. You’ll see the **Room bookings [1]** tab with options. Click **“Book a room” [2]** to open the Room Booking Dashboard.
 
-   <img src="https://github.com/LEARN-LK/Indico/blob/main/img/roombooking-1.png" width="60%">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/roombooking-1.png" width="60%">
 
 ---
 
 ### 3. Open the Room Booking Dashboard
 - Once inside the Room Booking interface, click the **Administration [3]** tab in the right-hand sidebar to configure room booking settings.
 
-   <img src="https://github.com/LEARN-LK/Indico/blob/main/img/roombookin-2.png" width="60%">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/roombookin-2.png" width="60%">
 
 ---
 
 ### 4. Add a New Location
 1. In the left sidebar under **General Settings**, click **Locations [4]**.
 
-   <img src="https://github.com/LEARN-LK/Indico/blob/main/img/roombooking-3.png" width="60%">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/roombooking-3.png" width="60%">
 
 2. Click the **➕ Add [5]** button in the top-right.
 3. In the **Add Location** popup, fill in the details:
 
-   <img src="https://github.com/LEARN-LK/Indico/blob/main/img/roombooking-4.png" width="60%">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/roombooking-4.png" width="60%">
 
    - **Name [6]**: `Auditorium`
    - **Room name format [7]**: e.g., `{building}/{floor}-{number}` (e.g., `Auditorium/1-001`)
@@ -72,7 +72,7 @@
 #### ii. Open Locations in General Settings
 1. In the left sidebar under **General Settings [1]**, click **Locations [2]**.
 
-   <img src="https://github.com/LEARN-LK/Indico/blob/main/img/add-room-1.png" width="40%">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/add-room-1.png" width="40%">
 
 2. Find the previously created location: **Auditorium**.
 3. Click on **Auditorium [3]** to open its details.
@@ -82,7 +82,7 @@
 #### iii. Add a New Room
 1. Inside the **Auditorium** location, click the **Add room [4]** button.
 
-   <img src="https://github.com/LEARN-LK/Indico/blob/main/img/add-room-2.png" width="40%">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/add-room-2.png" width="40%">
 2. A popup window titled **Add Room** will open with three tabs:
    - **Basic Details**
    - **Location**
@@ -93,7 +93,7 @@
 #### iv. Fill in Basic Room Details
 In the **Basic Details [5]** tab, provide:
 
-   <img src="https://github.com/LEARN-LK/Indico/blob/main/img/add-room-3.png" width="60%">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/add-room-3.png" width="60%">
 
 - **Where is the key? [7]**: `Reception Desk, Auditorium`
 - **Telephone [8]**: `+94 ##########`
@@ -106,7 +106,7 @@ In the **Basic Details [5]** tab, provide:
 #### v. Complete the Location Tab [10]
 Fill in the required fields as follows:
 
-   <img src="https://github.com/LEARN-LK/Indico/blob/main/img/add-room-4.png" width="60%">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/add-room-4.png" width="60%">
 
 - **Name**: `Main Auditorium`
 - **Site [11]**: `University of Peradeniya`
@@ -119,7 +119,7 @@ Fill in the required fields as follows:
 ---
 
 #### vi. Set Room Permissions
-   <img src="https://github.com/LEARN-LK/Indico/blob/main/img/add-room-5.png" width="60%">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/add-room-5.png" width="60%">
 
 In the **Permissions [15]** tab:
 - **Booking Mode**:
@@ -141,7 +141,7 @@ In the **Permissions [15]** tab:
 - Click **Save** or **Add Room** to finish.
 - The new room (**Main Auditorium [19]**) will now be listed under the **Auditorium** location.
 
-   <img src="https://github.com/LEARN-LK/Indico/blob/main/img/add-room-6.png" width="60%">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/add-room-6.png" width="60%">
 
 ---
 
@@ -149,16 +149,16 @@ In the **Permissions [15]** tab:
 1. Return to the **Room Booking dashboard**.
 2. click on **list of Rooms** Tab`.
 
- <img src="https://github.com/LEARN-LK/Indico/blob/main/img/bookroom-1.png" width="60%">
+ <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/bookroom-1.png" width="60%">
 3. Click **Book** next to the room (e.g., `Auditorium/1-001`)
 
- <img src="https://github.com/LEARN-LK/Indico/blob/main/img/bookroom-2.png" width="60%">
+ <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/bookroom-2.png" width="60%">
  
 4. Fill in the booking form:
    - **Reason**: e.g., *“Conference Session”*
    - Confirm or adjust the selected time/location
 
- <img src="https://github.com/LEARN-LK/Indico/blob/main/img/bookroom-3.png" width="60%">
+ <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/bookroom-3.png" width="60%">
  
 5. Click **Submit**
    > If room booking moderation is enabled, Dr. Silva will need to approve the request via **Bookings in My Rooms**.
