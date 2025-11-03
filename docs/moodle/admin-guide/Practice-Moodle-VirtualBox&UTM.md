@@ -1,256 +1,162 @@
 
+
 # **Practice Moodle in VirtualBox / UTM**
 
-### Step-by-Step Guide to Share Alpine Linux Virtual Machine with Moodle Preconfigured
+### **Complete Step-by-Step Guide to Run Moodle Preconfigured Virtual Machine**
 
-This guide explains how to set up a preconfigured virtual machine and practice Moodle. Instructions are provided separately for **VirtualBox users (Windows/Linux/macOS Intel/AMD)** and **UTM users (macOS Apple Silicon M1/M2/M3)**.
+This guide lets you run a **ready-made Moodle instance** using either **VirtualBox** (Windows/Linux/macOS Intel/AMD) or **UTM** (macOS Apple Silicon M1/M2/M3).
+It includes automated setup scripts that start the virtual machine and open Moodle automatically at:
 
----
-
-## **Part 1: Step-by-Step Instructions for VirtualBox Users (Intel/AMD)**
-
-### **1. Download and Install VirtualBox**:
-
-1. Visit [VirtualBox’s official site](https://www.virtualbox.org/).
-2. Download the latest version for your operating system (Windows/macOS/Linux).
-3. Install VirtualBox using the default options.
+```
+http://moodle:9000
+```
 
 ---
 
-### **2. Download the `.ova` File**:
+## ⚙️ **Part 1 — For Windows Users (VirtualBox)**
 
-1. Open the Google Drive link provided:
+### **1. Download Required Files**
+
+#### 📦 From Google Drive:
+
+* VM Image (`.ova`)
+  👉 [Download for Windows (VirtualBox)](https://drive.google.com/file/d/1AUnJanfNOT-sOQ_8J8ihS8WfgQdSTEVR/view?usp=sharing)
+* Automation Script (`.bat`)
+  👉 [Download Windows Setup Script](https://drive.google.com/file/d/your-windows-bat-link/view?usp=sharing)
+
+Make sure both files are saved in the **same folder** (e.g., `Downloads\Moodle_VM`).
+
+---
+
+### **2. Install VirtualBox**
+
+1. Visit [https://www.virtualbox.org](https://www.virtualbox.org).
+2. Download and install VirtualBox (default settings are fine).
+3. Restart your computer after installation.
+
+---
+
+### **3. Prepare Windows System**
+
+Before running the script, make sure to temporarily **disable security features** that may block VM imports or local web services:
+
+#### 🛡️ **Disable Windows Defender Protections**
+
+1. Open **Windows Security** → **Virus & threat protection**.
+2. Click **Manage settings**.
+3. Turn **OFF**:
+
+   * **Real-time protection**
+   * **Dev Drive protection**
+4. If you use other antivirus software (e.g., Avast, McAfee), **pause real-time protection** temporarily.
+
+> ⚠️ Re-enable protections once Moodle setup is complete.
+
+---
+
+### **4. Run the Setup Script**
+
+1. Right-click the downloaded `.bat` file → **Run as Administrator**.
+2. The script will:
+
+   * Add the `127.0.0.1 moodle` entry to your Windows hosts file
+   * Import the `.ova` file automatically into VirtualBox
+   * Start the Moodle virtual machine
+   * Wait until the web server is ready
+   * Launch Moodle automatically in your browser at
+     `http://moodle:9000`
+
+---
+
+### **5. Login to Moodle**
+
+In the browser, log in using:
+
+* **Username:** `moodle`
+* **Password:** `Mdl@1234`
+
+---
+
+### **6. Troubleshooting (Windows)**
+
+#### 🔹 *Environment Variable / PATH Issue*
+
+If the script shows an error like **“VBoxManage.exe not found”**, check your PATH:
+
+1. Open **System Properties → Advanced → Environment Variables**.
+2. In **System Variables**, find `Path`.
+3. Click **Edit** → **New** → add:
 
    ```
-   https://drive.google.com/file/d/1AUnJanfNOT-sOQ_8J8ihS8WfgQdSTEVR/view?usp=sharing&hl=en&tab=t.0
+   C:\Program Files\Oracle\VirtualBox\
    ```
-<!-- https://drive.google.com/file/d/1AUnJanfNOT-sOQ_8J8ihS8WfgQdSTEVR/view?usp=sharing-->
-   
-2. Download the `.ova` file.
+4. Click **OK**, then reopen Command Prompt and try again.
+
+#### 🔹 *Network Access*
+
+Make sure your VirtualBox network adapter is set to **Bridged Adapter** or **NAT** (default).
+If Moodle doesn’t load, try restarting the VM.
 
 ---
 
-### **3. Import the `.ova` File**:
 
-1. Launch **VirtualBox**.
-2. Go to **File > Import Appliance**.
-3. Select the downloaded `.ova` file.
-4. Review settings (CPU, memory, network).
-5. Click **Import** and wait for the process to complete.
 
----
+## Part - 2 🍎 Setup Guide for Mac (Apple Silicon / Silver Processor)
 
-### **4. Start the Virtual Machine**:
+### Step 1 – Install VirtualBox
 
-1. Select the VM in VirtualBox and click **Start**.
-2. Log in with:
+Download and install the **Apple Silicon (arm64)** test build:
+👉 [https://www.virtualbox.org/wiki/Testbuilds](https://www.virtualbox.org/wiki/Testbuilds)
 
-   * **Username**: `moodle`
-   * **Password**: `mdl@123`
+> Look for **“macOS / arm64 (Apple Silicon)”** under **Development Snapshots**.
+
+After installation:
+
+* Open **System Settings → Privacy & Security**
+* If macOS blocks VirtualBox, click **Allow**
 
 ---
 
-## **Part 2: Step-by-Step Instructions for UTM Users (Mac Apple Silicon M1/M2/M3)**
+### Step 2 – Run the `.sh` File to Start VM and Browser
 
-### **1. Download and Install UTM**:
+1. Open **Terminal**
+2. Drag the provided `.sh` file into the Terminal window
+3. Press **Enter**
 
-1. Visit [UTM’s official site](https://mac.getutm.app/).
-2. Download the **macOS (Universal)** version.
-3. Open the `.dmg` file and drag **UTM.app** to your Applications folder.
+The script will automatically:
 
----
+* Import the OVA file
+* Start the Virtual Machine
+* Launch your default browser at 👉 **[http://moodle:9000](http://moodle:9000)**
 
-### **2. Download the `.utm` File**:
-
-1. Open the Google Drive link provided (UTM version).
- ```
-   https://drive.google.com/file/d/1lTmono6KG2KkGD6V8n_4uAZRNrQV-iyo/view?usp=sharing&hl=en&tab=t.0
-   ```
-<!-- https://drive.google.com/file/d/1lTmono6KG2KkGD6V8n_4uAZRNrQV-iyo/view?usp=sharing-->
-
-2. Download the `.utm` file to your **Downloads** folder.
-
----
-
-### **3. Import the `.utm` File into UTM**:
-
-1. Launch **UTM.app**.
-2. Go to **File > Import Virtual Machine** or click the **+** icon.
-3. Browse to the downloaded `.utm` file and import it.
-4. The VM will appear in your UTM library.
+> 💡 If you get “permission denied”, run:
+>
+> ```bash
+> chmod +x yourfile.sh
+> ```
+>
+> then retry.
 
 ---
 
-### **4. Start the Virtual Machine**:
+### Step 3 - Access Moodle
 
-1. Select the VM and click **Play ▶**.
-2. Log in with:
+Once the VM is running:
 
-   * **Username**: `moodle`
-   * **Password**: `mdl@123`
-
----
-
-## **Part 3: Configure Networking and Access Moodle (Both VirtualBox & UTM Users)**
-
-### **5. Find the VM IP Address**:
-
-Inside the VM, run:
-
-```bash
-ip addr
-```
-
-Note the IP (e.g., `192.168.1.10`).
+* Open your browser (if not already open)
+* Visit **[http://moodle:9000](http://moodle:9000)**
+* Log in using the credentials provided in your setup notes
 
 ---
 
-### **6. Map Moodle to a Hostname on Host Machine**:
+## ⚙️ . Troubleshooting
 
-#### **Windows**:
-
-* Edit file: `C:\Windows\System32\drivers\etc\hosts`
-* Add:
-
-  ```
-  192.168.1.10 mymoodle.test.learn.ac.lk
-  ```
-
-#### **macOS**:
-
-* Edit file: `/private/etc/hosts`
-
-```bash
-sudo nano /private/etc/hosts
-```
-
-* Add:
-
-  ```
-  192.168.1.10 mymoodle.test.learn.ac.lk
-  ```
-
- * Save in nano:
-   * **Ctrl + O** → Enter → **Ctrl + X**
-
-#### **Linux**:
-
-* Edit file: `/etc/hosts`
-
-```bash
-sudo nano /etc/hosts
-```
-
-* Add:
-
-  ```
-  192.168.1.10 mymoodle.test.learn.ac.lk
-  ```
-
- * Save in nano:
-   * **Ctrl + O** → Enter → **Ctrl + X**
-
-#### How to Save & Exit in Nano Editor
-
-When editing files with nano (like /etc/hosts or config.php):
-
-- Make your changes (type or paste text).
-- Press Ctrl + O → Writes (saves) the file.
-- It will ask for the filename — just press Enter to confirm.
-Press Ctrl + X → Exits Nano.
+| Issue                | Possible Fix                                                |
+| -------------------- | ----------------------------------------------------------- |
+| Browser doesn’t open | Manually visit **[http://moodle:9000](http://moodle:9000)** |
+| VM won’t start       | Ensure VirtualBox is installed properly                     |
+| Path error (Windows) | Check **System Path** variables                             |
+| macOS blocks file    | Go to **System Settings → Privacy & Security → Allow**      |
 
 ---
 
-### **7. Access Moodle**:
-
-1. Open a browser on the host machine.
-2. Visit:
-
-   ```
-   http://mymoodle.test.learn.ac.lk
-   ```
-3. Default Moodle login:
-
-   * **Username**: `moodle`
-   * **Password**: `Mdl@1234`
-
----
-
-## **Part 4: Troubleshooting**
-
-### **Site Not Loading**
-
-Restart services:
-
-```bash
-rc-service nginx restart
-rc-service php-fpm82 restart
-```
-
-<!-- ### **Permission Issues**
-
-```bash
-chmod -R 777 /var/www/moodledata
-```
-
-### **Error Logs**
-
-```bash
-tail -f /var/log/nginx/error.log
-``` -->
-
-### **Renew DHCP Lease**
-
-```bash
-/etc/init.d/networking restart 
-```
-
-Then recheck the IP (Step 5).
-
-<!-- ### **Plugin Installation Errors**
-
-Edit `config.php`:
-
-```php
-@error_reporting(E_ALL | E_STRICT);
-@ini_set('display_errors', '1');
-$CFG->debug = (E_ALL | E_STRICT);
-$CFG->debugdisplay = 1;
-```
-
-### **Update PHP-FPM User/Group**
-
-Edit:
-
-```bash
-vi /etc/php82/php-fpm.d/www.conf
-```
-
-Set:
-
-```
-user = nginx
-group = nginx
-```   -->
-
-Restart PHP-FPM:
-
-```bash
-rc-service php-fpm82 restart
-```
-<!-- 
-Set Moodle config directory permissions:
-
-```php
-$CFG->directorypermissions = 0777;
-```  -->
-
----
-
-👉 Now your guide supports **both VirtualBox (.ova)** and **UTM (.utm)** users, while keeping the Moodle practice setup steps common.
-
-- Ensure VirtualBox's network settings are set to **Bridged Adapter**.
-- Ensure the VM is running before accessing Moodle.
-- Default credentials for the Moodle:
-  - **Username**: `moodle`
-  - **Password**: `Mdl@1234`
