@@ -13,16 +13,19 @@ http://moodle:9000
 
 ---
 
-## ⚙️ **Part 1 — For Windows Users (VirtualBox)**
+## ⚙️ **Part 1 — For Intel Users (Windows) VirtualBox**
 
 ### **1. Download Required Files**
 
 #### 📦 From Google Drive:
 
-* VM Image (`.ova`)
-  👉 [Download for Windows (VirtualBox)](https://drive.google.com/file/d/1AUnJanfNOT-sOQ_8J8ihS8WfgQdSTEVR/view?usp=sharing)
-* Automation Script (`.bat`)
-  👉 [Download Windows Setup Script](https://drive.google.com/file/d/your-windows-bat-link/view?usp=sharing)
+* VM Image (`.ova`) for Intel User (Windows/Mac) 
+  👉 [Download for Windows (VirtualBox)](https://drive.google.com/file/d/1PQkj9OFvMLmeoYCvKyDjWV06VEp-Nwbk/view?usp=sharing)
+* Automation Script  for Windows User (`.bat`)
+  👉 [Download Windows Setup Script](https://drive.google.com/file/d/1lYzC243wAijfeDqiAr5Wwy7MT9qptdIA/view?usp=sharing)
+* Automation Script  for Mac  User (`.sh`)
+  👉 [Download Windows Setup Script](https://drive.google.com/file/d/1EppBMiV9cP6XPaNT0O9XzTQrPqVK7W0K/view?usp=sharing)
+
 
 Make sure both files are saved in the **same folder** (e.g., `Downloads\Moodle_VM`).
 
@@ -32,7 +35,6 @@ Make sure both files are saved in the **same folder** (e.g., `Downloads\Moodle_V
 
 1. Visit [https://www.virtualbox.org](https://www.virtualbox.org).
 2. Download and install VirtualBox (default settings are fine).
-3. Restart your computer after installation.
 
 ---
 
@@ -101,14 +103,28 @@ If Moodle doesn’t load, try restarting the VM.
 
 
 
-## Part - 2 🍎 Setup Guide for Mac (Apple Silicon / Silver Processor)
 
-### Step 1 – Install VirtualBox
+## ⚙️ **Part 2 — For Intel Users (MAC) VirtualBox**
 
-Download and install the **Apple Silicon (arm64)** test build:
-👉 [https://www.virtualbox.org/wiki/Testbuilds](https://www.virtualbox.org/wiki/Testbuilds)
+### **1. Download Required Files**
 
-> Look for **“macOS / arm64 (Apple Silicon)”** under **Development Snapshots**.
+#### 📦 From Google Drive:
+
+* VM Image (`.ova`) for Intel User (Windows/Mac) 
+  👉 [Download for Windows (VirtualBox)](https://drive.google.com/file/d/1PQkj9OFvMLmeoYCvKyDjWV06VEp-Nwbk/view?usp=sharing)
+
+* Automation Script  for Mac  User (`.sh`)
+  👉 [Download Windows Setup Script](https://drive.google.com/file/d/1EppBMiV9cP6XPaNT0O9XzTQrPqVK7W0K/view?usp=sharing)
+
+
+Make sure both files are saved in the **same folder** (e.g., `Downloads\Moodle_VM`).
+
+---
+
+### **2. Install VirtualBox**
+
+1. Visit [https://www.virtualbox.org](https://www.virtualbox.org).
+2. Download and install VirtualBox (default settings are fine).
 
 After installation:
 
@@ -117,7 +133,9 @@ After installation:
 
 ---
 
-### Step 2 – Run the `.sh` File to Start VM and Browser
+
+
+### Step 3 – Run the `.sh` File to Start VM and Browser
 
 1. Open **Terminal**
 2. Drag the provided `.sh` file into the Terminal window
@@ -140,6 +158,74 @@ The script will automatically:
 ---
 
 ### Step 3 - Access Moodle
+
+Once the VM is running:
+
+* Open your browser (if not already open)
+* Visit **[http://moodle:9000](http://moodle:9000)**
+* Log in using the credentials provided in your setup notes
+
+---
+
+
+
+
+
+## Part - 3 🍎 Setup Guide for Mac (Apple Silicon / Silver Processor)
+
+
+### **1. Download Required Files**
+
+#### 📦 From Google Drive:
+
+* VM Image (`.ova`) for (Apple Silicon / Silver Processor)
+  👉 [Download for Apple Silicon (VirtualBox)](https://drive.google.com/file/d/1xD8Uc0pzQrDwEcN6shrW50o8iPsFmoU_/view?usp=sharing)
+
+* Automation Script  for Mac  User (`.sh`)
+  👉 [Download Windows Setup Script](https://drive.google.com/file/d/1EppBMiV9cP6XPaNT0O9XzTQrPqVK7W0K/view?usp=sharing)
+
+
+Make sure both files are saved in the **same folder** (e.g., `Downloads\Moodle_VM`).
+
+
+
+### Step 2 – Install VirtualBox
+
+Download and install the **Apple Silicon (arm64)** test build:
+👉 [https://www.virtualbox.org/wiki/Testbuilds](https://www.virtualbox.org/wiki/Testbuilds)
+
+> Look for **“macOS / arm64 (Apple Silicon)”** under **Development Snapshots**.
+
+After installation:
+
+* Open **System Settings → Privacy & Security**
+* If macOS blocks VirtualBox, click **Allow**
+
+---
+
+### Step 3 – Run the `.sh` File to Start VM and Browser
+
+1. Open **Terminal**
+2. Drag the provided `.sh` file into the Terminal window
+3. Press **Enter**
+
+The script will automatically:
+
+* Import the OVA file
+* Start the Virtual Machine
+* Launch your default browser at 👉 **[http://moodle:9000](http://moodle:9000)**
+
+> 💡 If you get “permission denied”, run:
+>
+> ```bash
+> chmod +x yourfile.sh
+> ```
+>
+> then retry.
+
+---
+
+### Step 4 - Access Moodle
 
 Once the VM is running:
 
