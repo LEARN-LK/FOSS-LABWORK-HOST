@@ -8,11 +8,12 @@
 
 1. **Ask other organizers or reviewers to first create an account:**
 
-   * Either by:
+    * Either by:
 
-     *  **Shibboleth login** (institution login via EduID)
-     *  **Manual account registration**
-   * Once they log in at least once, their account will exist in the system.
+        *  **Shibboleth login** (institution login via EduID)
+        *  **Manual account registration**
+
+    * Once they log in at least once, their account will exist in the system.
 
 2. Go to the homepage → Select the category **[1]**(e.g., University of Peradeniya **[1.1]**) 
 
@@ -27,21 +28,19 @@
 
 2.3 In the left sidebar, click Protection **[4]**.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/Protection-01.png" width="40%">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/Protection-01.png" width="40%">
 
-   
+3\. Click **Add** → choose **User**
 
-3. Click **Add** → choose **User**
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/Protection-02.png" width="40%">
 
-    <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/Protection-02.png" width="40%">
-
-4. Type the name or email of the newly registered user
+4\. Type the name or email of the newly registered user
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/Protection-03.png" width="40%">
   
    * You will now be able to find and add them
 
-5. Click the **pencil icon** next to the user’s name to assign specific roles/permissions:
+5\. Click the **pencil icon** next to the user’s name to assign specific roles/permissions:
 
    * Manage Abstracts
    * Registration
@@ -50,11 +49,13 @@
    * etc.
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/Protection-04.png" width="40%">
+
 <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/Protection-05.png" width="20%">
 
-6. Click**Save**
+6\. Click**Save**
 
 Repeat this process for any of the following roles as needed:
+
 | Role                | Responsibility                                       | Example                                  |
 | ------------------- | ---------------------------------------------------- | ---------------------------------------- |
 | **Abstracts**       | Manage abstract reviewing workflows                  | Assign Prof. Ananda as abstract reviewer |

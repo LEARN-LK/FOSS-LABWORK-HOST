@@ -36,8 +36,8 @@ To organize conferences by university and faculty/department structure, the LEAR
 
 2. Enter:
 
-   * **Title**: `Faculty of Computing`
-   * **Description**: e.g., “Events under Faculty of Computing”
+    * * **Title**: `Faculty of Computing`
+    * * **Description**: e.g., “Events under Faculty of Computing”
 
 3. Click **Save**.
 
@@ -45,8 +45,8 @@ To organize conferences by university and faculty/department structure, the LEAR
 
 5. Enter:
 
-   * **Title**: `Department of Computer Science`
-   * **Description**: “Events and workshops organized by the Department of Computer Science”
+    * * **Title**: `Department of Computer Science`
+    * * **Description**: “Events and workshops organized by the Department of Computer Science”
 
 6. Click **Save**.
 
@@ -68,9 +68,10 @@ To organize conferences by university and faculty/department structure, the LEAR
 <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/category-04.png" width="730">
 
 6. Assign them the role of **Manager**. 
+
 <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/category-05.png" width="330">
 
-7. Click **Save**.
+7\. Click **Save**.
 
 ---
 
@@ -83,9 +84,9 @@ To organize conferences by university and faculty/department structure, the LEAR
 4. Under **Permissions** or **Room Booking Permissions**, click **Add User**.
 5. Search for a user (e.g., `Mohan Bandara`) – ensure they have an Indico account.
 6. Assign the role of **Location Manager** with the following permissions:
-   - **Manage**: Full control over room settings and bookings.
-   - **Moderate**: Ability to approve or reject room booking requests.
-   - **Override**: Permission to override existing bookings if needed.
+    * - **Manage**: Full control over room settings and bookings.
+    * - **Moderate**: Ability to approve or reject room booking requests.
+    * - **Override**: Permission to override existing bookings if needed.
 7. Click **Save** to apply the changes.
 8. Verify the assignment by checking the **Room Booking** dashboard, where Mohan Bandara should now manage rooms like "Main Auditorium" under the category.
 
@@ -96,18 +97,18 @@ To organize conferences by university and faculty/department structure, the LEAR
 ### Updated Example Scenario
 
 - **LEARN Indico Admin**:
-  - Creates top-level category: **University of Peradeniya**
-  - Adds subcategory: **Faculty of Computing**
-  - Adds sub-subcategory: **Department of Computer Science**
-  - Assigns **Dr. Silva** (UoP IT Coordinator) as the **Category Manager** for the Department of Computer Science.
-  - Assigns **Mohan Bandara** as the **Location Manager** for room booking within the Department of Computer Science.
+  * - Creates top-level category: **University of Peradeniya**
+  * - Adds subcategory: **Faculty of Computing**
+  * - Adds sub-subcategory: **Department of Computer Science**
+  * - Assigns **Dr. Silva** (UoP IT Coordinator) as the **Category Manager** for the Department of Computer Science.
+  * - Assigns **Mohan Bandara** as the **Location Manager** for room booking within the Department of Computer Science.
 
 - **Dr. Silva can now**:
-  - Create and manage all events under the Department of Computer Science category.
-  - Enable abstract submission, registration, and room booking.
-  - Assign editors, reviewers, and conference managers.
+  * - Create and manage all events under the Department of Computer Science category.
+  * - Enable abstract submission, registration, and room booking.
+  * - Assign editors, reviewers, and conference managers.
 
 - **Mohan Bandara can now**:
-  - Manage room bookings (e.g., "Main Auditorium") for events under the Department of Computer Science.
-  - Approve or reject booking requests and resolve conflicts using override permissions.
-  - Ensure room availability aligns with the conference schedule (8 Sep - 13 Sep 2025).
+  * - Manage room bookings (e.g., "Main Auditorium") for events under the Department of Computer Science.
+  * - Approve or reject booking requests and resolve conflicts using override permissions.
+  * - Ensure room availability aligns with the conference schedule (8 Sep - 13 Sep 2025).

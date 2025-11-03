@@ -9,12 +9,11 @@
 
 1. Log into the **Management Area** of the "National Research Conference 2025" event.
 2. Click **Contributions [1]** in the left sidebar to view all contributions.
-
   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/Material-01.png" width="830">
   
 3. Select a contribution **(e.g., *“AI in Medical Imaging [2]”*)** by clicking its title to open details.
-   - Alternatively, go to **Timetable**, click a session block (e.g., “AI & Data Science”), and then click a contribution title to access details.
-   - Ensure the contribution or session was created.
+    * - Alternatively, go to **Timetable**, click a session block (e.g., “AI & Data Science”), and then click a contribution title to access details.
+    * - Ensure the contribution or session was created.
 
 
 ### **Step 2: Upload Materials for a Contribution**
@@ -33,7 +32,8 @@ Within the contribution details page
 5. Optionally:
    - Add a **description [6]** (e.g., “Poster for AI session”).
    - Set **access permissions [7]** using the protection icon (e.g., Public, Registered users, Managers).
-6. Click **Uploard [8]** to upload the material, then verify it appears with the correct timestamp (e.g., today’s date, August 01, 2025).
+   
+6\. Click **Upload [8]** to upload the material, then verify it appears with the correct timestamp (e.g., today’s date, August 01, 2025).
 
 >  Multiple materials (e.g., Slides and Poster) can be added and will display on the event homepage with their upload dates.
 
@@ -45,18 +45,16 @@ Within the contribution details page
 **Management Area → Timetable → Session block**
 
 1. In the **Management Area**, go to **Timetable [1]** and click a **Session Block** **(e.g., “AI & Data Science” [2]).**
-
    <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/material-timetable-01.png" width="830">
    
 2. Click **Manage materials [3]** (or the gear icon) to access session-level materials.
- 
    <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/material-timetable-02.png" width="830">
    
 3. Select **Add material for the session**, Click the  **upload a files [4]** button.
 4. Optionally, add a description **[6]** and set access permissions **[7]**.
 
     <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/Material-03.png" width="830">
-4. Click **Save** to apply changes.
+5. Click **Save** to apply changes.
 
 >  Session materials will be linked to the session; ensure session blocks are created.
 

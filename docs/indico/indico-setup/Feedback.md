@@ -46,10 +46,11 @@ In the survey editor : "Add Question **[5]**"
   
 * Click **Add question** *(+ icon)* for each of the following:
 
-  1. **Text [9]** – “What was the highlight of the conference for you?” *(Required)*
-  2. **Multiple Choice [7]** – “How would you rate the event’s organization?” *(Options: Excellent, Good, Average, Poor; Required)*
-  3. **Scale /Numbers (1–5) [6]** – “Rate the session quality (1 = Poor, 5 = Excellent)” *(Required)*
-  4. **Text [9]** – “Any suggestions for future events?” *(Optional)*
+    1. **Text [9]** – “What was the highlight of the conference for you?” *(Required)*
+    2. **Multiple Choice [7]** – “How would you rate the event’s organization?” *(Options: Excellent, Good, Average, Poor; Required)*
+    3. **Scale /Numbers (1–5) [6]** – “Rate the session quality (1 = Poor, 5 = Excellent)” *(Required)*
+    4. **Text [9]** – “Any suggestions for future events?” *(Optional)*
+  
 * Save each question before adding the next.
 
 ### 6. **Preview the Form**

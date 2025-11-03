@@ -17,10 +17,10 @@ Once the university structure is created and a department-level manager is assig
 
 4. Fill in the basic details **\[3]**:
 
-   * **Title**: `National Research Conference 2025`
-   * **Start/End Dates**: `August 20–22, 2025`
-   * **Location**: Select predefined location (e.g., `UoP Main Hall`)
-   * **Timezone**: `Asia/Colombo`
+    * - **Title**: `National Research Conference 2025`
+    * - **Start/End Dates**: `August 20–22, 2025`
+    * - **Location**: Select predefined location (e.g., `UoP Main Hall`)
+    * - **Timezone**: `Asia/Colombo`
 
 5. Click **Create Event \[4]**
 
@@ -87,13 +87,9 @@ Click **Save** to apply all settings and display your updated event info.
 | **Dates**       | August 20–22, 2025                |
 | **Timezone**    | Asia/Colombo                      |
 | **Logo**        | `nrc2025-logo.png` (uploaded)     |
-| **Description** |                                   |
+| **Description** | `Welcome to the National Research Conference 2025 hosted by the Department of Computer Science, Faculty of Computing, University of Peradeniya. This national event gathers researchers from across Sri Lanka to present and discuss new developments in science, technology, and innovation.`  |
 
-```markdown
-Welcome to the National Research Conference 2025 hosted by the Department of Computer Science, Faculty of Computing, University of Peradeniya.
 
-This national event gathers researchers from across Sri Lanka to present and discuss new developments in science, technology, and innovation.
-```
 
 ---
 

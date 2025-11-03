@@ -27,8 +27,8 @@ Contributions (e.g., talks, posters, papers) are the core components of your con
    - **Type [6]**: Select from preconfigured types (Oral, Poster, etc.).
    - **Description [4]**: Add a summary.
   
-5. Click **Create Contribution [8]**.
-6. Repeat for all planned contributions, ensuring a logical sequence for your program.
+4\. Click **Create Contribution [8]**.
+5\. Repeat for all planned contributions, ensuring a logical sequence for your program.
 
 >  Use this to build your conference’s content as an organizer.
 
@@ -44,9 +44,11 @@ Contributions (e.g., talks, posters, papers) are the core components of your con
 1. Go to the **Timetable [1]** section in the Management Area to organize your program.
 
    <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/timetable-01.png" width="530">
-2. Click **Add new [2] → Session block [2]** to create a session  (e.g., "AI & Data Science" on Day 1).
-   - Set the **session title [3]** , start time **[4]**, and duration **[5]**.
-   - Click **Save [7]** to create the block.
+   
+2\. Click **Add new [2] → Session block [2]** to create a session  (e.g., "AI & Data Science" on Day 1).
+
+   * - Set the **session title [3]** , start time **[4]**, and duration **[5]**.
+   * - Click **Save [7]** to create the block.
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/timetable-02.png" width="530">
 

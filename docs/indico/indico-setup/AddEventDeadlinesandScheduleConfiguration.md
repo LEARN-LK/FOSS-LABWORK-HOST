@@ -20,11 +20,11 @@ To define submission/review deadlines and build a day-by-day event program with 
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/Abstract-01.png" width="530">
   
-* Select **Call for Abstracts [2]** Click **Scheduler [3]**
+* Select **Call for Abstracts [2]** Click **Schedule [3]**
 * Fill in:
 
-  * **Start date [4]**: When abstract submission begins (e.g., 2025-06-01)
-  * **End date [5]**: When abstract submission closes (e.g., 2025-07-15)
+    * **Start date [4]**: When abstract submission begins (e.g., 2025-06-01)
+      * **End date [5]**: When abstract submission closes (e.g., 2025-07-15)
   
  Click **Save [6]**
 
@@ -70,12 +70,12 @@ Once submissions are closed, reviewers have **9 days** to evaluate them.
 
  **Steps**:
 
-* Click **“Program [1] in the left sidebar.
+* Click **“Program [1]** in the left sidebar.
 * Under “List of tracks and track groups”:
 
-  * Click **➕ Add track [2]**.
+    * Click **➕ Add track [2]**.
 
-  <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/program-02.png" width="530"> 
+  <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/program-02.png" width="530">
   
   * Fill in the **Track Title [3]** (e.g., *AI & Machine Learning*).
   * Optionally add a **Description**.
@@ -120,19 +120,19 @@ Management Area → Abstracts → Contribution Types **[1]** → New Contributio
 
    <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/review-role01.png" width="530">"
 
-4. Click the **➕ Role [2]** button.
-5. In the popup:
+4\. Click the **➕ Role [2]** button.
+5\. In the popup:
 
-   * **Role  [7]**: Select `Reviewer`.
-   * **User [3]**: Type the reviewer’s **name or email** (they must have an Indico account).
+   - * **Role  [7]**: Select `Reviewer`.
+   - * **User [3]**: Type the reviewer’s **name or email** (they must have an Indico account).
 
       <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/review-role02.png" width="530">"
 
-   * **Track**: Choose the specific track(s) they should review.
+   - * **Track**: Choose the specific track(s) they should review.
 
      <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/review-role-03.png?raw=true" width="530">
      
-6. Click **Assign**.
+6\. Click **Assign**.
 
 ---
 

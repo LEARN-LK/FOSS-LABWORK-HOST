@@ -63,22 +63,19 @@ You’ll now see several customizable fields. Here's what each field does, with 
 2. Click **Registration [1]**.
 
 3. Under **List of Registration Forms**, locate and click on **NRC 2025 Participant Registration [2]**.
+<img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/sent-certificate-1.png" width="530">
 
-   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/sent-certificate-1.png" width="530">
+4. Click the **Registrations [3]** link to view the list of registered participants.
 
-
-5. Click the **Registrations [3]** link to view the list of registered participants.
-
-6. From the **Participants List**, you can:
-
-   *  Select **all participants  [4]**
-   *  Or select **individual participants** by checking the boxes.
+5. From the **Participants List**, you can:
+    - *  Select **all participants  [4]**
+    - *  Or select **individual participants** by checking the boxes.
 
  <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/sent-certificate-2.png" width="530">
  
-7. Click the **Action** dropdown (usually found above the list or in the toolbar).
+6\. Click the **Action** dropdown (usually found above the list or in the toolbar).
 
-8. Choose **Generate Document [5]**.
+7\. Choose **Generate Document [5]**.
 
  <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/sent-certificate-3.png" width="530">
 

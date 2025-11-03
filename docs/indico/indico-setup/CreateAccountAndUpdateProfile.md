@@ -182,7 +182,7 @@ Keeping your Indico profile updated ensures accurate participant records, certif
 
 3\. From the dropdown menu, select **“My Profile [2]”**
 
-    <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/update-profile-01.png" width="430">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Indico/main/img/update-profile-01.png" width="430">
 
 4\. In the profile page click setting **[3]** > update the following fields as needed **[4]**:
 
