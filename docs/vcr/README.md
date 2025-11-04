@@ -31,48 +31,48 @@ The **number of accounts allocated to each institution** is determined by the pl
 
 ###  **Room & Session Management**
 
-* **[Sign in to vCR via LEARN IdP](https://github.com/LEARN-LK/VCR/blob/main/signintoVCR.md)**
-* **[Creating a Room, Deleting a Room](https://github.com/LEARN-LK/VCR/blob/main/Create%26DeleteRoom.md)**
-* **[Starting a Room , Layouts Settings  and Session Ending/Leaving a Room](https://github.com/LEARN-LK/VCR/blob/main/start&Ending-room.md)**
-* **[Waiting Room (Guest Policy)](https://github.com/LEARN-LK/VCR/blob/main/waitingRoom.md)**
-* **[Converting a Room to a Webinar & Locking Viewer Features (Webinar style class Room)](https://github.com/LEARN-LK/VCR/blob/main/Webinar-mood.md)**
+* **[Sign in to vCR via LEARN IdP](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/Room%26Session%20Management/signintoVCR/)**
+* **[Creating a Room, Deleting a Room](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/Room%26Session%20Management/Create%26DeleteRoom/)**
+* **[Starting a Room , Layouts Settings  and Session Ending/Leaving a Room](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Room%20Management/start%26Ending-room/)**
+* **[Waiting Room (Guest Policy)](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Room%20Management/waitingRoom/)**
+* **[Converting a Room to a Webinar & Locking Viewer Features (Webinar style class Room)](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Participant%20Control/Webinar-mood/)**
 
 
 ###  **Presentation & Content Sharing**
 
-* **[Uploading Presentation/Sharing Screen](https://github.com/LEARN-LK/VCR/blob/main/uplord-ppt%26sharing.md)**
-* **[Sharing External Video / Whiteboard / Annotate on the Slide ](https://github.com/LEARN-LK/VCR/blob/main/Sharing-External-Video%26whiteboard.md)**
-* **[Shared Notes](https://github.com/LEARN-LK/VCR/blob/main/sharenote.md)**
-* **[Fit to Page](https://github.com/LEARN-LK/VCR/blob/main/fittopage.md)**
+* **[Uploading Presentation/Sharing Screen](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/InstructorModerator%20Features/Overview%20for%20Instructors/ContentSharing/uplord-ppt%26sharing/)**
+* **[Sharing External Video / Whiteboard / Annotate on the Slide ](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/InstructorModerator%20Features/Overview%20for%20Instructors/ContentSharing/Sharing-External-Video%26whiteboard/)**
+* **[Shared Notes](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/sharenote.md)**
+* **[Fit to Page](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Other%20Features/fittopage/)**
 
 
 ###  **Audio & Captions**
 
-* **[Closed Captions](https://github.com/LEARN-LK/VCR/blob/main/closed-caption.md)**
-* **[Auto Captions (Auto audio transcription)](https://github.com/LEARN-LK/VCR/blob/main/auto-caption.md)**
+* **[Closed Captions](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/Audio%26Captions/closed-caption/)**
+* **[Auto Captions (Auto audio transcription)](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/Audio%26Captions/auto-caption/)**
 
 
 ###  **Engagement Tools**
 
-* **[Polling](https://github.com/LEARN-LK/VCR/blob/main/polling.md)**
-* **[Breakout Room](https://github.com/LEARN-LK/VCR/blob/main/breakout-room.md)**
+* **[Polling](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/Engagement%20Tools/polling/)**
+* **[Breakout Room](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/Engagement%20Tools/breakout-room/)**
 
 
 ###  **Reports & Analytics**
 
-* **[Report - Participants List & Learning Analytics Dashboard](https://github.com/LEARN-LK/VCR/blob/main/participants-list&dashboard.md)**
+* **[Report - Participants List & Learning Analytics Dashboard](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Monitoring%26Reporting/participants-list%26dashboard/)**
 
 
 ###  **Integrations & Streaming**
 
 * **[Live Streaming on YouTube or Facebook](https://vcr.learn.ac.lk/userguide/streaming.html)**
-* **[Moodle Integration](https://github.com/LEARN-LK/lms/blob/master/Moodle%20Virtual%20Class%20Room%20(Webinar)%20.md)**
+* **[Moodle Integration](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/Integrations%26Streaming/Moodle%20Virtual%20Class%20Room%20%28Webinar%29/)**
 
 ###  **Instructor/Moderator Features**
 
 * **[Overview for Instructors (moderator/presenter)](https://github.com/LEARN-LK/VCR/blob/main/moderator-task.md)**
-* **[Co-Host](https://github.com/LEARN-LK/VCR/blob/main/Co-Host.md)**
-* **[Visual Assessment](https://github.com/LEARN-LK/VCR/blob/main/visual-assessment.md)**
+* **[Co-Host](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/InstructorModerator%20Features/Co-Host/)**
+* **[Visual Assessment](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/InstructorModerator%20Features/visual-assessment/)**
 
 
 

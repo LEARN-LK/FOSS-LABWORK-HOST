@@ -85,19 +85,39 @@ nav:
       - Feedback Form: indico/indico-setup/Feedback.md
   - VCR:
     - Introduction: vcr/README.md
+    - Room & Session Management:
+      - Sign in to vCR: vcr/Room&Session Management/signintoVCR.md
+      - Create a vCR Room : vcr/Room&Session Management/Create&DeleteRoom.md
+      - Start a Room/Session: vcr/InstructorModerator Features/Overview for Instructors/Room Management/start&Ending-room.md
+      - Waiting Room (Guest Policy): vcr/InstructorModerator Features/Overview for Instructors/Room Management/waitingRoom.md
+      - Webinar Style Room: vcr/InstructorModerator Features/Overview for Instructors/Participant Control/Webinar-mood.md
+    - Presentation & Content Sharing:
+      - Sharing External Video: vcr/InstructorModerator Features/Overview for Instructors/ContentSharing/Sharing-External-Video&whiteboard.md
+      - Upload a Presentation: vcr/InstructorModerator Features/Overview for Instructors/ContentSharing/uplord-ppt&sharing.md
+      - Sharing Notes: vcr/sharenote.md
+      - Fit to Page:  vcr/InstructorModerator Features/Overview for Instructors/Other Features/fittopage.md
     - Audio & Captions: 
       - Auto Captions: vcr/Audio&Captions/auto-caption.md
       - Closed Captions: vcr/Audio&Captions/closed-caption.md
     - Engagement Tools: 
       - Breakout Rooms: vcr/Engagement Tools/breakout-room.md
       - Polling: vcr/Engagement Tools/polling.md
+    - Reports & Analytics:           
+        - participant list: vcr/InstructorModerator Features/Overview for Instructors/Monitoring&Reporting/participants-list&dashboard.md
+    - Integrations & Streaming:
+      - Moodle Virtual Class Room (Webinar): vcr/Integrations&Streaming/Moodle Virtual Class Room (Webinar).md
     - Instructor Moderator Features:
-      - Co-Host: vcr/InstructorModerator Features/Co-Host.md
-      - Visual Assessment: vcr/InstructorModerator Features/visual-assessment.md
-      - Overview for Instructors (moderatorpresenter):
+      - Overview for Instructors (moderator / presenter):
+        - Room Management:
+          - Co-Host: vcr/InstructorModerator Features/Overview for Instructors/Room Management/Co-Host.md
+          - Start a Room/Session: vcr/InstructorModerator Features/Overview for Instructors/Room Management/start&Ending-room.md
+          - Waiting Room (Guest Policy): vcr/InstructorModerator Features/Overview for Instructors/Room Management/waitingRoom.md
         - Content Sharing:
           - Sharing External Video: vcr/InstructorModerator Features/Overview for Instructors/ContentSharing/Sharing-External-Video&whiteboard.md
           - Upload a Presentation: vcr/InstructorModerator Features/Overview for Instructors/ContentSharing/uplord-ppt&sharing.md
+        - Participant Control:
+          - Visual Assessment: vcr/InstructorModerator Features/Overview for Instructors/Participant Control/visual-assessment.md
+          - Webinar Style Room: vcr/InstructorModerator Features/Overview for Instructors/Participant Control/Webinar-mood.md
         - Engagement Tools:
           - Breakout Rooms: vcr/Engagement Tools/breakout-room.md
           - Polling: vcr/Engagement Tools/polling.md
@@ -106,23 +126,10 @@ nav:
         - Other Features:
           - Fit to Page:  vcr/InstructorModerator Features/Overview for Instructors/Other Features/fittopage.md
           - Moodle Virtual Class Room (Webinar): vcr/InstructorModerator Features/Overview for Instructors/Other Features/Moodle Virtual Class Room (Webinar).md
-        - Participant Control:
-          - Visual Assessment: vcr/InstructorModerator Features/Overview for Instructors/Participant Control/visual-assessment.md
-          - Webinar Style Room: vcr/InstructorModerator Features/Overview for Instructors/Participant Control/Webinar-mood.md
-        - Room Management:
-          - Co-Host: vcr/InstructorModerator Features/Overview for Instructors/Room Management/Co-Host.md
-          - Start a Room/Session: vcr/InstructorModerator Features/Overview for Instructors/Room Management/start&Ending-room.md
-          - Waiting Room (Guest Policy): vcr/InstructorModerator Features/Overview for Instructors/Room Management/waitingRoom.md
         - Integrations & Streaming:
             - Moodle Virtual Class Room (Webinar): vcr/Integrations&Streaming/Moodle Virtual Class Room (Webinar).md
-      - Presentation & Content Sharing:
-        - Sharing External Video: vcr/InstructorModerator Features/Overview for Instructors/ContentSharing/Sharing-External-Video&whiteboard.md
-        - Upload a Presentation: vcr/InstructorModerator Features/Overview for Instructors/ContentSharing/uplord-ppt&sharing.md
-      - Reports & Analytics:           
-        - participant list: vcr/InstructorModerator Features/Overview for Instructors/Monitoring&Reporting/participants-list&dashboard.md
-      - Room & Session Management:
-        - Create a vCR Room : vcr/Room&Session Management/Create&DeleteRoom.md
-        - Sign in to vCR: vcr/Room&Session Management/signintoVCR.md
+    - Co-Host: vcr/InstructorModerator Features/Co-Host.md
+    - Visual Assessment: vcr/InstructorModerator Features/visual-assessment.md
   - LTUBE:
     - End User Guide: ltube/enduserguide.md
   - OpenShot: 
