@@ -59,7 +59,7 @@ Before running the script, temporarily **disable security features** that may bl
    * Dev Drive protection
 4. If you use third-party antivirus (e.g., Avast, McAfee), **pause real-time protection** temporarily.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/diffender.jpeg" alt="image" style="max-width: 100%;width: 500px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/diffender.jpeg?raw=true" alt="image" style="max-width: 100%;width: 500px;">
 
 > ⚠️ Re-enable protections once Moodle setup is complete.
 
