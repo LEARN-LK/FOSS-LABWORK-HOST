@@ -128,8 +128,8 @@ nav:
           - Moodle Virtual Class Room (Webinar): vcr/InstructorModerator Features/Overview for Instructors/Other Features/Moodle Virtual Class Room (Webinar).md
         - Integrations & Streaming:
             - Moodle Virtual Class Room (Webinar): vcr/Integrations&Streaming/Moodle Virtual Class Room (Webinar).md
-    - Co-Host: vcr/InstructorModerator Features/Co-Host.md
-    - Visual Assessment: vcr/InstructorModerator Features/visual-assessment.md
+      - Co-Host: vcr/InstructorModerator Features/Co-Host.md
+      - Visual Assessment: vcr/InstructorModerator Features/visual-assessment.md
   - LTUBE:
     - End User Guide: ltube/enduserguide.md
   - OpenShot: 
