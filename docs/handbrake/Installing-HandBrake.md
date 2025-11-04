@@ -10,7 +10,8 @@
   1. Visit https://handbrake.fr and download the .exe file.
   
   2. Double-click the downloaded file to run the installer. If prompted, install Microsoft .NET 8.0 (the installer will provide a link or guide you).
-  <img src="https://github.com/LEARN-LK/HandBrake/blob/main/img/icon-click-1.1.0%402x.gif" alt="image" style="width: 50%;">
+ 
+  <img src="https://raw.githubusercontent.com/LEARN-LK/HandBrake/main/img/icon-click-1.1.0%402x.gif" alt="image" style="width: 20%;">
 
   3. Follow the on-screen prompts, click “Install,” then click “Finish.” HandBrake will appear on your Desktop or in the Start Menu.
 
@@ -20,16 +21,14 @@
      <img src="https://raw.githubusercontent.com/LEARN-LK/HandBrake/main/img/install-finish-1.8.0.png" alt="image" style="width: 25%;">
 
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/diffender.jpeg?raw=true" alt="image" style="max-width: 100%;width: 500px;">
-
      
 - **macOS**:
   1. Download the .dmg file from https://handbrake.fr.
   2. Open the .dmg file, then drag the HandBrake icon to your Applications folder.
   
-  <img src="https://github.com/LEARN-LK/HandBrake/blob/main/img/dmg.png" alt="image" style="width: 10%;">
+  <img src="https://raw.githubusercontent.com/LEARN-LK/HandBrake/main/img/dmg.png" alt="image" style="width: 10%;">
       
-  <img src="https://github.com/LEARN-LK/HandBrake/blob/main/img/drag-dmg.png" alt="image" style="width: 40%;">
+  <img src="https://raw.githubusercontent.com/LEARN-LK/HandBrake/main/img/drag-dmg.png" alt="image" style="width: 40%;">
 
   3. Launch HandBrake from the Applications folder by double-clicking it.
 - **Linux**:
