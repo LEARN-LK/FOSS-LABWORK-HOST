@@ -14,11 +14,13 @@
 
   3. Follow the on-screen prompts, click “Install,” then click “Finish.” HandBrake will appear on your Desktop or in the Start Menu.
 
-     <img src="https://github.com/LEARN-LK/HandBrake/blob/main/img/install-1-1.8.0.png" alt="image" style="width: 50%;">
-     <img src="https://github.com/LEARN-LK/HandBrake/blob/main/img/install-2-1.8.0.png" alt="image" style="width: 25%;">
-     <img src="https://github.com/LEARN-LK/HandBrake/blob/main/img/install-2-1.8.0.png" alt="image" style="width: 25%;">
-     <img src="https://github.com/LEARN-LK/HandBrake/blob/main/img/install-finish-1.8.0.png" alt="image" style="width: 25%;">
+     <img src="https://raw.githubusercontent.com/LEARN-LK/HandBrake/main/img/install-1-1.8.0.png" alt="image" style="width: 50%;">
+     <img src="https://raw.githubusercontent.com/LEARN-LK/HandBrake/main/img/install-2-1.8.0.png" alt="image" style="width: 25%;">
+     <img src="https://raw.githubusercontent.com/LEARN-LK/HandBrake/main/img/install-2-1.8.0.png" alt="image" style="width: 25%;">
+     <img src="https://raw.githubusercontent.com/LEARN-LK/HandBrake/main/img/install-finish-1.8.0.png" alt="image" style="width: 25%;">
 
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/diffender.jpeg?raw=true" alt="image" style="max-width: 100%;width: 500px;">
 
      
 - **macOS**:
