@@ -44,7 +44,7 @@ nav:
       - Grading: moodle/TeachersGuide/Grading.md
       - Virtual Programming Lab - VPL: moodle/TeachersGuide/VirtualProgrammingLab-VPL.md
       - Board - Plugin: moodle/TeachersGuide/mdl-board.md
-      - Workplace Course Certificate: moodle/TeachersGuide/course-Certificate.md
+      - Workplace Course Certificate: moodle/TeachersGuide/course-certificate.md
       - Checklist - Plugin: moodle/TeachersGuide/Checklist.md
       - Completion Progress - plugin: moodle/TeachersGuide/completion-progress.md
       - Bulk Enrolments plugin: moodle/TeachersGuide/bulk_enrolments.md
@@ -84,6 +84,7 @@ nav:
       - Room Booking: indico/indico-setup/RoomBooking.md
       - Feedback Form: indico/indico-setup/Feedback.md
   - VCR:
+    - Introduction: vcr/README.md
     - Audio & Captions: 
       - Auto Captions: vcr/Audio&Captions/auto-caption.md
       - Closed Captions: vcr/Audio&Captions/closed-caption.md
