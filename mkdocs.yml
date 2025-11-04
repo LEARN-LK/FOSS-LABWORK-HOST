@@ -132,9 +132,9 @@ nav:
     - Editing Workflow: openshot/EnhancingVideo.md
     - Exporting Video: openshot/export-video.md
   - HandBrake:
-    - Introduction: HandBrake/README.md
-    - Installing HandBrake: HandBrake/Installing-HandBrake.md
-    - Converting Video: HandBrake/Converting-Video.md
-    - Adjusting Basic Settings: HandBrake/Adjusting-Settings.md
-    - Thoubleshooting: HandBrake/Troubleshooting.md
+    - Introduction: handbrake/README.md
+    - Installing HandBrake: handbrake/Installing-HandBrake.md
+    - Converting Video: handbrake/Converting-Video.md
+    - Adjusting Basic Settings: handbrake/Adjusting-Settings.md
+    - Thoubleshooting: handbrake/Troubleshooting.md
   
