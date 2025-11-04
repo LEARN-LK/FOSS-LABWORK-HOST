@@ -11,7 +11,7 @@
   
   2. Double-click the downloaded file to run the installer. If prompted, install Microsoft .NET 8.0 (the installer will provide a link or guide you).
  
-  <img src="https://raw.githubusercontent.com/LEARN-LK/HandBrake/main/img/icon-click-1.1.0%402x.gif" alt="image" style="width: 30%;">
+  <img src="https://raw.githubusercontent.com/LEARN-LK/HandBrake/main/img/icon-click-1.1.0%402x.gif" alt="image" style="width: 20%;">
 
   3. Follow the on-screen prompts, click “Install,” then click “Finish.” HandBrake will appear on your Desktop or in the Start Menu.
 
