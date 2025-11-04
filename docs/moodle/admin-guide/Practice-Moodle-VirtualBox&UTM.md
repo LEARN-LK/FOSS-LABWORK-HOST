@@ -1,9 +1,9 @@
 
-# **Practice Moodle in VirtualBox / UTM**
+# **Practice Moodle in VirtualBox**
 
 ### **Complete Step-by-Step Guide to Run Moodle Preconfigured Virtual Machine**
 
-This guide lets you run a **ready-made Moodle instance** using either **VirtualBox** (Windows/Linux/macOS Intel/AMD)** or **UTM** (macOS Apple Silicon M1/M2/M3).
+This guide lets you run a **ready-made Moodle instance** using either **VirtualBox** (Windows/Linux/macOS Intel/AMD)** or  (macOS Apple Silicon M1/M2/M3).
 It includes automated setup scripts that start the virtual machine and open Moodle automatically at:
 
 ```
@@ -18,7 +18,7 @@ http://moodle:9000
 | ------------------------------- | ------------- | ----------------------------- | ------------ | ---------------------------------------------------------------------- |
 | Intel / AMD (Windows)           | Windows       | VirtualBox                    | `.bat`       | [Part 1](https://drive.google.com/file/d/1lYzC243wAijfeDqiAr5Wwy7MT9qptdIA/view?usp=sharing)                  |
 | Intel / AMD (Mac)               | macOS (Intel) | VirtualBox                    | `.sh`        | [Part 2](https://drive.google.com/file/d/1EppBMiV9cP6XPaNT0O9XzTQrPqVK7W0K/view?usp=sharing)                      |
-| Apple Silicon (M1/M2/M3/Silver) | macOS (ARM)   | VirtualBox (ARM build) or UTM | `.sh`        | [Part 3](https://drive.google.com/file/d/1EppBMiV9cP6XPaNT0O9XzTQrPqVK7W0K/view?usp=sharing) |
+| Apple Silicon (M1/M2/M3/Silver) | macOS (ARM)   | VirtualBox (ARM build) | `.sh`        | [Part 3](https://drive.google.com/file/d/1EppBMiV9cP6XPaNT0O9XzTQrPqVK7W0K/view?usp=sharing) |
 
 ---
 
