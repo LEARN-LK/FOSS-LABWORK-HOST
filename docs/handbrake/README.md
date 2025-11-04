@@ -14,8 +14,9 @@ Key features include:
 
 HandBrake is lightweight, secure (download from https://handbrake.fr), and ideal for tasks like compressing videos, preparing them for specific devices, or converting old media. It does not support DRM-protected or copy-protected content.
 
-* [Installing HandBrake](https://github.com/LEARN-LK/HandBrake/blob/main/Installing-HandBrake.md)
-* [Converting Video](https://github.com/LEARN-LK/HandBrake/blob/main/Converting-Video.md)
-* [Adjusting Basic Settings](https://github.com/LEARN-LK/HandBrake/blob/main/Adjusting-Settings.md)
-* [Thoubleshooting](https://github.com/LEARN-LK/HandBrake/blob/main/Troubleshooting.md)
+* [Installing HandBrake](https://learn-lk.github.io/FOSS-LABWORK-HOST/handbrake/Installing-HandBrake/)
+* [Converting Video](https://learn-lk.github.io/FOSS-LABWORK-HOST/handbrake/Converting-Video/)
+* [Adjusting Basic Settings](https://learn-lk.github.io/FOSS-LABWORK-HOST/handbrake/Adjusting-Settings/)
+* [Thoubleshooting](https://learn-lk.github.io/FOSS-LABWORK-HOST/handbrake/Troubleshooting/)
   
+
