@@ -16,9 +16,9 @@ http://moodle:9000
 
 | Processor Type                  | Platform      | Virtualization Tool           | Setup Script | Download Section                                                       |
 | ------------------------------- | ------------- | ----------------------------- | ------------ | ---------------------------------------------------------------------- |
-| Intel / AMD (Windows)           | Windows       | VirtualBox                    | `.bat`       | [Part 1](#part-1--for-intel-users-windows-virtualbox)                  |
-| Intel / AMD (Mac)               | macOS (Intel) | VirtualBox                    | `.sh`        | [Part 2](#part-2--for-intel-users-mac-virtualbox)                      |
-| Apple Silicon (M1/M2/M3/Silver) | macOS (ARM)   | VirtualBox (ARM build) or UTM | `.sh`        | [Part 3](#part-3--setup-guide-for-mac-apple-silicon--silver-processor) |
+| Intel / AMD (Windows)           | Windows       | VirtualBox                    | `.bat`       | [Part 1](https://drive.google.com/file/d/1lYzC243wAijfeDqiAr5Wwy7MT9qptdIA/view?usp=sharing)                  |
+| Intel / AMD (Mac)               | macOS (Intel) | VirtualBox                    | `.sh`        | [Part 2](https://drive.google.com/file/d/1EppBMiV9cP6XPaNT0O9XzTQrPqVK7W0K/view?usp=sharing)                      |
+| Apple Silicon (M1/M2/M3/Silver) | macOS (ARM)   | VirtualBox (ARM build) or UTM | `.sh`        | [Part 3](https://drive.google.com/file/d/1EppBMiV9cP6XPaNT0O9XzTQrPqVK7W0K/view?usp=sharing) |
 
 ---
 
@@ -112,7 +112,7 @@ If Moodle doesn’t load, restart the VM.
 
 #### 📦 From Google Drive:
 
-* VM Image (`.ova`) for Intel User (Windows/Mac)
+* VM Image (`.ova`) for Intel User (Mac)
   👉 [Download for Mac (VirtualBox)](https://drive.google.com/file/d/1PQkj9OFvMLmeoYCvKyDjWV06VEp-Nwbk/view?usp=sharing)
 
 * Automation Script for Mac User (`.sh`)
