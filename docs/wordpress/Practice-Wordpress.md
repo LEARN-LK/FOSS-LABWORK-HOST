@@ -12,6 +12,7 @@ http://wordpress:8000
 
 ---
 
+<!--
 ## ⚡️ Quick Start Overview
 
 | Processor Type                  | Platform      | Virtualization Tool           | Setup Script | Download Section                                                       |
@@ -20,7 +21,7 @@ http://wordpress:8000
 | Intel / AMD (Mac)               | macOS (Intel) | VirtualBox                    | `.sh`        | [Part 2](https://drive.google.com/file/d/1EppBMiV9cP6XPaNT0O9XzTQrPqVK7W0K/view?usp=sharing)                      |
 | Apple Silicon (M series/Silver) | macOS (ARM)   | VirtualBox (ARM build) | `.sh`        | [Part 3](https://drive.google.com/file/d/1EppBMiV9cP6XPaNT0O9XzTQrPqVK7W0K/view?usp=sharing) |
 
----
+---  -->
 
 ## ⚙️ **Part 1 — For Intel Users (Windows) VirtualBox**
 
