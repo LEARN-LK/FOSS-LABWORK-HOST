@@ -3,7 +3,7 @@ OBS Studio (Open Broadcaster Software) is a free, open-source application design
 
 ### Categorized Steps to How To Record Computer Screen and Webcam (Face)
 
-1. [Installation](https://raw.githubusercontent.com/LEARN-LK/OBS/main/Installation.md)
+1. [Installation](obs/Installation)
 2. [Initial Setup](https://raw.githubusercontent.com/LEARN-LK/OBS/main/Initial-Setup.md)
 3. [Configuration](https://raw.githubusercontent.com/LEARN-LK/OBS/main/Configuration.md)
 4. [Adding Sources, Customization & Recording](https://raw.githubusercontent.com/LEARN-LK/OBS/main/Adding-Sources.md)
