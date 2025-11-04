@@ -14,7 +14,7 @@
 
 * On the **left side of the Room interface**, look for the tab labeled **“Shared Notes [1]”** (below the Users and Chat sections).
 
-    <img src="https://github.com/LEARN-LK/VCR/blob/main/img/Sharednote-01.png" alt="image" style="max-width: 100%;width: 400px;">
+    <img src="https://raw.githubusercontent.com/LEARN-LK/VCR/main/img/Sharednote-01.png" alt="image" style="max-width: 100%;width: 400px;">
 
 
 #### **3. Open the Shared Notes**
@@ -22,7 +22,7 @@
 * Click on **“Shared Notes”**.
 * Wait a few seconds while the **notepad loads [2]**.
 
-   <img src="https://github.com/LEARN-LK/VCR/blob/main/img/sharednote-02.png" alt="image" style="max-width: 100%;width: 300px;">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/VCR/main/img/sharednote-02.png" alt="image" style="max-width: 100%;width: 300px;">
 
 
 #### **4. Start Writing Notes**
@@ -30,7 +30,7 @@
 * Begin typing in the notepad area.
 * Both **moderators and participants** can contribute (unless restricted).
 
-    <img src="https://github.com/LEARN-LK/VCR/blob/main/img/shrenote-03.png" alt="image" style="max-width: 100%;width: 200px;">
+    <img src="https://raw.githubusercontent.com/LEARN-LK/VCR/main/img/shrenote-03.png" alt="image" style="max-width: 100%;width: 200px;">
 
 
 #### **5. Use Additional Note Features**
@@ -46,7 +46,7 @@ Click the **four vertical dots (⋮)** in the upper-right corner of the Shared N
 *  **Export [6]**:
   Save the notes in formats like `.txt`, `.html`, or `.pdf`.
 
-  <img src="https://github.com/LEARN-LK/VCR/blob/main/img/sharenote-05.png" alt="image" style="max-width: 100%;width: 200px;">
+  <img src="https://raw.githubusercontent.com/LEARN-LK/VCR/main/img/sharenote-05.png" alt="image" style="max-width: 100%;width: 200px;">
 
 ###  **Use Cases for Shared Notes**
 
