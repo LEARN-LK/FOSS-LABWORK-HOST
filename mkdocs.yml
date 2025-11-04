@@ -131,4 +131,10 @@ nav:
     - Starting a New Project & Importing Media: openshot/NewProject&Importing.md
     - Editing Workflow: openshot/EnhancingVideo.md
     - Exporting Video: openshot/export-video.md
+  - HandBrake:
+    - Introduction: handbrake/README.md
+    - Installing HandBrake: handbrake/Installing-HandBrake.md
+    - Converting Video: handbrake/Converting-Video.md
+    - Adjusting Basic Settings: handbrake/Adjusting-Settings.md
+    - Thoubleshooting: handbrake/Troubleshooting.md
   

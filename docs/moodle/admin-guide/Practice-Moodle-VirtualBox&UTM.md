@@ -1,9 +1,9 @@
 
-# **Practice Moodle in VirtualBox / UTM**
+# **Practice Moodle in VirtualBox**
 
 ### **Complete Step-by-Step Guide to Run Moodle Preconfigured Virtual Machine**
 
-This guide lets you run a **ready-made Moodle instance** using either **VirtualBox** (Windows/Linux/macOS Intel/AMD)** or **UTM** (macOS Apple Silicon M1/M2/M3).
+This guide lets you run a **ready-made Moodle instance** using either **VirtualBox** (Windows/Linux/macOS Intel/AMD)** or  (macOS Apple Silicon M1/M2/M3).
 It includes automated setup scripts that start the virtual machine and open Moodle automatically at:
 
 ```
@@ -18,7 +18,7 @@ http://moodle:9000
 | ------------------------------- | ------------- | ----------------------------- | ------------ | ---------------------------------------------------------------------- |
 | Intel / AMD (Windows)           | Windows       | VirtualBox                    | `.bat`       | [Part 1](https://drive.google.com/file/d/1lYzC243wAijfeDqiAr5Wwy7MT9qptdIA/view?usp=sharing)                  |
 | Intel / AMD (Mac)               | macOS (Intel) | VirtualBox                    | `.sh`        | [Part 2](https://drive.google.com/file/d/1EppBMiV9cP6XPaNT0O9XzTQrPqVK7W0K/view?usp=sharing)                      |
-| Apple Silicon (M1/M2/M3/Silver) | macOS (ARM)   | VirtualBox (ARM build) or UTM | `.sh`        | [Part 3](https://drive.google.com/file/d/1EppBMiV9cP6XPaNT0O9XzTQrPqVK7W0K/view?usp=sharing) |
+| Apple Silicon (M Series/Silver) | macOS (ARM)   | VirtualBox (ARM build) | `.sh`        | [Part 3](https://drive.google.com/file/d/1EppBMiV9cP6XPaNT0O9XzTQrPqVK7W0K/view?usp=sharing) |
 
 ---
 
@@ -59,6 +59,8 @@ Before running the script, temporarily **disable security features** that may bl
    * Dev Drive protection
 4. If you use third-party antivirus (e.g., Avast, McAfee), **pause real-time protection** temporarily.
 
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/diffender.jpeg?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
 > ⚠️ Re-enable protections once Moodle setup is complete.
 
 ---
@@ -97,11 +99,11 @@ Check your PATH variable:
    ```
    C:\Program Files\Oracle\VirtualBox\
    ```
-4. Click **OK**, then reopen Command Prompt.
+4. Click **OK**, then rerun the bat file.
 
 #### 🔹 *Network Access*
 
-Ensure your VirtualBox network adapter is set to **Bridged Adapter** or **NAT (default)**.
+Ensure your VirtualBox network adapter is set to **NAT (default)**.
 If Moodle doesn’t load, restart the VM.
 
 ---
@@ -149,7 +151,7 @@ The script will automatically:
 > 💡 If you see “permission denied”, run:
 >
 > ```bash
-> chmod +x yourfile.sh
+> chmod +x autopart-moodle.sh
 > ```
 >
 > and retry.
@@ -186,10 +188,9 @@ Save both files in the **same folder** (e.g., `Downloads/Moodle_VM`).
 
 ### **2. Install VirtualBox**
 
-Download and install the **Apple Silicon (ARM64)** test build:
-👉 [https://www.virtualbox.org/wiki/Testbuilds](https://www.virtualbox.org/wiki/Testbuilds)
+Download and install the **Apple Silicon (ARM64)** Apple Silicon hosts:
+👉 [https://www.virtualbox.org/wiki/](https://download.virtualbox.org/virtualbox/7.2.4/VirtualBox-7.2.4-170995-macOSArm64.dmg)
 
-> Look for **“macOS / arm64 (Apple Silicon)”** under **Development Snapshots**.
 
 After installation:
 
@@ -213,7 +214,7 @@ The script will automatically:
 > 💡 If you see “permission denied”, run:
 >
 > ```bash
-> chmod +x yourfile.sh
+> chmod +x autopart-moodle.sh
 > ```
 >
 > and retry.
@@ -239,7 +240,7 @@ Once the VM is running:
 | VM won’t start                  | Ensure VirtualBox is installed correctly                    |
 | Path error (Windows)            | Check **System Path** variables                             |
 | macOS blocks file               | Go to **System Settings → Privacy & Security → Allow**      |
-| “Permission denied” in Terminal | Run `chmod +x yourfile.sh` and retry                        |
-| Moodle doesn’t load             | Restart the VM or check network adapter (use NAT/Bridged)   |
+| “Permission denied” in Terminal | Run `chmod +x autopart-moodle.sh` and retry                        |
+| Moodle doesn’t load             | Restart the VM or check network adapter (use NAT)   |
 
 ---

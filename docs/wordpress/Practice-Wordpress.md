@@ -1,184 +1,249 @@
 
+# **Practice Wordpress in VirtualBox**
 
-#  Practice WordPress in VirtualBox / UTM
+### **Complete Step-by-Step Guide to Run WordPress Preconfigured Virtual Machine**
 
-This guide explains how to set up and access a preconfigured **WordPress VM** using VirtualBox or UTM.
+This guide lets you run a **ready-made WordPress instance** using either **VirtualBox** (Windows/Linux/macOS Intel/AMD)** or  (macOS Apple Silicon M1/M2/M3).
+It includes automated setup scripts that start the virtual machine and open WordPress automatically at:
 
----
-
-## **Part 1: Download and Install the Virtual Machine**
-
-### **Step 1: Download the VM**
-
-* **VirtualBox Users (.OVA)**:
-
-  1. Open the Google Drive link:
-      [Download OVA File](https://drive.google.com/file/d/1KuV93lV0gh0kq377uJbFrM3rEg8Z2xAI/view?usp=sharing&hl=en&tab=t.0)
-    <!--  [Download OVA File](https://drive.google.com/file/d/1KuV93lV0gh0kq377uJbFrM3rEg8Z2xAI/view?usp=drive_link)-->
-
-  2. Click **Download** to save the `.OVA` file.
-
-       
-
-* **UTM Users (.UTM)**:
-
-  1. Open the Google Drive link for the UTM file.
-[Download UTM File](https://drive.google.com/file/d/1byVEVpOK9KJ1RsvgZxqcdPJErvls141t/view?usp=sharing&hl=en&tab=t.0)
-
-<!-- [Download UTM File](https://drive.google.com/file/d/1byVEVpOK9KJ1RsvgZxqcdPJErvls141t/view?usp=sharing)-->
-
-  2. Download the `.UTM` file to your Mac.
+```
+http://wordpress:8000
+```
 
 ---
 
-### **Step 2: Install the Virtualization Software**
+## ⚡️ Quick Start Overview
 
-* **VirtualBox (Windows/Linux/macOS Intel/AMD)**:
-
-  1. Download from [VirtualBox Official Site](https://www.virtualbox.org/)
-  2. Install using default options.
-
-* **UTM (macOS Apple Silicon M1/M2/M3)**:
-
-  1. Download from [UTM Official Site](https://mac.getutm.app/)
-  2. Open the `.dmg` file and drag **UTM.app** to Applications.
+| Processor Type                  | Platform      | Virtualization Tool           | Setup Script | Download Section                                                       |
+| ------------------------------- | ------------- | ----------------------------- | ------------ | ---------------------------------------------------------------------- |
+| Intel / AMD (Windows)           | Windows       | VirtualBox                    | `.bat`       | [Part 1](https://drive.google.com/file/d/1lYzC243wAijfeDqiAr5Wwy7MT9qptdIA/view?usp=sharing)                  |
+| Intel / AMD (Mac)               | macOS (Intel) | VirtualBox                    | `.sh`        | [Part 2](https://drive.google.com/file/d/1EppBMiV9cP6XPaNT0O9XzTQrPqVK7W0K/view?usp=sharing)                      |
+| Apple Silicon (M series/Silver) | macOS (ARM)   | VirtualBox (ARM build) | `.sh`        | [Part 3](https://drive.google.com/file/d/1EppBMiV9cP6XPaNT0O9XzTQrPqVK7W0K/view?usp=sharing) |
 
 ---
 
-## **Part 2: Import the VM**
+## ⚙️ **Part 1 — For Intel Users (Windows) VirtualBox**
 
-* **VirtualBox**:
+### **1. Download Required Files**
 
-  1. Open VirtualBox → **File > Import Appliance**.
-  2. Select the downloaded `.OVA` file → Click **Next**.
-  3. Review settings (CPU, RAM, Network) → Click **Import**.
+#### 📦 From Google Drive:
 
-* **UTM**:
+* VM Image (`.ova`) for Intel User (Windows)
+  👉 [Download for Windows (VirtualBox)](https://drive.google.com/file/d/1sH2K2QzgE3GH696Q7E3xGxjMEh-7jkE_/view?usp=sharing)
 
-  1. Open UTM → **File > Import Virtual Machine** or click **+**.
-  2. Select the downloaded `.UTM` file.
-  3. The VM appears in the UTM Library.
+* Automation Script for Windows User (`.bat`)
+  👉 [Download Windows Setup Script](https://drive.google.com/file/d/1-eDiQ5wf4F0TGMAY1ACIHMAnTiuUy0-3/view?usp=sharing)
 
----
-
-## **Part 3: Start the VM**
-
-1. Select the VM → Click **Start** (VirtualBox) or **Play ▶** (UTM).
-2. Log in with the VM credentials:
-
-   * **Username**: `learn`
-   * **Password**: `wd123`
+Make sure both files are saved in the **same folder** (e.g., `Downloads\WordPress_VM`).
 
 ---
 
-## **Part 4: Configure Networking**
+### **2. Install VirtualBox**
 
-1. **VirtualBox only:** Go to VM **Settings → Network**.
-2. Set **Attached to** = **Bridged Adapter**.
-3. Ensure the VM is **running** before accessing WordPress.
-
----
-
-## **Part 5: Find the VM IP Address**
-
-1. Log into the VM.
-2. Run:
-
-   ```bash
-   ip addr show
-   ```
-3. Look for the `inet` entry under your network adapter (example: `192.168.1.10`).
+1. Visit [https://www.virtualbox.org](https://www.virtualbox.org).
+2. Download and install VirtualBox (default settings are fine).
 
 ---
 
-## **Part 6: Map WordPress to a Hostname**
+### **3. Prepare Windows System**
 
-We will map the IP to `mywordpress.test.learn.ac.lk` so you can access WordPress from the host browser.
+Before running the script, temporarily **disable security features** that may block VM imports or local web services.
 
-### **macOS / Linux**
+#### 🛡️ **Disable Windows Defender Protections**
 
-1. Open a terminal.
-2. Edit hosts file(Linux):
+1. Open **Windows Security → Virus & threat protection**.
+2. Click **Manage settings**.
+3. Turn **OFF**:
 
-   ```bash
-   sudo nano /etc/hosts
-   ```
-   Edit hosts file(MacOS):
+   * Real-time protection
+   * Dev Drive protection
+4. If you use third-party antivirus (e.g., Avast, McAfee), **pause real-time protection** temporarily.
 
-   ```bash
-   sudo nano /private/etc/hosts
-   ```
-3. Add:
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/diffender.jpeg?raw=true" alt="image" style="max-width: 100%;width: 500px;">
 
-   ```
-   192.168.1.10   mywordpress.test.learn.ac.lk
-   ```
-4. Save in nano:
 
-   * **Ctrl + O** → Enter → **Ctrl + X**
-5. Verify:
 
-   ```bash
-   cat /etc/hosts
-   ```
 
-### **Windows**
-
-1. Open **Notepad as Administrator**.
-2. Open file:
-
-   ```
-   C:\Windows\System32\drivers\etc\hosts
-   ```
-3. Add:
-
-   ```
-   192.168.1.10   mywordpress.test.learn.ac.lk
-   ```
-4. Save (Ctrl + S)
-5. Flush DNS:
-
-   ```cmd
-   ipconfig /flushdns
-   ```
+> ⚠️ Re-enable protections once WordPress setup is complete.
 
 ---
 
-## **Part 7: Access WordPress**
+### **4. Run the Setup Script**
 
-1. Open a browser on the host machine.
-2. Navigate to:
+1. Right-click the downloaded `.bat` file → **Run as Administrator**.
+2. The script will automatically:
+
+   * Add the `127.0.0.1 WordPress` entry to your Windows hosts file
+   * Import the `.ova` file automatically into VirtualBox
+   * Start the WordPress virtual machine
+   * Wait until the web server is ready
+   * Launch WordPress in your browser at:
+     👉 `http://WordPress:8000`
+
+---
+
+### **5. Login to WordPress**
+
+* **Username:** `learn`
+* **Password:** `wd123`
+
+---
+
+### **6. Troubleshooting (Windows)**
+
+#### 🔹 *“VBoxManage.exe not found”*
+
+Check your PATH variable:
+
+1. Open **System Properties → Advanced → Environment Variables**.
+2. In **System Variables**, find `Path`.
+3. Click **Edit → New** → add:
 
    ```
-   http://mywordpress.test.learn.ac.lk
+   C:\Program Files\Oracle\VirtualBox\
    ```
-3. WordPress should load successfully.
+4. Click **OK**, then rerun the bat file.
+
+#### 🔹 *Network Access*
+
+Ensure your VirtualBox network adapter is set to  **NAT (default)**.
+If WordPress doesn’t load, restart the VM.
 
 ---
 
-## **Part 8: WordPress Login (Dashboard)**
+## ⚙️ **Part 2 — For Intel Users (Mac) VirtualBox**
 
-* Go to:
+### **1. Download Required Files**
 
-  ```
-  http://mywordpress.test.learn.ac.lk/wp-admin
-  ```
-* Login credentials:
+#### 📦 From Google Drive:
 
-  * **Username**: `learn`
-  * **Password**: `wd123` *(example — replace with actual if different)*
+* VM Image (`.ova`) for Intel User (Mac)
+  👉 [Download for Mac (VirtualBox)](https://drive.google.com/file/d/1sH2K2QzgE3GH696Q7E3xGxjMEh-7jkE_/view?usp=sharing)
 
----
+* Automation Script for Mac User (`.sh`)
+  👉 [Download Mac Setup Script](https://drive.google.com/file/d/1B-IVo98GsFbimUpQundY-fKz05-3_BEv/view?usp=sharing)
 
-## **Important Notes**
-
-* Make sure **Bridged Adapter** is selected (VirtualBox).
-* VM must be **running** before accessing WordPress.
-* Default VM credentials:
-
-  * **Username**: `learn`
-  * **Password**: `wd123`
-* Hostname mapping is necessary for friendly access.
+Save both files in the **same folder** (e.g., `Downloads/WordPress_VM`).
 
 ---
 
+### **2. Install VirtualBox**
+
+1. Visit [https://www.virtualbox.org](https://www.virtualbox.org).
+2. Download and install VirtualBox for macOS Intel.
+3. After installation:
+
+   * Open **System Settings → Privacy & Security**
+   * If macOS blocks VirtualBox, click **Allow**
+
+---
+
+### **3. Run the `.sh` File to Start VM and Browser**
+
+1. Open **Terminal**.
+2. Drag the `.sh` file into the Terminal window.
+3. Press **Enter**.
+
+The script will automatically:
+
+* Import the OVA file
+* Start the Virtual Machine
+* Launch WordPress in your default browser at:
+  👉 **[http://WordPress:8000](http://WordPress:8000)**
+
+> 💡 If you see “permission denied”, run:
+>
+> ```bash
+> chmod +x autopart-moodle.sh
+> ```
+>
+> and retry.
+
+---
+
+### **4. Access WordPress**
+
+Open your browser (if not already open) and visit:
+👉 **[http://WordPress:8000](http://WordPress:8000)**
+
+**Login Details**
+
+* Username: `learn`
+* Password: `wd123`
+
+---
+
+## ⚙️ **Part 3 — Setup Guide for Mac (Apple Silicon / Silver Processor)**
+
+### **1. Download Required Files**
+
+#### 📦 From Google Drive:
+
+* VM Image (`.ova`) for Apple Silicon (ARM)
+  👉 [Download for Apple Silicon (VirtualBox)](https://drive.google.com/file/d/16WnM-IbnP1MKMGXkOsbiCxPs4l7AQHCI/view?usp=sharing)
+
+* Automation Script for Mac User (`.sh`)
+  👉 [Download Mac Setup Script](https://drive.google.com/file/d/181WAzw1iLpCtkZOTyEZa2Dq6Wiw8r7zn/view?usp=sharing)
+
+Save both files in the **same folder** (e.g., `Downloads/WordPress_VM`).
+
+---
+
+### **2. Install VirtualBox**
+
+Download and install the **Apple Silicon (ARM64)** macOS / Apple Silicon hosts:
+👉 [https://www.virtualbox.org/wiki/macOS / Apple Silicon hosts](https://download.virtualbox.org/virtualbox/7.2.4/VirtualBox-7.2.4-170995-macOSArm64.dmg)
+
+
+After installation:
+
+* Open **System Settings → Privacy & Security**
+* If macOS blocks VirtualBox, click **Allow**
+
+---
+
+### **3. Run the `.sh` File to Start VM and Browser**
+
+1. Open **Terminal**
+2. Drag the `.sh` file into the Terminal window
+3. Press **Enter**
+
+The script will automatically:
+
+* Import the OVA file
+* Start the Virtual Machine
+* Launch your browser at 👉 **[http://WordPress:8000](http://WordPress:8000)**
+
+> 💡 If you see “permission denied”, run:
+>
+> ```bash
+> chmod +x autopart-wp.sh
+> ```
+>
+> and retry.
+
+---
+
+### **4. Access WordPress**
+
+Once the VM is running:
+
+* Open your browser (if not already open)
+* Visit **[http://WordPress:9000](http://WordPress:8000)**
+* **Username:** `learn`
+* **Password:** `wd123`
+
+---
+
+## ⚙️ **Troubleshooting**
+
+| Issue                           | Possible Fix                                                |
+| ------------------------------- | ----------------------------------------------------------- |
+| Browser doesn’t open            | Manually visit **[http://WordPress:8000](http://WordPress:8000)** |
+| VM won’t start                  | Ensure VirtualBox is installed correctly                    |
+| Path error (Windows)            | Check **System Path** variables                             |
+| macOS blocks file               | Go to **System Settings → Privacy & Security → Allow**      |
+| “Permission denied” in Terminal | Run `chmod +x autopart-wp.sh` and retry                        |
+| WordPress doesn’t load             | Restart the VM or check network adapter (use NAT)   |
+
+---
