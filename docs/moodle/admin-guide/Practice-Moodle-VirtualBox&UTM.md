@@ -32,7 +32,7 @@ http://moodle:9000
   👉 [Download for Windows (VirtualBox)](https://drive.google.com/file/d/1PQkj9OFvMLmeoYCvKyDjWV06VEp-Nwbk/view?usp=sharing)
 
 * Automation Script for Windows User (`.bat`)
-  👉 [Download Windows Setup Script](https://drive.google.com/file/d/1lYzC243wAijfeDqiAr5Wwy7MT9qptdIA/view?usp=sharing)
+  👉 [Download Windows Setup Script](https://drive.google.com/file/d/14wCCr7081K3877nfIRaNutB8hCRsgGJ9/view?usp=sharing)
 
 Make sure both files are saved in the **same folder** (e.g., `Downloads\Moodle_VM`).
 
@@ -115,10 +115,10 @@ If Moodle doesn’t load, restart the VM.
 #### 📦 From Google Drive:
 
 * VM Image (`.ova`) for Intel User (Mac)
-  👉 [Download for Mac (VirtualBox)](https://drive.google.com/file/d/1PQkj9OFvMLmeoYCvKyDjWV06VEp-Nwbk/view?usp=sharing)
+  👉 [Download for Mac (VirtualBox)](https://drive.google.com/file/d/1FLTVFAJnVV4rmu04fMtf0YQW3cmtvYxI/view?usp=sharing)
 
 * Automation Script for Mac User (`.sh`)
-  👉 [Download Mac Setup Script](https://drive.google.com/file/d/1EppBMiV9cP6XPaNT0O9XzTQrPqVK7W0K/view?usp=sharing)
+  👉 [Download Mac Setup Script](https://drive.google.com/file/d/1Aq_XVHcH06PshUcIOPaHbjrEpxDHVrE-/view?usp=sharing)
 
 Save both files in the **same folder** (e.g., `Downloads/Moodle_VM`).
 
@@ -180,7 +180,7 @@ Open your browser (if not already open) and visit:
   👉 [Download for Apple Silicon (VirtualBox)](https://drive.google.com/file/d/1xD8Uc0pzQrDwEcN6shrW50o8iPsFmoU_/view?usp=sharing)
 
 * Automation Script for Mac User (`.sh`)
-  👉 [Download Mac Setup Script](https://drive.google.com/file/d/1EppBMiV9cP6XPaNT0O9XzTQrPqVK7W0K/view?usp=sharing)
+  👉 [Download Mac Setup Script](https://drive.google.com/file/d/19kXC7tgRKqfWwHDdo8ZXemetT5-_fHoN/view?usp=sharing)
 
 Save both files in the **same folder** (e.g., `Downloads/Moodle_VM`).
 

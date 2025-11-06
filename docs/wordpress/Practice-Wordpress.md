@@ -33,7 +33,7 @@ http://wordpress:8000
   👉 [Download for Windows (VirtualBox)](https://drive.google.com/file/d/1sH2K2QzgE3GH696Q7E3xGxjMEh-7jkE_/view?usp=sharing)
 
 * Automation Script for Windows User (`.bat`)
-  👉 [Download Windows Setup Script](https://drive.google.com/file/d/1-eDiQ5wf4F0TGMAY1ACIHMAnTiuUy0-3/view?usp=sharing)
+  👉 [Download Windows Setup Script](https://drive.google.com/file/d/1zZNyNqEwkhaNB0eP6HmI1v-I9IATKSXL/view?usp=sharing)
 
 Make sure both files are saved in the **same folder** (e.g., `Downloads\WordPress_VM`).
 
@@ -119,10 +119,10 @@ If WordPress doesn’t load, restart the VM.
 #### 📦 From Google Drive:
 
 * VM Image (`.ova`) for Intel User (Mac)
-  👉 [Download for Mac (VirtualBox)](https://drive.google.com/file/d/1sH2K2QzgE3GH696Q7E3xGxjMEh-7jkE_/view?usp=sharing)
+  👉 [Download for Mac (VirtualBox)](https://drive.google.com/file/d/12Lp0Z-E1WiHfdT06a-1-xSoBMIQBzJMR/view?usp=sharing)
 
 * Automation Script for Mac User (`.sh`)
-  👉 [Download Mac Setup Script](https://drive.google.com/file/d/1B-IVo98GsFbimUpQundY-fKz05-3_BEv/view?usp=sharing)
+  👉 [Download Mac Setup Script](https://drive.google.com/file/d/1Z_4JjU7T9IWEhz3r1A73VxK09itO5zLn/view?usp=sharing)
 
 Save both files in the **same folder** (e.g., `Downloads/WordPress_VM`).
 
@@ -184,7 +184,7 @@ Open your browser (if not already open) and visit:
   👉 [Download for Apple Silicon (VirtualBox)](https://drive.google.com/file/d/16WnM-IbnP1MKMGXkOsbiCxPs4l7AQHCI/view?usp=sharing)
 
 * Automation Script for Mac User (`.sh`)
-  👉 [Download Mac Setup Script](https://drive.google.com/file/d/181WAzw1iLpCtkZOTyEZa2Dq6Wiw8r7zn/view?usp=sharing)
+  👉 [Download Mac Setup Script](https://drive.google.com/file/d/11UVBByiSgx9_N84KudMyPw1WzboHHN1W/view?usp=sharing)
 
 Save both files in the **same folder** (e.g., `Downloads/WordPress_VM`).
 
