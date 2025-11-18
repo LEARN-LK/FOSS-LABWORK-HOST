@@ -16,16 +16,16 @@ nav:
       - Moodle language pack: moodle/admin-guide/mdl-language-pack.md
       - Customize Moodle Themes: moodle/admin-guide/Customize_Moodle_themes.md
       - Configuring Email Outgoing: moodle/admin-guide/Configuring-Email-Outgoing.md
-      - External Authentication: moodle/admin-guide/Learn-SSO.md
-      - Plugin Installation: 
-        - Interactive content: moodle/admin-guide/Install-H5P-plugin.md
-        - Virtual Programming Lab - VPL: moodle/admin-guide/installVPL.md
-        - Board: moodle/admin-guide/install-boad.md
-        - Workplace Course Certificate: moodle/admin-guide/Workplace-Certificate.md
-        - Checklist: moodle/admin-guide/Checklist-pluging.md 
-        - Completion Progress: moodle/admin-guide/Progress-plugin.md
-        - Attendance Activity Plugin: moodle/admin-guide/attendance-plugin.md
-        - Mass Enrolments: moodle/admin-guide/Mass-enrolments.md
+     # - External Authentication: moodle/admin-guide/Learn-SSO.md
+     # - Plugin Installation: 
+     #   - Interactive content: moodle/admin-guide/Install-H5P-plugin.md
+     #   - Virtual Programming Lab - VPL: moodle/admin-guide/installVPL.md
+     #   - Board: moodle/admin-guide/install-boad.md
+     #   - Workplace Course Certificate: moodle/admin-guide/Workplace-Certificate.md
+     #   - Checklist: moodle/admin-guide/Checklist-pluging.md 
+     #   - Completion Progress: moodle/admin-guide/Progress-plugin.md
+     #   - Attendance Activity Plugin: moodle/admin-guide/attendance-plugin.md
+     #   - Mass Enrolments: moodle/admin-guide/Mass-enrolments.md
     - Manager Faculty Co Ordinator :
       - Moodle Manager: moodle/managerfaculty/manager.md
       - Adding users: moodle/managerfaculty/Adding-users.md

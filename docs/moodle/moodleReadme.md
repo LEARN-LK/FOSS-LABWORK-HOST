@@ -31,13 +31,13 @@ It offers cross-browser compatibility and a default mobile-compatible interface.
    * [Change Moodle Language Pack](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/mdl-language-pack)
    * [Customize the Moodle themes](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Customize_Moodle_themes)
    * [Configuring Email Outgoing](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Configuring-Email-Outgoing)
-   * <h4>  External Authentication </h4>
-   * [LIAF SSO - Auth SAML2](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Learn-SSO)
+   <!--* <h4>  External Authentication </h4>
+   * [LIAF SSO - Auth SAML2](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Learn-SSO) -->
  <!--  * [LIAF SSO - Shiboleth SP](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/shiboleth)
    * [O365 Authentication](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/authentication#-mirosoft-o365--)
    * [Google Authentication](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/authentication#google-authentication) -->
-   * <h4>Plugin Installation</h4>
-
+   
+   <!-- * <h4>Plugin Installation</h4>
 
    * [Interactive content](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Install-H5P-plugin)
    * [Virtual Programming Lab - VPL](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/installVPL)
@@ -48,9 +48,9 @@ It offers cross-browser compatibility and a default mobile-compatible interface.
    * [Attendance Activity Plugin](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/attendance-plugin)
    * [Mass Enrolments](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/admin-guide/Mass-enrolments)
 
-
+-->
     
-```Note: Enabling Default Moodle Plugins (e.g., “Survey”)If a default plugin (like Survey) is not visible in the “Add an activity or resource” list for teachers, the Moodle administrator should:Navigate to:-Site administration → Plugins → Activity modules → Manage activities```
+```Note: Enabling Default Moodle Plugins (e.g., “Survey”)If a default plugin (like Survey) is not visible in the “Add an activity or resource” list for teachers, the Moodle administrator should:Navigate to:-Site administration → Plugins → Activity modules → Manage activities```   
      
 
 <h4> 02. Moodle Manager/ Faculty Coordinator Guide </h4>
