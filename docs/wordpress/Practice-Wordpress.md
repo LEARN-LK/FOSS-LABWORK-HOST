@@ -155,7 +155,7 @@ The script will automatically:
 > 💡 If you see “permission denied”, run:
 >
 > ```bash
-> chmod +x autopart-moodle.sh
+> chmod +x autopart-wp.sh
 > ```
 >
 > and retry.
