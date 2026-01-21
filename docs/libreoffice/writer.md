@@ -268,15 +268,6 @@ Faculty of Science
 
 ---
 
-#  Practice Tasks (For Trainees)
-
-✔ Change meeting date
-✔ Add another agenda item
-✔ Replace Dean’s name
-✔ Change font style
-✔ Save with a new name
-
----
 
 #  Learning Outcomes
 
