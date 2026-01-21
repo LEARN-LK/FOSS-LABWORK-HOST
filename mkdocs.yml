@@ -129,6 +129,7 @@ nav:
     - Thoubleshooting: handbrake/Troubleshooting.md
   - LibreOffice:
     - User Guide : libreoffice/libre.md
+    - Writer : libreoffice/writer.md
   - OBS:
     - Introduction: obs/README.md
     - Installation: obs/Installation.md
