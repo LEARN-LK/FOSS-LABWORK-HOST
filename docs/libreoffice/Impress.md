@@ -73,7 +73,7 @@ New Academic Staff Orientation
 ```
 
 ## insert "Text Box"
-insert > Text Box > drow
+insert > Text Box > draw
 ### Subtitle:
 
 ```
@@ -88,6 +88,9 @@ University of XYZ
 ---
 
 ##  STEP 4: Agenda Slide (Slide 2)
+
+### Add New Slide
+**** **Slide** > **New Slide**
 
 ### Layout:
 
@@ -122,7 +125,10 @@ Briefly explain the purpose of the orientation and introduce the main topics.
 
 ✔ Speaker notes are **only visible to the presenter**
 
+3. back to Normal Slide
+   Click **View**  → **Normal**
 ---
+
 
 ##  STEP 6: Faculty Overview Slide (Slide 3)
 
