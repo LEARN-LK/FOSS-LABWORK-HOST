@@ -89,14 +89,9 @@ University of XYZ
 
 ##  STEP 4: Agenda Slide (Slide 2)
 
-### Add New Slide
-**** **Slide** > **New Slide**
+### Add New Slide **Title and Content**
 
-### Layout:
-
-**Title and Content**
-
-### Title:
+**Slide** > **Layout** > **Title and Content** 
 
 ```
 Program Agenda
