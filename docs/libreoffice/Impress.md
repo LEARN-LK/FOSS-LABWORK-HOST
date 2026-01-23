@@ -89,7 +89,10 @@ University of XYZ
 
 ##  STEP 4: Agenda Slide (Slide 2)
 
-### Add New Slide **Title and Content**
+### Add New Slide 
+Slide > New Slide
+
+**add Title and Content**
 
 **Slide** > **Layout** > **Title and Content** 
 
@@ -136,25 +139,44 @@ Briefly explain the purpose of the orientation and introduce the main topics.
 
 ---
 
-## STEP 7: Add Animations (Slide 3)
+## ✅ STEP 7: Add Animations (Slide 3)
 
-### Animate Bullet Points:
+### **Animate Bullet Points (Content Only)**
 
-1. Select the bullet list
-2. Go to **Slide → Animation**
-3. Click **Add**
-4. Choose:
+1. Click **inside the content area** (bullet text box)
+   *(Do NOT select the slide background or title)*
 
-   * Animation: **Appear**
-   * Start: **On click**
-   * Duration: **Medium**
-5. Click **OK**
+2. Select the **bullet list text**
 
-✔ Bullets now appear one by one during presentation
+3. Go to **View → Animation**
+   *(The Animation panel will open on the right side)*
 
----
+4. Click **Add** ➕
+
+5. In the animation settings, choose:
+
+   * **Animation:** Appear
+   * **Start:** On click
+   * **Duration:** Medium
+
+6. Click **OK**
+
+7. In the Animation panel, ensure:
+
+   * ☑ **Animate as series**
+   * ☑ **By paragraph level**
+
+✔ Bullet points will now appear **one by one** when clicking during the presentation
+
 
 ##  STEP 8: Academic Responsibilities Slide (Slide 4)
+
+
+### Add New Slide 
+Slide > New Slide
+
+### Title
+"Academic Responsibilities Slide"
 
 ### Content:
 
@@ -168,7 +190,7 @@ Briefly explain the purpose of the orientation and introduce the main topics.
 ##  STEP 9: Add Animation to Title (Optional)
 
 1. Select slide title
-2. **Slide → Animation**
+2. **View → Animation**
 3. Choose:
 
    * Animation: **Fade In**
@@ -213,7 +235,7 @@ Explain how new staff can access IT, library, and research support.
 ### Apply Transition to Slides:
 
 1. Select a slide
-2. Go to **Slide → Slide Transition**
+2. Go to **View → Slide Transition**
 3. Choose:
 
    * Transition: **Fade smoothly**
@@ -306,28 +328,9 @@ Orientation_Program_Presentation_2026.odp
 
 **File → Export As → Export as PDF**
 
----
 
-#  PRACTICE TASKS (FOR TRAINEES)
 
-✔ Change template design
-✔ Modify animation speed
-✔ Add speaker notes to all slides
-✔ Remove animation from one slide
-✔ Add a new slide using same template
 
----
 
-#  LEARNING OUTCOMES
-
-After this training, participants can:
-
-* Use **templates** for professional presentations
-* Apply **animations** correctly
-* Add **slide transitions**
-* Use **speaker notes** confidently
-* Deliver presentations smoothly
-
----
 
 
