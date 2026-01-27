@@ -73,7 +73,7 @@ New Academic Staff Orientation
 ```
 
 ## insert "Text Box"
-insert > Text Box > draw
+Slide > Layout > Title and Content
 ### Subtitle:
 
 ```
@@ -114,7 +114,7 @@ Program Agenda
 
 ### Steps:
 
-1. Click **View → Notes**
+1. Click **View → Notes Pane**
 2. In the notes area, type:
 
 ```
@@ -129,6 +129,13 @@ Briefly explain the purpose of the orientation and introduce the main topics.
 
 
 ##  STEP 6: Faculty Overview Slide (Slide 3)
+
+### Add New Slide 
+Slide > New Slide
+
+**add Title and Content**
+
+**Slide** > **Layout** > **Title and Content** 
 
 ### Content:
 
