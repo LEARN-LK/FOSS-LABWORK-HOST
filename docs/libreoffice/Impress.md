@@ -57,7 +57,7 @@ A **10-slide professional presentation** including:
 
 1. Go to **File → New → Templates**
 2. Select **Presentations**
-3. Choose a **simple professional template** (e.g., *Focus*, *Blue Curve*)
+3. Choose a **simple professional template** (e.g. *Blue Curve*)
 4. Click **Open**
 
 ✔ This applies consistent design to all slides
