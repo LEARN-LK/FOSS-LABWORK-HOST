@@ -130,6 +130,7 @@ nav:
   - LibreOffice:
     - User Guide : libreoffice/libre.md
     - Writer : libreoffice/writer.md
+    - Impress : libreoffice/impress.md
   - OBS:
     - Introduction: obs/README.md
     - Installation: obs/Installation.md
