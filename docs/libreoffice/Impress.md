@@ -115,6 +115,9 @@ Program Agenda
 
 ### Bullet Points:
 
+<img src="https://raw.githubusercontent.com/LEARN-LK/libreoffice/main/0-bullet.png"  style="max-width: 100%;width: 300px;">
+
+
 * Welcome and introduction
 * Faculty structure
 * Academic responsibilities
@@ -128,6 +131,9 @@ Program Agenda
 ### Steps:
 
 1. Click **View → Notes Pane**
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/libreoffice/main/0-view-normal.png"  style="max-width: 100%;width: 300px;">
+
 2. In the notes area, type:
 
 ```
@@ -169,19 +175,23 @@ Slide > New Slide
 2. Select the **bullet list text**
 
 3. Go to **View → Animation**
-   *(The Animation panel will open on the right side)*
 
-4. Click **Add** ➕
+<img src="https://raw.githubusercontent.com/LEARN-LK/libreoffice/main/0-annimation.png"  style="max-width: 100%;width: 300px;">
+    *(The Animation panel will open on the right side)*
 
-5. In the animation settings, choose:
+5. Click **Add** ➕
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/libreoffice/main/0-fly-in.png"  style="max-width: 100%;width: 300px;">
+
+6. In the animation settings, choose:
 
    * **Animation:** Appear
    * **Start:** On click
    * **Duration:** Medium
 
-6. Click **OK**
+7. Click **OK**
 
-7. In the Animation panel, ensure:
+8. In the Animation panel, ensure:
 
    * ☑ **Animate as series**
    * ☑ **By paragraph level**
@@ -255,8 +265,12 @@ Explain how new staff can access IT, library, and research support.
 ### Apply Transition to Slides:
 
 1. Select a slide
+<img src="https://raw.githubusercontent.com/LEARN-LK/libreoffice/main/0-slide-transition.png"  style="max-width: 100%;width: 300px;">
+
 2. Go to **View → Slide Transition**
 3. Choose:
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/libreoffice/main/0-animation-fade.png"  style="max-width: 100%;width: 300px;">
 
    * Transition: **Fade smoothly**
    * Duration: **Medium**
@@ -328,6 +342,9 @@ We wish you success at the Faculty of Science
 ## 🟢 STEP 19: Slide Show Preview
 
 1. **Slide Show → Start from First Slide**
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/libreoffice/main/0-slide-show.png"  style="max-width: 100%;width: 300px;">
+
 2. Test:
 
    * Animations
@@ -345,6 +362,8 @@ Orientation_Program_Presentation_2026.odp
 ```
 
 ### Export as PDF:
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/libreoffice/main/0-export.png"  style="max-width: 100%;width: 300px;">
 
 **File → Export As → Export as PDF**
 
