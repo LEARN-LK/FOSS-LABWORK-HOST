@@ -46,6 +46,9 @@ A **10-slide professional presentation** including:
 1. Click **Start Menu**
 2. Open **LibreOffice**
 3. Click **Impress**
+
+   <img src="https://raw.githubusercontent.com/LEARN-LK/libreoffice/main/0-libre-impress.png" style="max-width: 100%;width: 200px;">
+
 4. Select **Blank Presentation**
 5. Click **Create**
 
@@ -55,9 +58,13 @@ A **10-slide professional presentation** including:
 
 ### Use Built-in Template
 
+<img src="https://raw.githubusercontent.com/LEARN-LK/libreoffice/main/0-new-template.png"  style="max-width: 100%;width: 500px;">
+
 1. Go to **File → New → Templates**
 2. Select **Presentations**
 3. Choose a **simple professional template** (e.g. *Blue Curve*)
+<img src="https://raw.githubusercontent.com/LEARN-LK/libreoffice/main/0-template.png"  style="max-width: 100%;width: 500px;">
+
 4. Click **Open**
 
 ✔ This applies consistent design to all slides
@@ -73,7 +80,11 @@ New Academic Staff Orientation
 ```
 
 ## insert "Text Box"
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/libreoffice/main/0-layout-title-content.png"  style="max-width: 100%;width: 500px;">
+
 Slide > Layout > Title and Content
+
 ### Subtitle:
 
 ```
@@ -91,6 +102,8 @@ University of XYZ
 
 ### Add New Slide 
 Slide > New Slide
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/libreoffice/main/0-new-slide.png"  style="max-width: 100%;width: 500px;">
 
 **add Title and Content**
 
