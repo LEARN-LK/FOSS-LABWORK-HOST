@@ -115,27 +115,24 @@ nav:
       - Visual Assessment: vcr/InstructorModerator Features/visual-assessment.md
   - LTUBE:
     - End User Guide: ltube/enduserguide.md
-  - OpenShot: 
-    - Introduction: openshot/README.md
-    - User Interface: openshot/User-interface.md
-    - Starting a New Project & Importing Media: openshot/NewProject&Importing.md
-    - Editing Workflow: openshot/EnhancingVideo.md
-    - Exporting Video: openshot/export-video.md
   - HandBrake:
     - Introduction: handbrake/README.md
     - Installing HandBrake: handbrake/Installing-HandBrake.md
     - Converting Video: handbrake/Converting-Video.md
     - Adjusting Basic Settings: handbrake/Adjusting-Settings.md
     - Thoubleshooting: handbrake/Troubleshooting.md
+  - OBS:
+    - Introduction: obs/README.md
+    - Installation: obs/Installation.md
+    - Setup & Configuration: obs/Setup&Configuration.md
+  - OpenShot: 
+    - Introduction: openshot/README.md
+    - User Interface: openshot/User-interface.md
+    - Starting a New Project & Importing Media: openshot/NewProject&Importing.md
+    - Editing Workflow: openshot/EnhancingVideo.md
+    - Exporting Video: openshot/export-video.md
   - LibreOffice:
     - User Guide : libreoffice/libre.md
     - Writer : libreoffice/writer.md
     - Impress : libreoffice/impress.md
-  - OBS:
-    - Introduction: obs/README.md
-    - Installation: obs/Installation.md
-    - Initial Setup: obs/Initial-Setup.md
-    - Configuration: obs/Configuration.md
-    - Adding Sources, Customization & Recording: obs/Adding-Sources.md
-    - Setup & Configuration: obs/Setup&Configuration.md
   
