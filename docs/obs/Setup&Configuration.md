@@ -26,7 +26,9 @@
        - Select MP4 as the recording format.
        -  **Encoder [6]** (Platform Difference)
           - Choose according to your system:
+            
             ### 🪟 Windows:
+            
                      * NVIDIA GPU → **NVENC (H.264)**
                      * AMD GPU → **AMD Hardware Encoder**
                      * Intel GPU → **QuickSync**
