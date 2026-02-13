@@ -24,7 +24,21 @@
        - Set the **recording path [4]** (where your files will be saved).
        - Choose **"High Quality, Medium File Size" [5]** for recording quality.
        - Select MP4 as the recording format.
-       - For the **encoder [6]**, use "NVENC" if you have an NVIDIA graphics card; otherwise, use "x264."
+       -  **Encoder [6]** (Platform Difference)
+          - Choose according to your system:
+            ### 🪟 Windows:
+                     * NVIDIA GPU → **NVENC (H.264)**
+                     * AMD GPU → **AMD Hardware Encoder**
+                     * Intel GPU → **QuickSync**
+                     * No dedicated GPU → **x264**
+                     
+            ### 🍎 macOS:
+                     
+                     * Apple Silicon (M1/M2/M3) → **Apple VT H264 Hardware Encoder**
+                     * Intel Mac → **x264**
+            
+       
+
        - Click "OK" to save settings.
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/output-01.png" style="width:70%;">
@@ -41,31 +55,56 @@
 
  <img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/settings-video-1.png" style="width:70%;">
 
- ## 4. Adding Sources
-   
-   - **Select Scene**:
-   - Ensure your created scene is selected in the **"Scenes (Guide)"[1]** section.
+## 4. Adding Sources
+
+### Select Scene
+
+Ensure your created scene is selected.
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/adding-source-1.png" style="width:70%">
- 
-  - **Add Display Capture**:
-    - In the **"Sources" section**, click the **"+" button.**
-    - Select **"macOS Screen Capture/Display Capture" [2]** from the dropdown menu and click "OK."
-    - A window will appear with the following options:
-      - **Create new**
-      - **Add Existing**: 
 
-      <img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/adding-source-2.png" style="width:60%">
-    
-    - Select **Create New** and Click  **"OK"** to proceed.
-    - In the **next window**  select the **capture method:**
-      - Choose **Display Capture [3]** from the "Method" dropdown to capture the entire screen.
-      - Leave "Window Capture" or "Application Capture" unselected unless you want to focus on a specific window or application.
-      - Check "Show cursor" if you want the mouse cursor to be visible in the recording (optional).
-   - Click **"OK" [4]** to add the screen capture feed.
+---
 
+## Add Screen Capture (Platform Difference)
+
+Click **"+"** in the Sources section.
+
+### 🪟 On Windows:
+
+Select → **Display Capture**
+
+### 🍎 On macOS:
+
+Select → **macOS Screen Capture**
+(Older versions may show as *Display Capture*)
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/adding-source-2.png" style="width:60%">
+
+- Select **Create New** and Click  **"OK"** to proceed.
+- In the **next window**  select the **capture method:**
+- Choose **Display Capture [3]** from the "Method" dropdown to capture the entire screen.
+- Leave "Window Capture" or "Application Capture" unselected unless you want to focus on a specific window or application.
+- Check "Show cursor" if you want the mouse cursor to be visible in the recording (optional).
+- Click **"OK" [4]** to add the screen capture feed.
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/adding-source-3.png" style="width:90%">
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
        
 
 - **Add Webcam**:
@@ -111,9 +150,30 @@
 <img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/recording.png" style="width:70%">
 
 
-
 - **Stop Recording**:
   - When finished, return to OBS Studio and click "Stop Recording."
   - Locate the recorded file in the file path specified in the output settings.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
