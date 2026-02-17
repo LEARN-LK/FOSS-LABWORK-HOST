@@ -57,7 +57,7 @@ nav:
       - Safe Exam Browser: moodle/StudentGuide/Safe-Exam-Browser.md
   - DSpace: 
     - Introduction: dspace/README.md
-    - Site Admin(Create Community,Sub-Community,Collectio): dspace/siteadmin.md
+    - Site Admin(Create Community,Sub-Community,Collection): dspace/siteadmin.md
     - Community and Collection Admin Roles: dspace/Community&Collection-Admin.md
     - Add Users and Assign Roles: dspace/AddUserstoDSpace.md
     - Submitter: dspace/Submitter.md
