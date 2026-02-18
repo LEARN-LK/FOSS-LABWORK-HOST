@@ -79,7 +79,7 @@ Before running the script, temporarily **disable security features** that may bl
    * Start the WordPress virtual machine
    * Wait until the web server is ready
    * Launch WordPress in your browser at:
-     👉 `http://wordpress:8000`
+     👉 `http://wordpress:8000/wp-admin`
 
 ---
 
@@ -165,7 +165,7 @@ The script will automatically:
 ### **4. Access WordPress**
 
 Open your browser (if not already open) and visit:
-👉 **[http://wordpress:8000](http://wordpress:8000)**
+👉 **[http://wordpress:8000/wp-admin](http://wordpress:8000/wp-admin)**
 
 **Login Details**
 
