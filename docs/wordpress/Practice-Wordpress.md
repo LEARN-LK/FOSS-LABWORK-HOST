@@ -79,7 +79,7 @@ Before running the script, temporarily **disable security features** that may bl
    * Start the WordPress virtual machine
    * Wait until the web server is ready
    * Launch WordPress in your browser at:
-     👉 `http://wordpress:8000/wp-admin`
+     👉 **[http://wordpress:8000](http://wordpress:8000)**
 
 ---
 
