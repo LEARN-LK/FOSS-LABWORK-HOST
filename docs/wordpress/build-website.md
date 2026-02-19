@@ -25,7 +25,7 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 2. Search for a lightweight theme like **Astra, GeneratePress, or OceanWP**.  
 3. Click **Install**, then **Activate** the theme.  
 
-### you need to select the theme **Twenty Twenty Four** and activate to follow the below steps
+
 ---
 
 ### **Step 3: Install Essential Plugins**  
