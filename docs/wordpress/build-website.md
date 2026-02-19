@@ -34,7 +34,7 @@ To install a plugin:
 2. Search for the plugin name.  
 3. Click **Install Now**, then **Activate**.  
 
-Here are the required plugins:  
+Here are the required plugins (already installed):  
 ✅ **Elementor** – For page building.  
 ✅ **Smart Slider 3** – For the homepage slider.  
 ✅ **Contact Form 7** – For contact forms (Optional).  
