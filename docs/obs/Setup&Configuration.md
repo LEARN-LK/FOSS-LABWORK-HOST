@@ -61,7 +61,7 @@
 
 ### Select Scene
 
-Ensure your created scene is selected.
+Ensure your created scene is selected (for MAC).
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/adding-source-1.png" style="width:70%">
 
@@ -74,6 +74,10 @@ Click **"+"** in the Sources section.
 ### 🪟 On Windows:
 
 Select → **Display Capture**
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/001-display-capture.png" style="width:70%">
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/002-windows-display-capure.png" style="width:70%">
 
 ### 🍎 On macOS:
 
