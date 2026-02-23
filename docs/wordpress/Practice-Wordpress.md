@@ -79,7 +79,7 @@ Before running the script, temporarily **disable security features** that may bl
    * Start the WordPress virtual machine
    * Wait until the web server is ready
    * Launch WordPress in your browser at:
-     👉 `http://WordPress:8000`
+     👉 **[http://wordpress:8000](http://wordpress:8000)**
 
 ---
 
@@ -150,7 +150,7 @@ The script will automatically:
 * Import the OVA file
 * Start the Virtual Machine
 * Launch WordPress in your default browser at:
-  👉 **[http://WordPress:8000](http://WordPress:8000)**
+  👉 **[http://wordpress:8000](http://wordpress:8000)**
 
 > 💡 If you see “permission denied”, run:
 >
@@ -165,7 +165,7 @@ The script will automatically:
 ### **4. Access WordPress**
 
 Open your browser (if not already open) and visit:
-👉 **[http://WordPress:8000](http://WordPress:8000)**
+👉 **[http://wordpress:8000/wp-admin](http://wordpress:8000/wp-admin)**
 
 **Login Details**
 
@@ -213,7 +213,7 @@ The script will automatically:
 
 * Import the OVA file
 * Start the Virtual Machine
-* Launch your browser at 👉 **[http://WordPress:8000](http://WordPress:8000)**
+* Launch your browser at 👉 **[http://wordpress:8000](http://wordpress:8000)**
 
 > 💡 If you see “permission denied”, run:
 >
@@ -230,7 +230,7 @@ The script will automatically:
 Once the VM is running:
 
 * Open your browser (if not already open)
-* Visit **[http://WordPress:9000](http://WordPress:8000)**
+* Visit **[http://wordpress:8000/wp-admin](http://wordpress:8000/wp-admin)**
 * **Username:** `learn`
 * **Password:** `wd123`
 
@@ -240,7 +240,7 @@ Once the VM is running:
 
 | Issue                           | Possible Fix                                                |
 | ------------------------------- | ----------------------------------------------------------- |
-| Browser doesn’t open            | Manually visit **[http://WordPress:8000](http://WordPress:8000)** |
+| Browser doesn’t open            | Manually visit **[http://wordpress:8000/wp-admin](http://wordpress:8000/wp-admin)** |
 | VM won’t start                  | Ensure VirtualBox is installed correctly                    |
 | Path error (Windows)            | Check **System Path** variables                             |
 | macOS blocks file               | Go to **System Settings → Privacy & Security → Allow**      |

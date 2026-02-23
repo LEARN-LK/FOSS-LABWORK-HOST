@@ -10,20 +10,21 @@ Using WordPress, build your own website. This guide covers how to create a websi
 
 Here’s a step-by-step guide to creating your website using WordPress based on above wireframe:
 
-### Workshop Materials- [Downlord here](https://drive.google.com/drive/folders/1J5aJy9V4vHGXT4jaAsZQL0Re8d-L0OYn?usp=sharing) 
+### Workshop Materials :- [Download here](https://drive.google.com/drive/folders/1J5aJy9V4vHGXT4jaAsZQL0Re8d-L0OYn?usp=sharing) 
 
 ---
 
 ### **Step 1: Set Up WordPress**  
 1. Log in to the WordPress dashboard by going to **yourdomain.com/wp-admin**.
-   - eg: (http://mywordpress.test.learn.ac.lk/wp-admin)
+   - eg: (http://wordpress:8000/wp-admin)
 
 ---
 
-### **Step 2 (Optional): Choose & Install a Theme**  
-1. Go to **Appearance → Themes → Add New**.  
+### **Step 2 : Choose & Install a Theme (installing is Optional)**  
+1. Go to **Appearance → Themes → Add New**. 
 2. Search for a lightweight theme like **Astra, GeneratePress, or OceanWP**.  
 3. Click **Install**, then **Activate** the theme.  
+
 
 ---
 
@@ -33,7 +34,7 @@ To install a plugin:
 2. Search for the plugin name.  
 3. Click **Install Now**, then **Activate**.  
 
-Here are the required plugins:  
+Here are the required plugins (already installed):  
 ✅ **Elementor** – For page building.  
 ✅ **Smart Slider 3** – For the homepage slider.  
 ✅ **Contact Form 7** – For contact forms (Optional).  
