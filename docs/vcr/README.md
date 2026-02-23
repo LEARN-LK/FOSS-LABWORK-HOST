@@ -14,7 +14,6 @@ With vCR, students and teachers can connect live, share content, and learn toget
 ### For teachers at LEARN member institutions:
 
 * Free to use
-* No data charges
 * No guaranteed service level, but our team will support you as best we can
 
 ---
@@ -42,7 +41,7 @@ The **number of accounts allocated to each institution** is determined by the pl
 
 * **[Uploading Presentation/Sharing Screen](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/InstructorModerator%20Features/Overview%20for%20Instructors/ContentSharing/uplord-ppt%26sharing/)**
 * **[Sharing External Video / Whiteboard / Annotate on the Slide ](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/InstructorModerator%20Features/Overview%20for%20Instructors/ContentSharing/Sharing-External-Video%26whiteboard/)**
-* **[Shared Notes](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/sharenote.md)**
+* **[Shared Notes](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/sharenote)**
 * **[Fit to Page](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/InstructorModerator%20Features/Overview%20for%20Instructors/Other%20Features/fittopage/)**
 
 
@@ -70,7 +69,6 @@ The **number of accounts allocated to each institution** is determined by the pl
 
 ###  **Instructor/Moderator Features**
 
-* **[Overview for Instructors (moderator/presenter)](https://github.com/LEARN-LK/VCR/blob/main/moderator-task.md)**
 * **[Co-Host](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/InstructorModerator%20Features/Co-Host/)**
 * **[Visual Assessment](https://learn-lk.github.io/FOSS-LABWORK-HOST/vcr/InstructorModerator%20Features/visual-assessment/)**
 
