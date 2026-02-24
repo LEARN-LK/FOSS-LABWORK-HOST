@@ -6,7 +6,7 @@ WordPress is one of the most popular and user-friendly platforms for creating we
 
 Using WordPress, build your own website. This guide covers how to create a website. First, you should have an idea of the design you want to create. In this guide, I will walk you through building a website based on the attached wireframe. 
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/%5Cwireframe.jpeg" alt="image" style="max-width: 100%;width: 500px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/%5Cwireframe.jpeg" alt="image" style="max-width: 100%;width: 600px;">
 
 Here’s a step-by-step guide to creating your website using WordPress based on above wireframe:
 
@@ -49,30 +49,32 @@ Here are the required plugins (already installed):
 
 2. In your WordPress dashboard, go to: **Pages → Add New**
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/001-page-add.png" alt="image" style="max-width: 100%;width: 500px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/001-page-add.png" alt="image" style="max-width: 100%;width: 600px;">
 
 3. If a setup pop-up window appears, close it.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/002-close-choose-pattern.png" alt="image" style="max-width: 100%;width: 500px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/002-close-choose-pattern.png" alt="image" style="max-width: 100%;width: 600px;">
 
 4. In the page title field, type: **Home**
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/003-rename-thepage.png" alt="image" style="max-width: 100%;width: 500px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/003-rename-thepage.png" alt="image" style="max-width: 100%;width: 600px;">
 
 
 5. Click the **Publish button** (top right corner).
 
 6. Once the page is published, click the **WordPress logo / Dashboard link (top-left corner)** to go back to the main Dashboard.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/005-back-todashbaord.png" alt="image" style="max-width: 100%;width: 500px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/005-back-todashbaord.png" alt="image" style="max-width: 100%;width: 600px;">
 
 7. Go to **Settings → Reading**, select **"A static page"**, and choose **"Home"**.
-   <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/Reading.png" alt="image" style="max-width: 100%;width: 500px;">
-   <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/Static.png" alt="image" style="max-width: 100%;width: 500px;">
+  
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/Reading.png" alt="image" style="max-width: 100%;width: 600px;">
+  
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/Static.png" alt="image" style="max-width: 100%;width: 600px;">
 
 8. Click Save
 
-   <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/2.1-then-click-save.png" alt="image" style="max-width: 100%;width: 500px;">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/2.1-then-click-save.png" alt="image" style="max-width: 100%;width: 600px;">
 ---
 
 ### **Step 5: Build Each Section of the Homepage**  
@@ -81,37 +83,48 @@ Now, we will create each section based on your wireframe.
 
 #### **1. Logo Section**  
 - Go to **WordPress Dashboard** [1] → **Appearance** [2] → **Themes**[3] → **Customize**[4].
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-01.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-02.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-01.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
+
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-02.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
 
 - Once you come to the page, click on the Learn-WP
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/step%204.5%20click%20on%20the%20page%20once.png" alt="image" style="max-width: 100%;width: 500px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/step%204.5%20click%20on%20the%20page%20once.png" alt="image" style="max-width: 100%;width: 600px;">
+
+- then click on the Edit Site link (top left)
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/editsitelink001.png" alt="image" style="max-width: 100%;width: 600px;">
 
 - then click again on the Learn-WP to get the menu
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/step%204.6%20click%20edit%20template.png" alt="image" style="max-width: 100%;width: 500px;">
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/step%204.6%20click%20edit%20template.png" alt="image" style="max-width: 100%;width: 600px;">
 
 - Click on **Site Identity (⋮)** [5] → **Delete it**[6].
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-03.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-03.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
   
 - Click on **+ ICON** [7].
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-04.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-04.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
 
 - **Search and Insert The Logo** [8]
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-05.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-05.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
   
 - Click on **Choose the Logo**[9]
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-06.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-06.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
 
 - Upload your **logo** and click **Publish**.
   
-  <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-07.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+  <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-07.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
  
-  <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-08.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+  <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-08.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
 
 - Then Logo > Click on **Move left**  > **Save**
 
-   <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/move-left.png" alt="image" style="max-width: 100%;width: 500px;">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/move-left.png" alt="image" style="max-width: 100%;width: 600px;">
   
 ---
 
@@ -120,18 +133,21 @@ Now, we will create each section based on your wireframe.
 ✅ **Before creating the menu, first create the necessary pages (Service, Contact, About).**  
 
 1. Go to **Dashboard** [12] → **Pages**[13] → **Add New**[14].
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-09.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-09.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
 
 3. Choose the design [15], then create and publish these pages [16]:  
    - **Services**  
    - **Contact**  
    - **About**
 
- <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-10.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
- <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-11.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+ <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-10.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
+
+ <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-11.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
 
 4. The menu will be automatically added to the designed page [17]. If it is not applied, follow the steps below:
- <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-12.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+ 
+ <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-12.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
 
 5. Go to **Appearance → Menus**.  
 6. Click **Create a New Menu** and name it **Main Menu**.  
@@ -147,16 +163,21 @@ Now, we will create each section based on your wireframe.
 1. Go to **Dashboard → Appearance → Editor (Site Editor)**.  
 2. Navigate to the **Homepage** template.  
 3. Click **+ (Add Block)** [18] and search for **Shortcode** or **Smart Slider 3 Block** [19].
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-13.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-14.png?raw=true" alt="image" style="max-width: 100%;width: 500px;"> 
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-13.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-14.png?raw=true" alt="image" style="max-width: 100%;width: 600px;"> 
    
 4. Click on the **Smart Slider block** to add it to the page.  
 5. Click on the **slideshow edit settings** [20].
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-15.png?raw=true" alt="image" style="max-width: 100%;width: 500px;"> 
+
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-15.png?raw=true" alt="image" style="max-width: 100%;width: 600px;"> 
 
 7. Click **Add New → Select a slider type**.  
 8. Upload your images and add text if needed.
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-16.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-16.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
    
 10. Click **Save** once the slider is ready.  
  ---
@@ -165,19 +186,22 @@ Now, we will create each section based on your wireframe.
 1. Go to **Dashboard → Appearance → Editor (Site Editor)**.  
 2. Navigate to the **Homepage** template.  
 3. Click **+ (Add Block)** and add a **Columns block**[22] (select the **two-column layout**)[23].
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-17.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-17.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
    
 5. In the **first column**, click **+ (Add Block)** and select the **Paragraph block** [24] to add text content.
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-18.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-18.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
 
 6. In the **second column**, click **+ (Add Block)** and select the **Image block** [25]to upload an image.
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-19.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-19.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
 
 7.for full  width coloumn follow the  following steps
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/fullwidth.jpeg" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/fullwidth.jpeg" alt="image" style="max-width: 100%;width: 700px;">
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/fullwidth-2.jpeg" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/fullwidth-2.jpeg" alt="image" style="max-width: 100%;width: 700px;">
 
 
 8. Click **Save** to apply changes.  
@@ -195,7 +219,7 @@ Now, we will create each section based on your wireframe.
 4. Open Column Settings
    * Click the **Columns block** (the parent block, not the individual column).
 
- <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/2-colunm.png" alt="image" style="max-width: 100%;width: 600px;">
+ <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/2-colunm.png" alt="image" style="max-width: 100%;width: 700px;">
    
    * Look at the **right sidebar** (Block settings).
    * If you don’t see the sidebar, click the ⚙️ **settings gear** icon on the top-right.
@@ -203,7 +227,7 @@ Now, we will create each section based on your wireframe.
    * In the sidebar, you should see **“Columns”** or **“Number of columns”**.
    * Use the **arrows** or **type 4** to set it to **4 columns**.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/col-settings.png" alt="image" style="max-width: 100%;width: 250px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/col-settings.png" alt="image" style="max-width: 100%;width: 350px;">
 
 6. Now, inside each column:
    * Click **+ (Add Block)** and insert an **Image block** (upload a service image).
@@ -245,6 +269,6 @@ Now, your homepage is fully built using the **Full Site Editor (FSE)**!
 
 **"Now your WordPress website is fully built based on your wireframe! Here is the final output."** 
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-20.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-20.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
 
 
