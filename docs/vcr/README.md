@@ -26,6 +26,20 @@ While the platform can be used to teach at multiple LEARN member institutions, *
 
 The **number of accounts allocated to each institution** is determined by the platform’s capacity and is proportional to the institution’s contribution to LEARN.
 
+
+---
+
+
+### **Presentation Guidelines**
+
+#### **Important Note**
+
+* Screen sharing is **not recommended** for presentations, as it reduces the room size and may cause performance issues.
+* Always prefer using **uploaded PDF slides** for a better and more stable presentation experience.
+* Use screen sharing **only when absolutely necessary** (e.g., live demonstrations).
+* If your presentation includes video content, upload the video to an online platform such as **YouTube** in advance.
+* Use the **“Share an External Video”** option to play videos during the session instead of screen sharing.
+
 ---
 
 ###  **Room & Session Management**
