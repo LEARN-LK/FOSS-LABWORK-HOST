@@ -81,6 +81,7 @@ It offers cross-browser compatibility and a default mobile-compatible interface.
    * [Checklist - Plugin](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/TeachersGuide/Checklist)
    * [Completion Progress - plugin](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/TeachersGuide/completion-progress)
    * [Bulk Enrolments plugin](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/TeachersGuide/bulk_enrolments)
+   * [Exabis e-Portfolio](https://learn-lk.github.io/FOSS-LABWORK-HOST/moodle/TeachersGuide/New-Exabis-e-Portfolio)
      
 <h4> 04. Student Guide</h4>
 
