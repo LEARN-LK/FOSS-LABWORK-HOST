@@ -32,7 +32,6 @@ The **number of accounts allocated to each institution** is determined by the pl
 
 ### **Presentation Guidelines**
 
-#### **Important Note**
 
 #### <font color="green"> **Important Note** </font>
 
