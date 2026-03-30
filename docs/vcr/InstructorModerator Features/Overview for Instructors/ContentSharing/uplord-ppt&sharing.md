@@ -62,12 +62,17 @@
 
 ---
 
-### ⚠ **Important Notes**
 
-*  **Do NOT share your screen or PowerPoint window directly** — this reduces performance and room size.
-*  **Always convert PowerPoint slides to PDF** before uploading.
+### <font color="red"> ⚠ **Important Notes** </font>
 
 
+* Screen sharing is **not recommended** for presentations, as it reduces the room size and may cause performance issues.
+* Always prefer using **uploaded PDF slides** for a better presentation experience.
+* Use screen sharing **only when absolutely necessary**.
+* If your presentation includes videos, upload them to an online platform such as **YouTube**.
+* Use the **“Share an External Video”** option to play videos during your session.
+
+---
 
 Here is a clear **step-by-step guide for Sharing Your Screen** in the LEARN vCR (BigBlueButton) platform:
 
