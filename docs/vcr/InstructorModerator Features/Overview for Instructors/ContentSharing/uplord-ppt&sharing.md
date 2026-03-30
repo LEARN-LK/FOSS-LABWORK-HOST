@@ -62,7 +62,6 @@
 
 ---
 
-
 ### <font color="red"> ⚠ **Important Notes** </font>
 
 
@@ -79,10 +78,6 @@ Here is a clear **step-by-step guide for Sharing Your Screen** in the LEARN vCR 
 ---
 
 ##  **How to Share Your Screen in vCR**
-
->  **Important Note:**
-> Screen sharing is **not recommended** for presentations, as it **reduces the Room size** and may cause performance issues. Always prefer using uploaded PDF slides.
-> Use screen sharing **only when absolutely necessary**.
 
 ---
 
