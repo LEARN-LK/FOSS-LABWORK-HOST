@@ -34,6 +34,8 @@ The **number of accounts allocated to each institution** is determined by the pl
 
 #### **Important Note**
 
+#### <font color="green"> **Important Note** </font>
+
 * Screen sharing is **not recommended** for presentations, as it reduces the room size and may cause performance issues.
 * Always prefer using **uploaded PDF slides** for a better and more stable presentation experience.
 * Use screen sharing **only when absolutely necessary** (e.g., live demonstrations).
