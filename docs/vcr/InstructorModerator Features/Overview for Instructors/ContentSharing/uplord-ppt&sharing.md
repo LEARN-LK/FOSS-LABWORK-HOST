@@ -62,7 +62,9 @@
 
 ---
 
+
 ### <font color="red"> ⚠ **Important Notes** </font>
+
 
 * Screen sharing is **not recommended** for presentations, as it reduces the room size and may cause performance issues.
 * Always prefer using **uploaded PDF slides** for a better presentation experience.
@@ -70,12 +72,16 @@
 * If your presentation includes videos, upload them to an online platform such as **YouTube**.
 * Use the **“Share an External Video”** option to play videos during your session.
 
+---
 
 Here is a clear **step-by-step guide for Sharing Your Screen** in the LEARN vCR (BigBlueButton) platform:
 
 ---
 
 ##  **How to Share Your Screen in vCR**
+
+
+---
 
 # **Steps to Share Your Screen**
 
@@ -92,7 +98,8 @@ Here is a clear **step-by-step guide for Sharing Your Screen** in the LEARN vCR 
    * At the **bottom center** of the Room interface, find and click the **computer screen icon [1]** (next to the camera icon).
 
       <img src="https://raw.githubusercontent.com/LEARN-LK/VCR/main/img/sharescreen-01.png" alt="image" style="max-width: 100%;width: 500px;">
- 
+
+     
 
 4. **Select What to Share**
    A new pop-up window will appear with three tabs:
