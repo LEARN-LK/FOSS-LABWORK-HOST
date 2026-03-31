@@ -63,6 +63,10 @@
 ---
 
 
+
+##  **How to Share Your Screen in vCR**
+
+
 ### <font color="red"> ⚠ **Important Notes** </font>
 
 
@@ -71,14 +75,6 @@
 * Use screen sharing **only when absolutely necessary**.
 * If your presentation includes videos, upload them to an online platform such as **YouTube**.
 * Use the **“Share an External Video”** option to play videos during your session.
-
----
-
-Here is a clear **step-by-step guide for Sharing Your Screen** in the LEARN vCR (BigBlueButton) platform:
-
----
-
-##  **How to Share Your Screen in vCR**
 
 
 ---
