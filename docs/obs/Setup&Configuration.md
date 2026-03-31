@@ -99,18 +99,6 @@ Select → **macOS Screen Capture**
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
        
 
 - **Add Webcam**:
@@ -162,18 +150,131 @@ Select → **macOS Screen Capture**
 
 
 
+# 🚀 7. YouTube Live Streaming Guide
+
+---
 
 
+##  Prerequisite – Create a YouTube Channel
+
+Before starting live streaming:
+
+* You must have a **YouTube channel**
+* If you don’t have one:
+
+  1. Go to YouTube
+  2. Sign in with your Google account
+  3. Click your profile → **Create a Channel**
+  4. Follow the setup steps
+
+---
+
+###  Important Note
+
+* New channels **cannot stream immediately**
+* You must **enable live streaming**
+* Activation may take **up to 24 hours**
+
+ After activation, you can access **YouTube Studio → Go Live**
+
+---
 
 
+## Step 1: Open YouTube Live
+
+* Go to  **Profile [1] >  Click YouTube Studio [2]**
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/youtube-live-1.png" width="90%">
+
+* Click **Create  [3] → Go Live [4]**
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/youtube-live-2.png" width="90%">
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/youtube-live-3.png" width="90%">
+
+---
+
+## Step 2: Enter Stream Details > Click Edit [5]
+
+* Title
+* Description
+* Visibility (Public / Unlisted / Private)
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/youtube-live-4.png" width="90%">
+
+---
+
+## Step 3: Create New Stream Key
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/youtube-live-5.png" width="90%">
+
+1. Click [7] **“Create new stream key”**
 
 
+<img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/youtube-live-6.png" width="90%">
+
+2. Enter:
+
+   * **Name** (e.g., *Workshop Stream*, *Test Stream*)
+3. (Optional) Set:
+
+   * Stream latency
+   * Other advanced settings
+4. Click  [9] **Create**
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/youtube-live-7.png" width="90%">
+
+5. Copy the newly created **Stream Key[10]**
 
 
+---
+
+## Step 4: Configure OBS
+
+* Go to **Settings [11] → Stream [12]**
 
 
+<img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/youtube-live-8.png" width="90%">
+
+Set:
+
+* Service → YouTube
+* Server → Auto
+* Click **use Stream Key [13]**  → **Paste key [14]** → **Click OK [15]**
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/youtube-live-9.png" width="90%">
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/youtube-live-10.png" width="90%">
+---
 
 
+## Step 5: Start Streaming
+
+* Click **Start Streaming [16]** in OBS
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/OBS/main/img/youtube-live-11.png" width="90%">
+
+* Then click **Go Live** in YouTube
+
+
+---
+
+## Step 7: Stop Streaming
+
+* Click **Stop Streaming** in OBS
+
+---
+
+# ⚠️ Troubleshooting
+
+| Issue              | Solution                       |
+| ------------------ | ------------------------------ |
+| Black screen       | Enable macOS screen permission |
+| No audio           | Check Mic settings             |
+| Stream not working | Verify Stream Key              |
+| Lag                | Reduce bitrate/resolution      |
+
+---
 
 
 
