@@ -61,11 +61,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#suppress-messy-insecurerequestwarning-warnings-in-terminal-screen" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -3518,8 +3513,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -3562,8 +3555,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -3579,251 +3570,270 @@
 
 
 
-<p>import os
+  <h1>Name & email</h1>
+
+<pre><code class="language-python">
+import os
 import re
 import sys
 import urllib.parse
 from bs4 import BeautifulSoup
 import pandas as pd
 import requests
-import urllib3</p>
-<h1 id="suppress-messy-insecurerequestwarning-warnings-in-terminal-screen">Suppress messy InsecureRequestWarning warnings in terminal screen</h1>
-<p>urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)</p>
-<h1 id="robust-patterns-for-global-email-and-phone-discovery">Robust patterns for global email and phone discovery</h1>
-<p>EMAIL_PATTERN = re.compile(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}")
-PHONE_PATTERN = re.compile(r"(?:+94|0)[1-9][0-9]\s?[- ]?[0-9]{3}\s?[- ]?[0-9]{4}")</p>
-<h1 id="loose-title-matching-pattern-to-clean-titles-out-of-names-if-they-bleed-in">Loose Title matching pattern to clean titles out of names if they bleed in</h1>
-<p>DESIGNATION_CLEAN_PATTERN = re.compile(
-    r"\b(Senior Professor|Senior Lecturer|Assistant Lecturer|Professor|Lecturer|Instructor|Head|Dean|HOD|Probationary|Grade I|Grade II|II|I|Visiting|Chair)\b",
+import urllib3
+
+# Suppress messy InsecureRequestWarning warnings in terminal screen
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+# Robust patterns for global email and phone discovery
+EMAIL_PATTERN = re.compile(r&quot;[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}&quot;)
+PHONE_PATTERN = re.compile(r&quot;(?:\+94|0)[1-9][0-9]\s?[- ]?[0-9]{3}\s?[- ]?[0-9]{4}&quot;)
+
+# Loose Title matching pattern to clean titles out of names if they bleed in
+DESIGNATION_CLEAN_PATTERN = re.compile(
+    r&quot;\b(Senior Professor|Senior Lecturer|Assistant Lecturer|Professor|Lecturer|Instructor|Head|Dean|HOD|Probationary|Grade I|Grade II|II|I|Visiting|Chair)\b&quot;,
     re.IGNORECASE
-)</p>
-<h1 id="skips-pages-that-do-not-host-individual-personnel-profiles">Skips pages that do not host individual personnel profiles</h1>
-<p>BLACKLIST_KEYWORDS = [
+)
+
+# Skips pages that do not host individual personnel profiles
+BLACKLIST_KEYWORDS = [
     'accreditation', 'scholarship', 'schedule', 'guidelines', 'structure', 'research', 'mile-stone', 'grants', 
     'partners-in-leaning','student-handbook', 'news', 'programme', 'internship', 'dissertation', 'exemption', 
     'calendar-of-dates', 'heads-of-the-department','library','student-resources','msu', 'curriculum', 'syllabus', 
     'fee', 'exam', 'admission', 'course','activity','ethics-review-committee','iqac','alumni','video-resources',
     'history', 'gallery', 'event', 'notice', 'download', 'publication'
-]</p>
-<p>HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,<em>/</em>;q=0.8",
-    "Accept-Language": "en-US,en;q=0.9",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Connection": "keep-alive",
-    "Upgrade-Insecure-Requests": "1",
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "none",
-    "Sec-Fetch-User": "?1"
-}</p>
-<h1 id="persistent-network-session-to-speed-up-sequential-loop-downloads">Persistent network session to speed up sequential loop downloads</h1>
-<p>session = requests.Session()
+]
+
+HEADERS = {
+    &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&quot;,
+    &quot;Accept&quot;: &quot;text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8&quot;,
+    &quot;Accept-Language&quot;: &quot;en-US,en;q=0.9&quot;,
+    &quot;Accept-Encoding&quot;: &quot;gzip, deflate, br&quot;,
+    &quot;Connection&quot;: &quot;keep-alive&quot;,
+    &quot;Upgrade-Insecure-Requests&quot;: &quot;1&quot;,
+    &quot;Sec-Fetch-Dest&quot;: &quot;document&quot;,
+    &quot;Sec-Fetch-Mode&quot;: &quot;navigate&quot;,
+    &quot;Sec-Fetch-Site&quot;: &quot;none&quot;,
+    &quot;Sec-Fetch-User&quot;: &quot;?1&quot;
+}
+
+# Persistent network session to speed up sequential loop downloads
+session = requests.Session()
 session.headers.update(HEADERS)
-session.verify = False  # Global bypass for local university SSL configuration errors</p>
-<p>def clean_extracted_name(name_str):
-    """Removes any academic designation keywords that leaked into the name string."""
+session.verify = False  # Global bypass for local university SSL configuration errors
+
+def clean_extracted_name(name_str):
+    &quot;&quot;&quot;Removes any academic designation keywords that leaked into the name string.&quot;&quot;&quot;
     if not name_str:
-        return "Name Check Required"
-    name_str = DESIGNATION_CLEAN_PATTERN.sub("", name_str)
-    name_str = re.sub(r'^\s<em>[-–—,•|:]\s</em>|\s<em>[-–—,•|:]\s</em>\$', '', name_str)
-    return " ".join(name_str.split()).strip()</p>
-<p>def discover_name_on_profile(soup):
-    """Finds the person's name on their profile page by checking top-level headings or title."""
+        return &quot;Name Check Required&quot;
+    name_str = DESIGNATION_CLEAN_PATTERN.sub(&quot;&quot;, name_str)
+    name_str = re.sub(r'^\s*[-–—,•|:]\s*|\s*[-–—,•|:]\s*\$', '', name_str)
+    return &quot; &quot;.join(name_str.split()).strip()
+
+def discover_name_on_profile(soup):
+    &quot;&quot;&quot;Finds the person's name on their profile page by checking top-level headings or title.&quot;&quot;&quot;
     for tag_name in ['h1', 'h2', 'h3']:
         for heading in soup.find_all(tag_name):
             text = heading.get_text().strip()
             if any(title in text.lower() for title in ['prof', 'dr.', 'mr.', 'ms.', 'mrs.']):
-                return clean_extracted_name(text)</p>
-<pre><code>if soup.title and soup.title.string:
-    try:
-        # Iteratively processes delimiters to split safely
-        title_text = soup.title.string
-        for delimiter in ['|', '-']:
-            if delimiter in title_text:
-                # Extracts the first contextual block before the divider safely
-                title_text = title_text.split(delimiter)[0]
-        title_text = title_text.strip()
+                return clean_extracted_name(text)
 
-        if any(title in title_text.lower() for title in ['prof', 'dr.', 'mr.', 'ms.', 'mrs.', 'staff']):
-            return clean_extracted_name(title_text.replace('Staff', '').replace('Profile', ''))
-    except Exception:
-        pass
+    if soup.title and soup.title.string:
+        try:
+            # Iteratively processes delimiters to split safely
+            title_text = soup.title.string
+            for delimiter in ['|', '-']:
+                if delimiter in title_text:
+                    # Extracts the first contextual block before the divider safely
+                    title_text = title_text.split(delimiter)[0]
+            title_text = title_text.strip()
 
-return "Name Check Required"
-</code></pre>
-<p>def discover_designation_on_profile(soup):
-    """Scans the profile text elements to classify their exact academic rank."""
-    page_text = soup.get_text(separator=" ")</p>
-<pre><code>leader_match = re.search(r'\b(Head of Department|Head|HOD|Dean)\b', page_text, re.IGNORECASE)
-if leader_match:
-    val = leader_match.group(0).lower()
-    return "HOD" if val == 'hod' else leader_match.group(0).title()
+            if any(title in title_text.lower() for title in ['prof', 'dr.', 'mr.', 'ms.', 'mrs.', 'staff']):
+                return clean_extracted_name(title_text.replace('Staff', '').replace('Profile', ''))
+        except Exception:
+            pass
 
-rank_match = re.search(r'\b(Senior Professor|Senior Lecturer|Assistant Lecturer|Lecturer|Professor)\s*(?:Grade\s*[IVX12i]+|[IVX12i]+|（Confirmed）|（Probationary）)?\b', page_text, re.IGNORECASE)
-if rank_match:
-    return " ".join(rank_match.group(0).split()).title()
+    return &quot;Name Check Required&quot;
 
-return "Academic Staff"
-</code></pre>
-<p>def parse_details_from_snippet(text):
-    """Uses contextual regex patterns to filter designations, phone lines, and formal names."""
-    clean_text = " ".join(text.split())</p>
-<pre><code>desig_match = DESIGNATION_CLEAN_PATTERN.search(clean_text)
-designation = desig_match.group(0).strip() if desig_match else "Lecturer / Academic Staff"
+def discover_designation_on_profile(soup):
+    &quot;&quot;&quot;Scans the profile text elements to classify their exact academic rank.&quot;&quot;&quot;
+    page_text = soup.get_text(separator=&quot; &quot;)
 
-leader_match = re.search(r'\b(Head of Department|Head|HOD|Dean)\b', clean_text, re.IGNORECASE)
-if leader_match:
-    val = leader_match.group(0).lower()
-    designation = "HOD" if val == 'hod' else leader_match.group(0).title()
-else:
-    grade_match = re.search(r'\b(Senior Lecturer|Lecturer|Assistant Lecturer)\s*(?:Grade\s*[IVX12i]+|[IVX12i]+)?\b', clean_text, re.IGNORECASE)
-    if grade_match:
-        designation = " ".join(grade_match.group(0).split()).title()
+    leader_match = re.search(r'\b(Head of Department|Head|HOD|Dean)\b', page_text, re.IGNORECASE)
+    if leader_match:
+        val = leader_match.group(0).lower()
+        return &quot;HOD&quot; if val == 'hod' else leader_match.group(0).title()
 
-name_match = re.search(r"\b(?:Prof\.|Dr\.|Mr\.|Mrs\.|Ms\.|Ven\.)\s+(?:(?:[A-Z]\.\s*)+[A-Z][a-z]+|(?:[A-Z][a-z]+\s+)+[A-Z][a-z]+|[A-Z][a-z]+)", clean_text, re.IGNORECASE)
-raw_extracted_name = name_match.group(0).strip() if name_match else "Name Check Required"
-final_clean_name = clean_extracted_name(raw_extracted_name)
+    rank_match = re.search(r'\b(Senior Professor|Senior Lecturer|Assistant Lecturer|Lecturer|Professor)\s*(?:Grade\s*[IVX12i]+|[IVX12i]+|（Confirmed）|（Probationary）)?\b', page_text, re.IGNORECASE)
+    if rank_match:
+        return &quot; &quot;.join(rank_match.group(0).split()).title()
 
-phone_match = PHONE_PATTERN.search(clean_text)
-phone = phone_match.group(0) if phone_match else "N/A"
+    return &quot;Academic Staff&quot;
 
-return final_clean_name, designation, phone
-</code></pre>
-<p>def get_profile_links_from_directory(directory_url):
-    """Scans the directory layout page to identify deep individual profile links universally."""
+def parse_details_from_snippet(text):
+    &quot;&quot;&quot;Uses contextual regex patterns to filter designations, phone lines, and formal names.&quot;&quot;&quot;
+    clean_text = &quot; &quot;.join(text.split())
+
+    desig_match = DESIGNATION_CLEAN_PATTERN.search(clean_text)
+    designation = desig_match.group(0).strip() if desig_match else &quot;Lecturer / Academic Staff&quot;
+
+    leader_match = re.search(r'\b(Head of Department|Head|HOD|Dean)\b', clean_text, re.IGNORECASE)
+    if leader_match:
+        val = leader_match.group(0).lower()
+        designation = &quot;HOD&quot; if val == 'hod' else leader_match.group(0).title()
+    else:
+        grade_match = re.search(r'\b(Senior Lecturer|Lecturer|Assistant Lecturer)\s*(?:Grade\s*[IVX12i]+|[IVX12i]+)?\b', clean_text, re.IGNORECASE)
+        if grade_match:
+            designation = &quot; &quot;.join(grade_match.group(0).split()).title()
+
+    name_match = re.search(r&quot;\b(?:Prof\.|Dr\.|Mr\.|Mrs\.|Ms\.|Ven\.)\s+(?:(?:[A-Z]\.\s*)+[A-Z][a-z]+|(?:[A-Z][a-z]+\s+)+[A-Z][a-z]+|[A-Z][a-z]+)&quot;, clean_text, re.IGNORECASE)
+    raw_extracted_name = name_match.group(0).strip() if name_match else &quot;Name Check Required&quot;
+    final_clean_name = clean_extracted_name(raw_extracted_name)
+
+    phone_match = PHONE_PATTERN.search(clean_text)
+    phone = phone_match.group(0) if phone_match else &quot;N/A&quot;
+
+    return final_clean_name, designation, phone
+
+def get_profile_links_from_directory(directory_url):
+    &quot;&quot;&quot;Scans the directory layout page to identify deep individual profile links universally.&quot;&quot;&quot;
     profile_links = set()
     try:
         response = session.get(directory_url, timeout=15)
         if response.status_code != 200:
-            print(f"[-] Directory connection rejected. Status Code: {response.status_code}")
+            print(f&quot;[-] Directory connection rejected. Status Code: {response.status_code}&quot;)
             return []
-        soup = BeautifulSoup(response.text, "html.parser")</p>
-<pre><code>    parsed_directory = urllib.parse.urlparse(directory_url)
-    dir_parts = parsed_directory.netloc.replace("www.", "").split(".")
-    uni_root_boundary = ".".join(dir_parts[-3:]) if "ac.lk" in directory_url else ".".join(dir_parts[-2:])
+        soup = BeautifulSoup(response.text, &quot;html.parser&quot;)
 
-    for anchor in soup.find_all("a", href=True):
-        href = anchor["href"].strip()
-        if not href or href in ["#", "/", "index.php", "index.html", "home"]:
-            continue
+        parsed_directory = urllib.parse.urlparse(directory_url)
+        dir_parts = parsed_directory.netloc.replace(&quot;www.&quot;, &quot;&quot;).split(&quot;.&quot;)
+        uni_root_boundary = &quot;.&quot;.join(dir_parts[-3:]) if &quot;ac.lk&quot; in directory_url else &quot;.&quot;.join(dir_parts[-2:])
 
-        full_url = urllib.parse.urljoin(directory_url, href)
-        url_lower = full_url.lower()
-        parsed_sublink = urllib.parse.urlparse(full_url)
-        sublink_path = parsed_sublink.path.rstrip("/")
-
-        if uni_root_boundary in parsed_sublink.netloc:
-            if not sublink_path or sublink_path in ["", "/index.php"]:
+        for anchor in soup.find_all(&quot;a&quot;, href=True):
+            href = anchor[&quot;href&quot;].strip()
+            if not href or href in [&quot;#&quot;, &quot;/&quot;, &quot;index.php&quot;, &quot;index.html&quot;, &quot;home&quot;]:
                 continue
-            if full_url != directory_url and full_url.rstrip('/') != directory_url.rstrip('/'):
-                if any(kw in url_lower for kw in BLACKLIST_KEYWORDS):
+
+            full_url = urllib.parse.urljoin(directory_url, href)
+            url_lower = full_url.lower()
+            parsed_sublink = urllib.parse.urlparse(full_url)
+            sublink_path = parsed_sublink.path.rstrip(&quot;/&quot;)
+
+            if uni_root_boundary in parsed_sublink.netloc:
+                if not sublink_path or sublink_path in [&quot;&quot;, &quot;/index.php&quot;]:
                     continue
-                if not any(x in url_lower for x in ['.pdf', '.jpg', '.png', '.zip', 'contact', 'about', 'lms']):
-                    profile_links.add(full_url)
-except Exception as e:
-    print(f"[-] Error collecting profile links: {e}")
-return list(profile_links)
-</code></pre>
-<p>def extract_contacts_deep(url):
-    """Tries surface extraction first. If no multiple layout details are found, crawls the profile system."""
+                if full_url != directory_url and full_url.rstrip('/') != directory_url.rstrip('/'):
+                    if any(kw in url_lower for kw in BLACKLIST_KEYWORDS):
+                        continue
+                    if not any(x in url_lower for x in ['.pdf', '.jpg', '.png', '.zip', 'contact', 'about', 'lms']):
+                        profile_links.add(full_url)
+    except Exception as e:
+        print(f&quot;[-] Error collecting profile links: {e}&quot;)
+    return list(profile_links)
+
+def extract_contacts_deep(url):
+    &quot;&quot;&quot;Tries surface extraction first. If no multiple layout details are found, crawls the profile system.&quot;&quot;&quot;
     records = []
     try:
         response = session.get(url, timeout=12)
         if response.status_code != 200:
-            print(f"[-] Profile link rejected by server. Status Code: {response.status_code}")
+            print(f&quot;[-] Profile link rejected by server. Status Code: {response.status_code}&quot;)
             return records
-        soup = BeautifulSoup(response.text, "html.parser")
-        raw_text = soup.get_text(separator=" ")
+        soup = BeautifulSoup(response.text, &quot;html.parser&quot;)
+        raw_text = soup.get_text(separator=&quot; &quot;)
     except Exception as e:
-        print(f"[-] Connection failed to {url}: {e}")
-        return records</p>
-<pre><code>surface_emails = list(set(EMAIL_PATTERN.findall(raw_text)))
+        print(f&quot;[-] Connection failed to {url}: {e}&quot;)
+        return records
 
-# CASE 1: The page is a shared dynamic master table containing everyone's details
-if len(surface_emails) &gt; 3:
-    print(f"[+] Multiple emails found directly on landing directory page: {url}")
-    for email in surface_emails:
-        email_pos = raw_text.find(email)
-        snippet = " ".join(raw_text[max(0, email_pos - 250):min(len(raw_text), email_pos + 250)].split())
-        name, designation, phone = parse_details_from_snippet(snippet)
-        records.append({
-            "Name": name,
-            "Email": email,
-            "Designation": designation,
-            "Phone": phone,
-            "Profile URL": url
-        })
+    surface_emails = list(set(EMAIL_PATTERN.findall(raw_text)))
 
-# CASE 2: The page is an individual personal profile biography path
-else:
-    name = discover_name_on_profile(soup)
-    designation = discover_designation_on_profile(soup)
-    email = surface_emails[0] if surface_emails else "N/A"
-    phone_match = PHONE_PATTERN.search(raw_text)
-    phone = phone_match.group(0) if phone_match else "N/A"
+    # CASE 1: The page is a shared dynamic master table containing everyone's details
+    if len(surface_emails) &gt; 3:
+        print(f&quot;[+] Multiple emails found directly on landing directory page: {url}&quot;)
+        for email in surface_emails:
+            email_pos = raw_text.find(email)
+            snippet = &quot; &quot;.join(raw_text[max(0, email_pos - 250):min(len(raw_text), email_pos + 250)].split())
+            name, designation, phone = parse_details_from_snippet(snippet)
+            records.append({
+                &quot;Name&quot;: name,
+                &quot;Email&quot;: email,
+                &quot;Designation&quot;: designation,
+                &quot;Phone&quot;: phone,
+                &quot;Profile URL&quot;: url
+            })
 
-    email = surface_emails[0] if surface_emails else "N/A"
+    # CASE 2: The page is an individual personal profile biography path
+    else:
+        name = discover_name_on_profile(soup)
+        designation = discover_designation_on_profile(soup)
+        email = surface_emails[0] if surface_emails else &quot;N/A&quot;
+        phone_match = PHONE_PATTERN.search(raw_text)
+        phone = phone_match.group(0) if phone_match else &quot;N/A&quot;
 
-    if name != "Name Check Required" or email != "N/A":
-        # Mapped explicitly to avoid structural data shifting
-        records.append({
-            "Name": name,
-            "Email": email,
-            "Designation": designation,
-            "Phone": phone,
-            "Profile URL": url
-        })
+        email = surface_emails[0] if surface_emails else &quot;N/A&quot;
 
-return records
-</code></pre>
-<h1 id="-runtime-execution-controller-">--- RUNTIME EXECUTION CONTROLLER ---</h1>
-<p>if <strong>name</strong> == "<strong>main</strong>":
+        if name != &quot;Name Check Required&quot; or email != &quot;N/A&quot;:
+            # Mapped explicitly to avoid structural data shifting
+            records.append({
+                &quot;Name&quot;: name,
+                &quot;Email&quot;: email,
+                &quot;Designation&quot;: designation,
+                &quot;Phone&quot;: phone,
+                &quot;Profile URL&quot;: url
+            })
+
+    return records
+
+
+# --- RUNTIME EXECUTION CONTROLLER ---
+if __name__ == &quot;__main__&quot;:
     # Check if a URL was passed directly in the terminal invocation
     if len(sys.argv) &gt; 1:
         TARGET_DIRECTORY = sys.argv[1].strip()
     else:
-        print("💡 Tip: Next time, pass the URL straight into the command: python file.py <URL>")
-        TARGET_DIRECTORY = input("Please paste the TARGET_DIRECTORY URL and press Enter: ").strip()</p>
-<pre><code># Absolute verification pattern checks
-if not TARGET_DIRECTORY.startswith(("http://", "https://")):
-    print("[-] Error: Invalid URL layout. Please verify it starts with http:// or https://")
-    sys.exit(1)
+        print(&quot;💡 Tip: Next time, pass the URL straight into the command: python file.py &lt;URL&gt;&quot;)
+        TARGET_DIRECTORY = input(&quot;Please paste the TARGET_DIRECTORY URL and press Enter: &quot;).strip()
 
-print(f"\n[*] Commencing discovery pipeline on: {TARGET_DIRECTORY}")
-profile_urls = get_profile_links_from_directory(TARGET_DIRECTORY)
-print(f"[+] Identified {len(profile_urls)} potential faculty profile paths.")
+    # Absolute verification pattern checks
+    if not TARGET_DIRECTORY.startswith((&quot;http://&quot;, &quot;https://&quot;)):
+        print(&quot;[-] Error: Invalid URL layout. Please verify it starts with http:// or https://&quot;)
+        sys.exit(1)
 
-all_extracted_faculty = []
+    print(f&quot;\n[*] Commencing discovery pipeline on: {TARGET_DIRECTORY}&quot;)
+    profile_urls = get_profile_links_from_directory(TARGET_DIRECTORY)
+    print(f&quot;[+] Identified {len(profile_urls)} potential faculty profile paths.&quot;)
 
-# Process isolated routes sequentially
+    all_extracted_faculty = []
 
-for i, profile_url in enumerate(profile_urls, start=1):
-    print(f"[{i}/{len(profile_urls)}] Processing: {profile_url}")
-    results = extract_contacts_deep(profile_url)
+    # Process isolated routes sequentially
 
-    if results:
-        all_extracted_faculty.extend(results)
+    for i, profile_url in enumerate(profile_urls, start=1):
+        print(f&quot;[{i}/{len(profile_urls)}] Processing: {profile_url}&quot;)
+        results = extract_contacts_deep(profile_url)
 
-    # Export structural details safely
-    if all_extracted_faculty:
-        df = pd.DataFrame(all_extracted_faculty)
-        # Drop duplicates across clean matrix overlaps
-        df.drop_duplicates(subset=['Email', 'Name'], keep='first', inplace=True)
+        if results:
+            all_extracted_faculty.extend(results)
 
-        # --- THE EXACT LOCATION WHERE COLUMN ORDER IS CHANGED ---
-        # Re-indexing the layout list shifts columns instantly
-        desired_order = ["Name", "Email", "Designation", "Phone", "Profile URL"]
-        df = df[desired_order]
-        # ---------------------------------------------------------
+        # Export structural details safely
+        if all_extracted_faculty:
+            df = pd.DataFrame(all_extracted_faculty)
+            # Drop duplicates across clean matrix overlaps
+            df.drop_duplicates(subset=['Email', 'Name'], keep='first', inplace=True)    
 
-        # Clean naming module isolates domain strings
-        domain = urllib.parse.urlparse(TARGET_DIRECTORY).netloc.replace("www.", "")
-        output_file = f"extracted_faculty_{domain}.csv"
-        df.to_csv(output_file, index=False)
-        print(f"\n[Done] Pipeline saved {len(df)} records safely inside '{output_file}'!")
-    else:
-        print("\n[-] Pipeline closed. No contact cards could be mapped successfully.")
+            # --- THE EXACT LOCATION WHERE COLUMN ORDER IS CHANGED ---
+            # Re-indexing the layout list shifts columns instantly
+            desired_order = [&quot;Name&quot;, &quot;Email&quot;, &quot;Designation&quot;, &quot;Phone&quot;, &quot;Profile URL&quot;]
+            df = df[desired_order]
+            # ---------------------------------------------------------
+
+            # Clean naming module isolates domain strings
+            domain = urllib.parse.urlparse(TARGET_DIRECTORY).netloc.replace(&quot;www.&quot;, &quot;&quot;)
+            output_file = f&quot;extracted_faculty_{domain}.csv&quot;
+            df.to_csv(output_file, index=False)
+            print(f&quot;\n[Done] Pipeline saved {len(df)} records safely inside '{output_file}'!&quot;)
+        else:
+            print(&quot;\n[-] Pipeline closed. No contact cards could be mapped successfully.&quot;)
+
 </code></pre>
 
 
