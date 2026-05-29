@@ -1,3 +1,7 @@
+#### note that - still building this code as universal for all type of web pages to extract the name and email from the page
+
+  * this is working for many type of links
+  * 
 ```python
 
 import os
