@@ -1,3 +1,5 @@
+```python
+
 import os
 import re
 import sys
@@ -258,3 +260,5 @@ if __name__ == "__main__":
             print(f"\n[Done] Pipeline saved {len(df)} records safely inside '{output_file}'!")
         else:
             print("\n[-] Pipeline closed. No contact cards could be mapped successfully.")
+
+```
