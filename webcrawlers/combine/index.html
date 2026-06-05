@@ -9,6 +9,8 @@
       
       
       
+        <link rel="prev" href="../cleaning/">
+      
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +18,7 @@
     
     
       
-        <title>Combine - FOSS</title>
+        <title>Combine Emails - FOSS</title>
       
     
     
@@ -60,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ask-the-user-for-the-folder-containing-the-text-files" class="md-skip">
+        <a href="#note-that-still-building-this-code-but-works-for-same-folder-txt-file-combining-of-emails" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Combine
+              Combine Emails
             
           </span>
         </div>
@@ -3467,18 +3469,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
         
           
           <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
@@ -3494,7 +3498,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             WebCrawlers
@@ -3513,12 +3517,105 @@
   
   
   <span class="md-ellipsis">
-    Name & email
+    Name & email Extract
     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cleaning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cleaning Emails
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Combine Emails
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Combine Emails
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#note-that-still-building-this-code-but-works-for-same-folder-txt-file-combining-of-emails" class="md-nav__link">
+    <span class="md-ellipsis">
+      note that - still building this code, but works for same folder txt file combining of emails
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3548,8 +3645,23 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#note-that-still-building-this-code-but-works-for-same-folder-txt-file-combining-of-emails" class="md-nav__link">
+    <span class="md-ellipsis">
+      note that - still building this code, but works for same folder txt file combining of emails
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -3565,49 +3677,60 @@
 
 
 
-<p>import os
-import re</p>
-<h1 id="ask-the-user-for-the-folder-containing-the-text-files">Ask the user for the folder containing the text files</h1>
-<p>folder_path = input("Enter the path to the folder with your text files: ")</p>
-<p>if not os.path.isdir(folder_path):
-    print(f"Error: The folder '{folder_path}' does not exist.")
+  <h1>Combine Emails</h1>
+
+<h4 id="note-that-still-building-this-code-but-works-for-same-folder-txt-file-combining-of-emails">note that - still building this code, but works for same folder txt file combining of emails</h4>
+<ul>
+<li>removes surrounding spaces from email addresses in a text files and combine to a single text file</li>
+<li></li>
+</ul>
+<pre><code class="language-python">
+import os
+import re
+
+# Ask the user for the folder containing the text files
+folder_path = input(&quot;Enter the path to the folder with your text files: &quot;)
+
+if not os.path.isdir(folder_path):
+    print(f&quot;Error: The folder '{folder_path}' does not exist.&quot;)
 else:
     # Ask for the output filename
     output_filename = input(
-        "Enter the name for the combined output file (e.g., all_emails.txt): "
-    )</p>
-<pre><code># Use a set instead of a list to automatically remove duplicate emails
-unique_emails = set()
+        &quot;Enter the name for the combined output file (e.g., all_emails.txt): &quot;
+    )
 
-# Regex pattern to find standard email formats
-email_pattern = r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+    # Use a set instead of a list to automatically remove duplicate emails
+    unique_emails = set()
 
-# Loop through every file in the specified folder
-for root, dirs, files in os.walk(folder_path):
-    for file in files:
-        # Only process files ending in .txt
-        if file.endswith(".txt") and file != output_filename:
-            file_path = os.path.join(root, file)
+    # Regex pattern to find standard email formats
+    email_pattern = r&quot;[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}&quot;
 
-            try:
-                with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
-                    text = f.read()
-                    # Find all emails in the current file
-                    found_emails = re.findall(email_pattern, text)
-                    # Strip spaces and add to our unique collection
-                    for email in found_emails:
-                        unique_emails.add(email.strip())
-            except Exception as e:
-                print(f"Could not read file {file}: {e}")
+    # Loop through every file in the specified folder
+    for root, dirs, files in os.walk(folder_path):
+        for file in files:
+            # Only process files ending in .txt
+            if file.endswith(&quot;.txt&quot;) and file != output_filename:
+                file_path = os.path.join(root, file)
 
-# Write all combined, clean emails to the final file
-with open(output_filename, "w", encoding="utf-8") as output_file:
-    for email in sorted(unique_emails):
-        output_file.write(email + "\n")
+                try:
+                    with open(file_path, &quot;r&quot;, encoding=&quot;utf-8&quot;, errors=&quot;ignore&quot;) as f:
+                        text = f.read()
+                        # Find all emails in the current file
+                        found_emails = re.findall(email_pattern, text)
+                        # Strip spaces and add to our unique collection
+                        for email in found_emails:
+                            unique_emails.add(email.strip())
+                except Exception as e:
+                    print(f&quot;Could not read file {file}: {e}&quot;)
 
-print(
-    f"\nSuccess! Combined {len(unique_emails)} unique emails into '{output_filename}'."
-)
+    # Write all combined, clean emails to the final file
+    with open(output_filename, &quot;w&quot;, encoding=&quot;utf-8&quot;) as output_file:
+        for email in sorted(unique_emails):
+            output_file.write(email + &quot;\n&quot;)
+
+    print(
+        f&quot;\nSuccess! Combined {len(unique_emails)} unique emails into '{output_filename}'.&quot;
+    )
 </code></pre>
 
 
