@@ -1,3 +1,9 @@
+#### note that - still building this code, but works for same folder txt file combining of emails
+
+  * removes surrounding spaces from email addresses in a text files and combine to a single text file
+  * 
+```python
+
 import os
 import re
 
@@ -44,3 +50,4 @@ else:
     print(
         f"\nSuccess! Combined {len(unique_emails)} unique emails into '{output_filename}'."
     )
+```

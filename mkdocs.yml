@@ -137,5 +137,7 @@ nav:
     - Writer : libreoffice/writer.md
     - Impress : libreoffice/impress.md
   - WebCrawlers:
-    - Name & email : webcrawlers/contactextract.md
+    - Name & email Extract : webcrawlers/contactextract.md
+    - Cleaning Emails: webcrawlers/cleaning.md
+    - Combine Emails : webcrawlers/combine.md
   
