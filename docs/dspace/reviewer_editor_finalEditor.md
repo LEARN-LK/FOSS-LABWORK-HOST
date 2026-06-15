@@ -32,25 +32,28 @@ Ensures the submission is original, complete, and meets the collection’s acade
 ### **2. Editor**  
 **Role**: Ensures metadata accuracy, improves item visibility, and curates content.  
 **What the Editor Does**:  
-1. **Access the Approved Submission**:  
+   **Access the Approved Submission**:  
    - Log in as the editor (e.g., `editor.cs@uni.edu`).  
-   - Click **Profile [1]→ MyDSpace [2]→ Workflow Tasks [3]**..
+   - Click **Profile [1]→ MyDSpace [2]→ Workflow Tasks [3]**
+   
+   <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Editor-01.png" alt="image" style="max-width: 100%;width: 400px;">
 
-     <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Editor-01.png" alt="image" style="max-width: 100%;width: 400px;">  
-     
-     <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Editor%20-02.png" alt="image" style="max-width: 100%;width: 600px;">  
-     
+   <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Editor%20-02.png" alt="image" style="max-width: 100%;width: 600px;">
 
-2. **Edit Metadata**:  
+         
+
+   **Edit Metadata**:  
    - Fix typos in the title/abstract.  
    - Add missing keywords (e.g., *"machine learning, climate modeling"*).  
-   - Ensure Dublin Core fields (author, date, subject) are accurate.  
-3. **Curate the Item**:  
+   - Ensure Dublin Core fields (author, date, subject) are accurate.
+
+   **Curate the Item**:  
    - Assign a persistent identifier (e.g., Handle or DOI).  
    - Link related items (e.g., datasets, code repositories).
 
-     <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Editor-03.png" alt="image" style="max-width: 100%;width: 400px;">  
-     <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Editor-04.png" alt="image" style="max-width: 100%;width: 400px;">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Editor-03.png" alt="image" style="max-width: 100%;width: 400px;">  
+     
+   <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Editor-04.png" alt="image" style="max-width: 100%;width: 400px;">
 
 
 **Example Editor Actions**:  
@@ -61,19 +64,24 @@ Ensures the submission is original, complete, and meets the collection’s acade
 ### **3. Final Editor (Site Admin)**  
 **Role**: Oversees final approval and publication.  
 **What the Site Admin Does**:  
-1. **Final Review**:  
+
+**1. Final Review**:  
+   
    - Log in as the Final Editor (e.g., `finaleditor@gmail.com`).
 
-      <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/FinalEditor-01.png" alt="image" style="max-width: 100%;width: 400px;">
-   - Click **Profile [1]→ MyDSpace [2]→ Workflow Tasks [3]**..
+   <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/FinalEditor-01.png" alt="image" style="max-width: 100%;width: 400px;">
+   
+   - Click **Profile [1]→ MyDSpace [2]→ Workflow Tasks [3]**
 
-      <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/finalEditor-02.png" alt="image" style="max-width: 100%;width: 400px;">
-2. **Approve for Archiving**:  
+   <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/finalEditor-02.png" alt="image" style="max-width: 100%;width: 400px;">
+
+**2. Approve for Archiving**:  
    - Ensure the submission meets institutional standards.  
    - Click **Accept** to publish the item to the collection.
+   
+   <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/finalEditor-03.png" alt="image" style="max-width: 100%;width: 400px;">
 
-      <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/finalEditor-03.png" alt="image" style="max-width: 100%;width: 400px;">
-3. **Assign Access Rights**:  
+**3. Assign Access Rights**:  
    - Set embargo periods (if needed).  
    - Confirm licensing (e.g., Creative Commons).  
 
