@@ -1,5 +1,5 @@
-site_name: FOSS
-site_url: https://learn-lk.github.io/FOSS-LABWORK-HOST/
+site_name: FOSS Labwork Host
+site_url: https://github.io
 
 theme:
   name: material
