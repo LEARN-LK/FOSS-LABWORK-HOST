@@ -72,6 +72,7 @@ To try out ORCID integration without affecting any real data, you’ll first nee
 * You’ll now be on the **ORCID Authorizations** page.
 
   <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-03.png" alt="image" style="max-width: 100%;width: 400px;">
+
 * Click on **“Connect to ORCID ID”** to begin the linking process.
 
   <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-04.png" alt="image" style="max-width: 100%;width: 400px;">

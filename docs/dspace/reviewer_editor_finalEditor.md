@@ -12,7 +12,7 @@ Ensures the submission is original, complete, and meets the collection’s acade
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/reviewer-01.png" alt="image" style="max-width: 100%;width: 400px;">  
 3. Open the assigned submission.
- <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/reviewer-02.png" alt="image" style="max-width: 100%;width: 700px;">
+ <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/reviewer-02.png" alt="image" style="max-width: 100%;width: 700px;"> </br>
 4. Review the research paper [4].
    
    **Options:**

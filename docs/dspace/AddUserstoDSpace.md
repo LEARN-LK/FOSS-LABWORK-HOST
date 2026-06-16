@@ -40,35 +40,41 @@ Repeat this for all the users you want to assign roles to, such as:
 Navigate to:
 **Communities & Collections → Faculty of Science → Computer Science → Final Year Projects 2024**
 
-1. On the right side, click the **Edit button (pencil icon) [4]** for the **Final Year Projects 2024** collection.
+<ol>
+  <li>On the right side, click the <b>Edit button (pencil icon) [4]</b> for the <b>Final Year Projects 2024</b> collection.</li>
+
 <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/eAR1-Editrole.png" alt="image" style="max-width: 100%;width: 450px;">   
 
-2. Click on **Assign Roles**
+<li>Click on <b>Assign Roles</b></li>
+</ol>
+
 <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/eAR2-Assignrole.png" alt="image" style="max-width: 100%;width: 450px;">   
 
 ---
 
 ### 👤 **Submitter** (e.g., `student123@uni.edu`)
 
-1. In the **Submitters** section, click **Create** [6]
+<ol>
+  <li> In the <b>Submitters</b> section, click <b>Create</b> [6]</li>
    
 <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/submitter-add-01.png" alt="image" style="max-width: 100%;width: 450px;">
     
-2. Click on the generated group (e.g., `COLLECTION_..._SUBMIT`) [7]
+ <li> Click on the generated group (e.g., `COLLECTION_..._SUBMIT`) [7] </li>
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/submitter-add-02.png" alt="image" style="max-width: 100%;width: 450px;">
 
-   
-3. Click **Add E-Person**[5]
-4. Search for the email (e.g., `student123@uni.edu`)
 
-   * If not found, go back and add the E-Person first (Step 4.1)
-5. Select the user → Click **Add** [8]
+   
+<li> Click <b>Add E-Person</b>[5] </li>
+<li> Search for the email (e.g., `student123@uni.edu`) </li>
+
+   <b>If not found, go back and add the E-Person first (Step 4.1)</b>
+<li> Select the user → Click <b>Add</b> [8] </li>
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/submitter-add-03.png" alt="image" style="max-width: 100%;width: 450px;">
    
-6. Click **Save Changes**
-
+<li> Click <b>Save Changes</b> </li>
+</ol>
 ---
 
 ### 👤 **Reviewer** (e.g., `prof.reviewer@uni.edu`)
