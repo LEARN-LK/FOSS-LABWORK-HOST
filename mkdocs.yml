@@ -1,11 +1,11 @@
-site_name: FOSS Labwork Host
-site_url: https://github.io
+site_name: FOSS
+
 
 theme:
   name: material
 
-extra_css:
-  - stylesheets/custom.css
+# extra_css:
+  # - stylesheets/custom.css
 
 nav:
   - Home: index.md
