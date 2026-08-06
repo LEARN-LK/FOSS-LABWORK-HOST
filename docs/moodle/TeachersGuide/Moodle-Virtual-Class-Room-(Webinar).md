@@ -1,98 +1,151 @@
-<h1>Moodle Virtual Class Room (Webinar)</h1>
+The content is good, but it can be made much more concise, consistent, and easier to follow. Below is a reorganized version that matches the style of your other Moodle Teacher Guides.
 
-The Virtual Classroom (vCR) stands as the pinnacle of educational technology for Higher Education. It operates as an on-premise hosted scalable cluster,  multi-million server and networking infrastructure. The backbone of this platform is the BigBlueButton web conferencing system, a free and open-source solution, tailored for online classes.
+---
 
-This cutting-edge platform revolutionizes the learning experience by maximizing the time dedicated to applied learning. It empowers students to collaborate seamlessly and receive real-time feedback, fostering an environment conducive to effective education.
+# Moodle Virtual Classroom (Webinar)
 
-Users have the flexibility to create personalized rooms for hosting sessions or effortlessly join others using concise and convenient links.
+The **LEARN Virtual Classroom (vCR)** is an online web conferencing platform powered by **BigBlueButton**. It enables teachers to conduct live online classes, webinars, meetings, and discussions directly through a web browser.
 
-Furthermore, teachers affiliated with LEARN member institutions enjoy complimentary access to the platform, inclusive of free data usage. While the service operates without a formal Service Level Agreement (SLA), LEARN engineering commits to delivering the best possible service through diligent efforts. This ensures a high-quality educational experience for both educators and students within the vCR ecosystem.
+Teachers from **LEARN member institutions** can use the service free of charge with **zero-rated (data-free)** access where applicable. Users can create virtual classrooms, invite participants using a meeting link, and integrate the classroom into Moodle.
 
-<h2> 01 - How to start VCR </h2>
+> **Note**
+>
+> The VCR service is available only to **EduID Staff** members or users with **Institutional Credentials**.
+>
+> If you do not have an EduID account, visit **[https://eduid.lk/](https://eduid.lk/)**.
 
-<h3>login to vCR.learn.ac.lk </h3>
-You can log in to VCR in two ways: one using institutional credentials and the other using EDUID. 
+---
 
- `Note: The VCR service is exclusively available for EDUID staff members. If you don't have an EDUID account, please refer to the following link: https://eduid.lk/` 
+# 01 - Log in to LEARN vCR
 
-<h4>1.1 -Log in to VCR using EDUID/Institutional credentials</h4>
+You can log in using either:
 
-<h5>Step :</h5>
+* EduID credentials
+* Institutional credentials
 
-* To log in using EDUID/Institutional credentials you need to visit the following [VCR Login:](https://vcr.learn.ac.lk/).
-* Select the dropdown menu and choose 'equID Sri Lanka.' Afterward, click the 'Continue' button. If you have institutional credentials, you should choose your institute from the dropdown menu.
+### Steps
 
-  <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/106-eduid.png" alt="image" style="max-width: 100%;width: 500px;">
-* You will be redirected to the login page. Enter your EDUID username and password. If you have institutional credentials, enter those credentials instead.
+1. Open **[https://vcr.learn.ac.lk/](https://vcr.learn.ac.lk/)**
+2. From the identity provider list, select:
 
-   <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/107-login.png" alt="image" style="max-width: 100%;width: 500px;">
-* Then you will gain access to Learn VCR.
-  
-  <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/108-vcrDashboard.png" alt="image" style="max-width: 100%;width: 500px;">
-   
-<h4>1.2 Create VCR Classroom</h4>
-To create the VCR classroom, refer to the following user guideline link:https://vcr.learn.ac.lk/userguide/"
+   * **equID Sri Lanka** (EduID users), or
+   * Your institution (Institutional users).
+3. Click **Continue**.
 
-<h4>1.3 add VCR as a URL activity to Moodle course</h4>
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/106-eduid.png" alt="image" style="max-width:100%;width:500px;">
 
-<h5>Step :</h5>
+4. Enter your username and password.
+5. Click **Sign In**.
 
-* after creating VCR Class room Copy URL:
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/107-login.png" alt="image" style="max-width:100%;width:500px;">
 
-  <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/111-vcr-link.png" alt="image" style="max-width: 100%;width: 500px;">
-* Log in to your Moodle site as a teacher or administrator.
-* Navigate to the course where you want to add the URL activity.
-* Click on the "Turn editing on" button to enable editing mode.
+6. The LEARN vCR Dashboard will open.
 
-  <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/110-url-1.png" alt="image" style="max-width: 100%;width: 700px;">
-* Click on the "Add an activity or resource" button.
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/108-vcrDashboard.png" alt="image" style="max-width:100%;width:500px;">
 
-  <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/111-url-2.png" alt="image" style="max-width: 100%;width: 700px;">
-* Scroll down or use the search bar to find the "URL" activity module.
+---
 
-  <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/112-url-3.png" alt="image" style="max-width: 100%;width: 500px;">
-* Click on the "Add" button next to the URL activity.
-* Fill in the Activity Details:
-  - Activity name: Provide a descriptive name for the activity, so students understand its purpose.
-  - External URL: Paste the full URL of VCR Meeting link you want to link to.
-  - Description (optional): Add a brief description of the activity or the content of the linked resource.
+# 02 - Create a Virtual Classroom
 
-     <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/113-url-4.png" alt="image" style="max-width: 100%;width: 700px;">
+To create a virtual classroom, follow the official LEARN vCR User Guide.
 
-<h2>Student Access:</h2>
-* Students will now see the URL activity (VCR) within the course page.
-<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/107-stud-vcr.png" alt="image" style="max-width: 100%;width: 700px;">
-<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/108-stud-vcr2.png" alt="image" style="max-width: 100%;width: 700px;">
+**User Guide:** [https://vcr.learn.ac.lk/userguide/](https://vcr.learn.ac.lk/userguide/)
 
-* They can click on the link or resource to access the VCR Classroom.
-  <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/109-stud-vcr3.png" alt="image" style="max-width: 100%;width: 500px;">
-  
-<h2> Add VCR Recurring Session to Calender   </h2>
-when VCR meeting recurring, you can add it to the Calender
+After creating the room, copy the **Meeting Link**.
 
-<h3> Step </h3>
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/111-vcr-link.png" alt="image" style="max-width:100%;width:500px;">
 
-- Copy the VCR meeting link.
-- Navigate to the Dashboard Menu in Moodle [1].
-- Locate and access the Calendar on the Dashboard page [2].
-- Choose the date for the VCR Meeting or Click on "New Event" Button [3].
+---
 
-   <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/136%20-Event.png" alt="image" style="max-width: 100%;width: 500px;">
-  
-- Add the following details:
-  - Event title [4]
-  - Date [5]
-  - Type of event [6] / for more details Click "Show more"[6.1]
-  - Description [7]
-  - Location
-  - Duration
+# 03 - Add the Virtual Classroom to a Moodle Course
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/136%20-%20Event%20dialog%20box.png" alt="image" style="max-width: 100%;width: 500px;">
-  
- 
+### Steps
 
-- If the VCR session repeats, select the "Repeat this event" button [8].
-- Specify the number of repeated weeks [9]in the "Repeat weekly" tab.
-- Then Click on "Save" Button.
+1. Log in to Moodle as a Teacher or Administrator.
+2. Open the required course.
+3. Turn editing on.
 
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/110-url-1.png" alt="image" style="max-width:100%;width:700px;">
 
+4. Click **Add an activity or resource**.
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/111-url-2.png" alt="image" style="max-width:100%;width:700px;">
+
+5. Select **URL**.
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/112-url-3.png" alt="image" style="max-width:100%;width:500px;">
+
+6. Click **Add**.
+7. Enter the activity details:
+
+   * **Name** – Enter a meaningful activity name.
+   * **External URL** – Paste the copied VCR meeting link.
+   * **Description** *(Optional)* – Add meeting details for students.
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/113-url-4.png" alt="image" style="max-width:100%;width:700px;">
+
+8. Click **Save and return to course**.
+
+The Virtual Classroom is now available on the course page.
+
+---
+
+# 04 - Student Access
+
+Students can join the virtual classroom directly from the Moodle course.
+
+### Steps
+
+1. Open the Moodle course.
+2. Click the **Virtual Classroom** activity.
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/107-stud-vcr.png" alt="image" style="max-width:100%;width:700px;">
+
+3. Click **Join Meeting**.
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/108-stud-vcr2.png" alt="image" style="max-width:100%;width:700px;">
+
+4. The meeting will open in LEARN vCR.
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/109-stud-vcr3.png" alt="image" style="max-width:100%;width:500px;">
+
+---
+
+# 05 - Add a Recurring Virtual Classroom Session to the Moodle Calendar
+
+If your Virtual Classroom session is held regularly (for example, every week), you can add it to the Moodle Calendar.
+
+### Steps
+
+1. Copy the VCR meeting link.
+2. Open the Moodle **Dashboard**.
+3. Go to **Calendar**.
+4. Click the required date or select **New Event**.
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/136%20-Event.png" alt="image" style="max-width:100%;width:500px;">
+
+5. Enter the event details:
+
+   * Event title
+   * Date
+   * Event type
+   * Description
+   * Location *(Optional)*
+   * Duration
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/136%20-%20Event%20dialog%20box.png" alt="image" style="max-width:100%;width:500px;">
+
+6. Enable **Repeat this event**.
+7. Select **Repeat weekly** and specify the number of weeks.
+8. Click **Save**.
+
+---
+
+### Overall improvements
+
+* ✅ Reduced unnecessary paragraphs.
+* ✅ Consistent numbering (**01–05**) like your other Teacher Guides.
+* ✅ One action per step (ideal for video tutorials).
+* ✅ Clear headings and concise descriptions.
+* ✅ Consistent Moodle terminology (Turn editing on, Add an activity or resource, Save and return to course).
+* ✅ Better readability while preserving all essential information.
