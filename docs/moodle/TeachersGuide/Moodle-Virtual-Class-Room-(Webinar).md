@@ -63,15 +63,15 @@ After creating the room, copy the **Meeting Link**.
 
 1. Log in to Moodle as a Teacher or Administrator.
 2. Open the required course.
-3. Turn editing on.
+3. Turn editing on [1].
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/110-url-1.png" alt="image" style="max-width:100%;width:700px;">
 
-4. Click **Add an activity or resource**.
+4. Click **Add an activity or resource [2]**.
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/111-url-2.png" alt="image" style="max-width:100%;width:700px;">
 
-5. Select **URL**.
+5. Select **URL [3]**.
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/112-url-3.png" alt="image" style="max-width:100%;width:500px;">
 
@@ -118,19 +118,19 @@ If your Virtual Classroom session is held regularly (for example, every week), y
 ### Steps
 
 1. Copy the VCR meeting link.
-2. Open the Moodle **Dashboard**.
-3. Go to **Calendar**.
-4. Click the required date or select **New Event**.
+2. Open the Moodle **Dashboard** [1].
+3. Go to **Calendar [2]**.
+4. Click the required date or select **New   [3]**.
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/136%20-Event.png" alt="image" style="max-width:100%;width:500px;">
 
 5. Enter the event details:
 
-   * Event title
-   * Date
-   * Event type
-   * Description
-   * Location *(Optional)*
+   * Event title [4]
+   * Date  [5]
+   * Event type [6]
+   * Description [7]
+   * Location *(Optional)* 
    * Duration
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/136%20-%20Event%20dialog%20box.png" alt="image" style="max-width:100%;width:500px;">
@@ -141,11 +141,3 @@ If your Virtual Classroom session is held regularly (for example, every week), y
 
 ---
 
-### Overall improvements
-
-* ✅ Reduced unnecessary paragraphs.
-* ✅ Consistent numbering (**01–05**) like your other Teacher Guides.
-* ✅ One action per step (ideal for video tutorials).
-* ✅ Clear headings and concise descriptions.
-* ✅ Consistent Moodle terminology (Turn editing on, Add an activity or resource, Save and return to course).
-* ✅ Better readability while preserving all essential information.
