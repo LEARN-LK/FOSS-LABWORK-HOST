@@ -1,8 +1,8 @@
-# End User Guide for LTUBE
+# End User Guide for LEARN-TUBE
 
-### Following guide is for the user to publish a video in LTUBe
+## Following guide is for the user to publish a video in LTUBE.
 
-**To try the following steps, you need to have an account from EduID**
+<!--  **To try the following steps, you need to have an account from EduID**-->
 
 
 
