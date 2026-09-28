@@ -6,8 +6,8 @@
 * They can click on the link or resource to access the VCR Classroom.
   <img src="https://raw.githubusercontent.com/LEARN-LK/lms/master/img/109-stud-vcr3.png" alt="image" style="max-width: 100%;width: 700px;">
 
-  
+
 <p>Below will render an iframe</p>
 <div class="iframe-container">
-<iframe frameborder="0" src="https://www.youtube.com/embed/qkcx0kf6jME"></iframe>
+<iframe frameborder="0" src="https://ltube.ac.lk/view?m=DX2J1VbxI"></iframe>
 </div>
