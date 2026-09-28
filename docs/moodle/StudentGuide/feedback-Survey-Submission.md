@@ -2,7 +2,7 @@
 
 <h2>Video Guide - feedback activity and submit feedback</h2>
 
-<iframe width="560" height="315" src="https://ltube.ac.lk/view?m=JtzBNCVnl" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=JtzBNCVnl" frameborder="0" allowfullscreen></iframe>
 
 
 

@@ -12,7 +12,7 @@ Moodle is a learning management system (LMS) that allows you to access course ma
 
 <h2>Video Guide - Moodle Student Guide Getting Started</h2>
 
-<iframe width="560" height="315" src="https://ltube.ac.lk/view?m=E8J3iH7XA" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=E8J3iH7XA" frameborder="0" allowfullscreen></iframe>
 
 
 

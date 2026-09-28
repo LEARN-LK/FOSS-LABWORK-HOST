@@ -1,7 +1,7 @@
 
 <h2>Video Guide - Navigating Courses ,Submitting Assignments Quizzes</h2>
 
-<iframe width="560" height="315" src="https://ltube.ac.lk/view?m=8ivnmtdHt" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=8ivnmtdHt" frameborder="0" allowfullscreen></iframe>
 
 
 
