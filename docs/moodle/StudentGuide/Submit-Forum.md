@@ -1,5 +1,10 @@
 <h2>Submit the Forum</h2>
 
+
+<h2>Video Guide - Submit the Forum </h2>
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/view?m=M4RuRrhwT" frameborder="0" allowfullscreen></iframe>
+
 Here are the steps for a student to reply to a forum in Moodle:
 
 1. **Access the Forum**:

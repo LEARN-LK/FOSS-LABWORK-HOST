@@ -9,6 +9,15 @@ Moodle is a learning management system (LMS) that allows you to access course ma
 * Enter the URL provided by your institution for Moodle.
 * Log in using your username and password.
 
+
+<h2>Video Guide - Moodle Student Guide Getting Started</h2>
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/view?m=E8J3iH7XA" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+
 <h2>02. Getting Started</h2>
 
 * Logging In
