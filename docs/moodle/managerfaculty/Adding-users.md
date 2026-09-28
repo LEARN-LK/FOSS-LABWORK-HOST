@@ -1,4 +1,10 @@
+<h2> Video Guide - Moodle Adding Users and Enrolment </h2>
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=8EdApUdtE" frameborder="0" allowfullscreen></iframe>
+
+
+
 <h1>Adding users </h1>
+
 
 This is a two-step process, 
 

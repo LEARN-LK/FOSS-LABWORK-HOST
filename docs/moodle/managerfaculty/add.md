@@ -1,3 +1,10 @@
+
+<h2> Video Guide - Moodle Course Management</h2>
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=h3Y5ZTLEk" frameborder="0" allowfullscreen></iframe>
+
+
+
 <H1> 01 Adding a Course Category </H1>
 
 `Note: Regular teachers cannot add new courses to Moodle. To do this, you need to be log in as an administrator, course creator, or manager.`
