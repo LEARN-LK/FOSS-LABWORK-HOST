@@ -1,4 +1,3 @@
-<H2>Join in VCR Class Room</H2>
 
 <h2>Video Guide - Join in VCR Class Room </h2>
 
