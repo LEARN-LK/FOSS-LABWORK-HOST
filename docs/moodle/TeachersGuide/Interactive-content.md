@@ -8,6 +8,11 @@ Interactive content in Moodle refers to any content that allows learners to enga
 * Interactive video: Learners watch a video and answer questions, complete activities, or make choices that affect the outcome of the video.
 * Quiz: Learners answer a series of questions to assess their understanding of the material.
 
+
+<h2> Video Guide - Moodle Interactive Content </h2>
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=VaOcDzBZ0" frameborder="0" allowfullscreen></iframe>
+
 <h3>Interactive content can be created using a variety of tools, including:</h3>
 
 * H5P: H5P is a free and open-source content creation tool that offers a wide variety of interactive content types.

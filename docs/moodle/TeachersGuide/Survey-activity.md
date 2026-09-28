@@ -4,6 +4,9 @@ The Survey activity provides a collection of validated survey instruments, such 
 
  `Please note that the Survey activity does not allow for customization of questions. If you wish to craft your own survey questions, consider utilizing the Feedback activity instead.` 
 
+ <h2> Video Guide - Moodle Survey Activity</h2>
+ <iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=m9ZiKvaAV" frameborder="0" allowfullscreen></iframe>
+
 <h3>Create a new step survey activity.</h3>
 
 * Go to the course where you want to create the step survey activity.

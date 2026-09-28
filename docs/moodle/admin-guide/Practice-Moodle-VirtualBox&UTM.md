@@ -1,4 +1,10 @@
 
+
+
+
+
+
+
 # **Practice Moodle in VirtualBox**
 
 ### **Complete Step-by-Step Guide to Run Moodle Preconfigured Virtual Machine**
@@ -23,6 +29,9 @@ http://moodle:9000
 --- -->
 
 ## ⚙️ **Part 1 — For Intel Users (Windows) VirtualBox**
+
+<h2> Video Guide - Practice Moodle in VirtualBox (Windows)</h2>
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=EqJ0hhewm" frameborder="0" allowfullscreen></iframe>
 
 ### **1. Download Required Files**
 
@@ -110,6 +119,10 @@ If Moodle doesn’t load, restart the VM.
 
 ## ⚙️ **Part 2 — For Intel Users (Mac) VirtualBox**
 
+<h2> Video Guide - Practice Moodle in VirtualBox (Mac -Intel)</h2>
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=XCeQdpcoY" frameborder="0" allowfullscreen></iframe>
+
 ### **1. Download Required Files**
 
 #### 📦 From Google Drive:
@@ -171,6 +184,13 @@ Open your browser (if not already open) and visit:
 ---
 
 ## ⚙️ **Part 3 — Setup Guide for Mac (Apple Silicon / Silver Processor)**
+
+
+
+<h2> Video Guide - Practice Moodle in VirtualBox (Mac -Silicon)</h2>
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=x15bHp0D7" frameborder="0" allowfullscreen></iframe>
+
 
 ### **1. Download Required Files**
 

@@ -2,6 +2,11 @@
 
 Students can send work to their teacher for feedback. Submissions can be typed online or uploaded as files. Teachers can grade with percentages, scales, or rubrics. Students can work alone or together.
 
+
+<h2> Video Guide -Moodle Adding an Assignment</h2>
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=mZLteW3fE" frameborder="0" allowfullscreen></iframe>
+
 <h2>How is it set up?</h2>
 
 * Step 01 : Log in to your Moodle account: Access your Moodle site and log in with your administrator or teacher credentials.

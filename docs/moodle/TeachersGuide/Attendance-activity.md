@@ -8,6 +8,10 @@ The Attendance activity has the capability to generate reports, covering either 
 
 For swift access to Attendance functionality, an optional Attendance block is available, providing teachers with quick entry to the feature and students with an expedited summary report of their attendance.
 
+<h2> Video Guide - Moodle Attendance activity</h2>
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=JFymacYmZ" frameborder="0" allowfullscreen></iframe>
+
 <h2>Adding an Attendance activity</h2>
 
 * Login to Moodle:

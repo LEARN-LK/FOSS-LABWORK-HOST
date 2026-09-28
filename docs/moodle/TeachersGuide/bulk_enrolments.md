@@ -1,3 +1,8 @@
+<h2> Video Guide - Moodle Bulk Enrolments plugin</h2>
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=ltZYlLwgY" frameborder="0" allowfullscreen></iframe>
+
+
 <h2>Bulk Enrolments plugin</h2>
 
 Bulk enrolments allows you to enrol students and add them to groups in a Moodle course using an excel file containing the students' email address or userid. Before you start, you will require an excel file containing a complete list of the students' email address or userids in the first column. Subsequent columns contain the names of any groups you want to add each student to.

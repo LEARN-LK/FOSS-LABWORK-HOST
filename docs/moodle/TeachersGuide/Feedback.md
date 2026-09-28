@@ -1,5 +1,10 @@
 <h1>Feedback activity</h1>
 
+<h2> Video Guide - Moodle Feedback Activity</h2>
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=omnmQULqo" frameborder="0" allowfullscreen></iframe>
+
+
 <h3>1. Enable the feedback activity.</h3>
 
 `Note : Mostly pluging is enabled ,if not follow below step` 

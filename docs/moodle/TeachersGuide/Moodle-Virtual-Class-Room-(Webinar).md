@@ -1,6 +1,6 @@
-The content is good, but it can be made much more concise, consistent, and easier to follow. Below is a reorganized version that matches the style of your other Moodle Teacher Guides.
 
----
+<h2> Video Guide - Moodle Virtual Class Room (Webinar) </h2>
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=LpbQE0BZR" frameborder="0" allowfullscreen></iframe>
 
 # Moodle Virtual Classroom (Webinar)
 

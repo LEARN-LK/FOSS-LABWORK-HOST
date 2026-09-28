@@ -1,5 +1,9 @@
 <h1>Forum Activity</h1>
 
+<h2> Video Guide - Moodle Creating and Managing a Forum </h2>
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=TLrOjcSo5" frameborder="0" allowfullscreen></iframe>
+
 
 A **forum activity** in Moodle is a tool for online discussions, enabling teachers and students to collaborate on specific topics. It supports different formats:
 

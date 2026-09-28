@@ -2,6 +2,11 @@
 
 # Exabis e-Portfolio Training Guide
 
+
+<h2> Video Guide - Moodle Exabis ePortfolio</h2>
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=W7j0SfHNP" frameborder="0" allowfullscreen></iframe>
+
 ### For Teachers and Students
 
 ---

@@ -8,6 +8,11 @@ Participants can access their certificates directly within the course or receive
 
 These tools are especially useful in workplace environments and structured courses, where automated and verifiable certification is required to acknowledge achievements systematically.
 
+
+<h2> Video Guide - Moodle Certificate Activity</h2>
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=mWVWPLqOM" frameborder="0" allowfullscreen></iframe>
+
 <!--
 ## installing the **Workplace Course Certificate** plugin in Moodle:
 

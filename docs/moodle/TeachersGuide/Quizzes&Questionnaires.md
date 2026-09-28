@@ -4,6 +4,9 @@ The Quiz activity in Moodle 4.0 is a tool that allows teachers to create and del
 
 Quizzes can be graded automatically or manually. For automatically graded quizzes, the system will automatically assign students a score based on their answers. For manually graded quizzes, teachers will need to review student responses and assign scores manually.Students can take quizzes multiple times, and teachers can control how many attempts students are allowed and whether students can see their scores after each attempt.
 
+<h2> Video Guide - Moodle Add Questions to a Quiz</h2>
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=O2PQ4Oaqn" frameborder="0" allowfullscreen></iframe>
+
 <h3>Here are some of the new features in the Quiz activity in Moodle :</h3>
 
 * New question types: Moodle 4.0 includes several new question types, such as drag-and-drop questions, matching questions, and hotspot questions.

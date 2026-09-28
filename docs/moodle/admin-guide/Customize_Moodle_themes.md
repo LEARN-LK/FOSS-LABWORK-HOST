@@ -1,5 +1,9 @@
 <h1>Customize Moodle Themes</h1>
 
+<h2> Video Guide - Moodle language pack </h2>
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=02xwPRMdZ" frameborder="0" allowfullscreen></iframe>
+
+
 <h2> 01 -Basic Customization (Theme Selector and Settings):</h2>
 
 - Go to Administration > Appearance > Themes Setting / advanced Themes Settings.

@@ -6,6 +6,13 @@ Teachers have the option to download board content or a spreadsheet of all submi
 
 Initially developed by Brickfield Education Labs with funding from Dublin City University, the plugin aims to foster interactive learning and collaboration in both virtual and physical classroom environments
 
+
+
+
+<h2> Video Guide - Moodle Board Plugin </h2>
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=SYM2pXGO5" frameborder="0" allowfullscreen></iframe>
+
+
 <!--
 ## Here are the steps to install the *Board* plugin for Moodle:
 

@@ -25,6 +25,11 @@ To install the **Checklist plugin** in Moodle, follow these steps:
 2. Set any options such as **default permissions** or **email notifications** for checklist completion.
 -->
 
+<h2> Video Guide - Moodle Check List Plugin</h2>
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=N1aRWkbU1" frameborder="0" allowfullscreen></iframe>
+
+
 ### Step 1: Add Checklist to a Course
 1. Go to the desired course in **Editing Mode**.
 2. Select **Add an activity or resource**.

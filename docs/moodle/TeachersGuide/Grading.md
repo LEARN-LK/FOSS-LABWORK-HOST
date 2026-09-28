@@ -1,3 +1,9 @@
+<h2> Video Guide - Moodle Grading Activity </h2>
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=EKprNO18m" frameborder="0" allowfullscreen></iframe>
+
+
+
 <h1>Grading</h1>
 Grading system is a comprehensive tool that allows instructors to assess student performance and provide feedback. Here's a step-by-step guide on how to use the grading system:
 

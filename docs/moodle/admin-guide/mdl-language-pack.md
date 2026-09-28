@@ -1,3 +1,10 @@
+
+<h2> Video Guide - Moodle language pack </h2>
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=73IcNImQj" frameborder="0" allowfullscreen></iframe>
+
+
+
+
 ## Here is the complete guide to **installing the language pack** 
 ---
 
