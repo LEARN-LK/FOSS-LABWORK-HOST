@@ -1,5 +1,9 @@
 # End User Guide for LEARN-TUBE
 
+
+<h2>Video Guide - End User Guide for LEARN-TUBE</h2>
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=tYp3kUbbZ" frameborder="0" allowfullscreen></iframe>
+
 ## Following guide is for the user to publish a video in LTUBE.
 
 <!--  **To try the following steps, you need to have an account from EduID**-->
