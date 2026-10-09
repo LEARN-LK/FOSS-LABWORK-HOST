@@ -101,7 +101,7 @@ Open the public inbox named:
 
 `glb`
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/sandbox-2.png" alt="Open the DSpace profile page" style="max-width: 100%;width: 300px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/sandbox-2.png" alt="Open the DSpace profile page" style="max-width: 100%;width: 500px;">
 
 ### 4. Find the ORCID Verification Email
 
@@ -118,7 +118,7 @@ Make sure that the inbox name matches the email address you entered during regis
 3. Click the link [5].
 4. Follow the instructions displayed by ORCID Sandbox.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/sandbox-3.png" alt="Open the DSpace profile page" style="max-width: 100%;width: 300px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/sandbox-3.png" alt="Open the DSpace profile page" style="max-width: 100%;width: 500px;">
 
 After successful verification, return to the ORCID Sandbox website and continue with your account.
 
