@@ -87,7 +87,7 @@ Alternatively, open the Public Inbox directly:
 [https://www.mailinator.com/v4/public/inboxes.jsp](https://www.mailinator.com/v4/public/inboxes.jsp)
 
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/sandbox-1.png" alt="Open the DSpace profile page" style="max-width: 100%;width: 300px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/sandbox-1.png" alt="Open the DSpace profile page" style="max-width: 100%;width: 500px;">
 
 ### 3. Open Your Mailinator Inbox [3],[4]
 
