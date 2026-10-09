@@ -24,11 +24,11 @@ For this tutorial, use a Mailinator email address as your **Primary email**.
 
 For example:
 
-`nuwan@mailinator.com`
+`glb@mailinator.com`
 
-Replace `nuwan` with your preferred Mailinator inbox name.
+Replace `glb` with your preferred Mailinator inbox name.
 
-- **Primary email:** Use your Mailinator address, such as `nuwan@mailinator.com`.
+- **Primary email:** Use your Mailinator address, such as `glb@mailinator.com`.
 - **Additional email:** You may add your personal email address as an additional email address if the registration form provides this option.
 
 ORCID Sandbox verification messages for this workflow will be accessed through the Mailinator Public Inbox.
@@ -62,9 +62,7 @@ Available options may include:
 
 For testing, select the appropriate visibility option for your demonstration.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-04.png" alt="ORCID visibility preferences" style="max-width: 100%;width: 300px;">
-
-<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-05.png" alt="ORCID visibility settings" style="max-width: 100%;width: 300px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-04.png" alt="ORCID visibility preferences" style="max-width: 100%;width: 300px;"><img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-05.png" alt="ORCID visibility settings" style="max-width: 100%;width: 300px;">
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-06.png" alt="ORCID profile visibility selection" style="max-width: 100%;width: 300px;">
 
@@ -76,29 +74,34 @@ For testing, select the appropriate visibility option for your demonstration.
 
 ### 1. Open Mailinator
 
-Visit the Mailinator website:
+Visit the Mailinator website [1]:
 
 [https://www.mailinator.com/](https://www.mailinator.com/)
 
 ### 2. Open the Public Inbox
 
-Click **Public Inbox** in the top-right corner of the website.
+Click **Public Inbox [2]** in the top-right corner of the website.
 
 Alternatively, open the Public Inbox directly:
 
 [https://www.mailinator.com/v4/public/inboxes.jsp](https://www.mailinator.com/v4/public/inboxes.jsp)
 
-### 3. Open Your Mailinator Inbox
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/sandbox-1.png" alt="Open the DSpace profile page" style="max-width: 100%;width: 300px;">
+
+### 3. Open Your Mailinator Inbox [3],[4]
 
 Enter the inbox name that matches the primary email address used during registration.
 
 For example, if you registered using:
 
-`nuwan@mailinator.com`
+`glb@mailinator.com`
 
 Open the public inbox named:
 
-`nuwan`
+`glb`
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/sandbox-2.png" alt="Open the DSpace profile page" style="max-width: 100%;width: 300px;">
 
 ### 4. Find the ORCID Verification Email
 
@@ -112,8 +115,10 @@ Make sure that the inbox name matches the email address you entered during regis
 
 1. Open the ORCID Sandbox verification email.
 2. Locate the **Verify your email address** link.
-3. Click the link.
+3. Click the link [5].
 4. Follow the instructions displayed by ORCID Sandbox.
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/sandbox-3.png" alt="Open the DSpace profile page" style="max-width: 100%;width: 300px;">
 
 After successful verification, return to the ORCID Sandbox website and continue with your account.
 
