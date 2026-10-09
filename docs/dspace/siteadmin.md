@@ -72,11 +72,13 @@ At **LEARN**, access to DSpace is provided **only through Single Sign-On (SSO)**
    
   
 4. Fill in [10]:
+
 <img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/SA9-siteadmin-subcommunityname-finalyear.png" alt="image" style="max-width: 100%;width: 500px;">
 
    - **Collection Name**: `Final Year Projects 2024`
    - **Short Description**: `Undergraduate final year research projects`
    - **License**: Keep default or add custom license
+   - **Entity Type**   `Person`
 
 5. Click **Save**
 
