@@ -33,9 +33,10 @@ Replace `nuwan` with your preferred Mailinator inbox name.
 
 ORCID Sandbox verification messages for this workflow will be accessed through the Mailinator Public Inbox.
 
-<img src="[https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-01.png](https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-01.png)" alt="ORCID Sandbox registration form" style="max-width: 100%;width: 300px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-01.png" alt="ORCID Sandbox registration form" style="max-width: 100%;width: 300px;">
 
-<img src="[https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-02.png](https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-02.png)" alt="ORCID Sandbox registration details" style="max-width: 100%;width: 300px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-02.png" alt="ORCID Sandbox registration details" style="max-width: 100%;width: 300px;">
+
 
 ### 3. Complete the Registration Form
 
@@ -47,7 +48,7 @@ Follow any additional instructions displayed by ORCID Sandbox.
 
 If your organization is not listed, for example, LEARN, click **Skip this step without adding an affiliation**.
 
-<img src="[https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-03.png](https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-03.png)" alt="Skip the employment information step" style="max-width: 100%;width: 400px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-03.png" alt="Skip the employment information step" style="max-width: 100%;width: 400px;">
 
 ### 5. Set Visibility Preferences
 
@@ -61,11 +62,11 @@ Available options may include:
 
 For testing, select the appropriate visibility option for your demonstration.
 
-<img src="[https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-04.png](https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-04.png)" alt="ORCID visibility preferences" style="max-width: 100%;width: 300px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-04.png" alt="ORCID visibility preferences" style="max-width: 100%;width: 300px;">
 
-<img src="[https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-05.png](https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-05.png)" alt="ORCID visibility settings" style="max-width: 100%;width: 300px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-05.png" alt="ORCID visibility settings" style="max-width: 100%;width: 300px;">
 
-<img src="[https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-06.png](https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-06.png)" alt="ORCID profile visibility selection" style="max-width: 100%;width: 300px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/orcid-06.png" alt="ORCID profile visibility selection" style="max-width: 100%;width: 300px;">
 
 ---
 
@@ -143,7 +144,7 @@ After successful verification, return to the ORCID Sandbox website and continue 
 
 Once logged in, click your name or profile icon at the top of the page and select **Profile → Update Profile**.
 
-<img src="[https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-01.png](https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-01.png)" alt="Open the DSpace profile page" style="max-width: 100%;width: 300px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-01.png" alt="Open the DSpace profile page" style="max-width: 100%;width: 300px;">
 
 2.1 in a Researcher Profile > Click "Create new"
 
@@ -151,17 +152,17 @@ Once logged in, click your name or profile icon at the top of the page and selec
 
 On your profile page, locate the **Click on View** button and click it to open the ORCID settings.
 
-<img src="[https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-02.png](https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-02.png)" alt="Open ORCID settings in DSpace" style="max-width: 100%;width: 300px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-02.png" alt="Open ORCID settings in DSpace" style="max-width: 100%;width: 300px;">
 
 ### 4. Connect Your ORCID iD
 
 You should now be on the **ORCID Authorizations** page.
 
-<img src="[https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-03.png](https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-03.png)" alt="DSpace ORCID Authorizations page" style="max-width: 100%;width: 400px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-03.png" alt="DSpace ORCID Authorizations page" style="max-width: 100%;width: 400px;">
 
 Click **Connect to ORCID ID** to begin the linking process.
 
-<img src="[https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-04.png](https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-04.png)" alt="Connect to ORCID ID button" style="max-width: 100%;width: 400px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-04.png" alt="Connect to ORCID ID button" style="max-width: 100%;width: 400px;">
 
 ### 5. Authorize DSpace in ORCID
 
@@ -179,7 +180,7 @@ If DSpace is configured to use the ORCID Sandbox:
 4. Approve the requested permissions if you agree.
 5. Click **Authorize access** or the equivalent authorization button displayed.
 
-<img src="[https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-05.png](https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-05.png)" alt="Authorize DSpace access in ORCID" style="max-width: 100%;width: 400px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-05.png" alt="Authorize DSpace access in ORCID" style="max-width: 100%;width: 400px;">
 
 **Important configuration requirement:** The DSpace installation must be configured with the ORCID Sandbox API credentials and authorization endpoints for this test. Creating a Sandbox account does not automatically configure DSpace to use the Sandbox.
 
@@ -196,7 +197,7 @@ You may see permissions such as:
 - Add or update research activities.
 - Add or update profile information.
 
-<img src="[https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-06.png](https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-06.png)" alt="ORCID authorization details in DSpace" style="max-width: 100%;width: 500px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/DSpace/main/imgs/Dspace-orcid-06.png" alt="ORCID authorization details in DSpace" style="max-width: 100%;width: 500px;">
 
 ---
 
