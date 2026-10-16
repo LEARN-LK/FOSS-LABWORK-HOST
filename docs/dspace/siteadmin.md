@@ -1,4 +1,9 @@
 
+### Video Guide - DSpace Site Administration
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=hX40B3AJc" frameborder="0" allowfullscreen></iframe>
+
+
 ## 🔐 Access via SSO Login (EduID & Shibboleth)
 
 At **LEARN**, access to DSpace is provided **only through Single Sign-On (SSO)**. Users must log in using:

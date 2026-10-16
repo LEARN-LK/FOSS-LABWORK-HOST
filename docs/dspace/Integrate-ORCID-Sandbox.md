@@ -1,7 +1,12 @@
+
+
 # ORCID Sandbox + DSpace Integration Steps
 
 This guide explains how to create an ORCID Sandbox account, verify the registered email address using Mailinator, and connect the Sandbox ORCID iD to DSpace for testing.
 
+### Video Guide : DSpace ORCID Sandbox Integration
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=dIeOS8F3Z" frameborder="0" allowfullscreen></iframe>
 ---
 
 ## Step 1: Create an ORCID Sandbox Account (For Testing)
