@@ -67,7 +67,8 @@ nav:
     - ORCID Sandbox + DSpace integration: dspace/Integrate-ORCID-Sandbox.md
   - WordPress:
     - Practice WordPress: wordpress/Practice-Wordpress.md
-    - Build Your Own Website: wordpress/build-website.md    
+    - Build Your Own Website: wordpress/build-website.md
+    - Build Your Own Website: wordpress/build-website1.md    
     - Site-Backup & Restore: wordpress/Site-Backup&Restore.md
   - Indico:
     - Introduction: indico/README.md
