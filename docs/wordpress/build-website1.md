@@ -87,46 +87,46 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 1. Go to **Appearance → Editor**.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-1.png" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-1.png" alt="image" style="max-width: 50%;width: 600px;">
 
 2. Click on **Patterns**, then click the **Add Pattern** drop-down (the `+` icon next to Patterns) and select **Add Pattern**.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-2.png" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-2.png" alt="image" style="max-width: 50%;width: 600px;">
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-3.png" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-3.png" alt="image" style="max-width: 85%;width: 600px;">
 
 3. Set Pattern Name to **`Learn Menu`**, set Categories to **`Headers`**, and click **Create / Add**.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-4.png" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-4.png" alt="image" style="max-width: 80%;width: 600px;">
 
 4. In the editor space (`Type / to choose a block`), click the **`+`** icon on the right side and select **Columns**.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-5.png" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-5.png" alt="image" style="max-width: 80%;width: 600px;">
 
 5. Choose the **33 / 66** layout split.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-6.png" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-6.png" alt="image" style="max-width: 80%;width: 600px;">
 
 6. **Left Column (33%):** Click the **`+`** icon → select **Site Logo** (under Media) or **Image**, and upload/select the LEARN logo.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-7.png" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-7.png" alt="image" style="max-width: 80%;width: 600px;">
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-7.1.png" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-7.1.png" alt="image" style="max-width: 50%;width: 600px;">
 
 
 7. **Right Column (66%):** Click the **`+`** icon → select **Navigation**, and add your page links (**About**, **Contact Us**, **Services**).
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-8.png" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-8.png" alt="image" style="max-width: 80%;width: 600px;">
 
 
 8. Click **Save**.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-9.png" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-9.png" alt="image" style="max-width: 80%;width: 600px;">
 
 
 9. Return to the main editor view by clicking **Dashboard** or **Edit Site**.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-10.png" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-10.png" alt="image" style="max-width: 80%;width: 600px;">
 
 
 10. At the top of your site layout/page, click the **`+` (Add block)** icon.
