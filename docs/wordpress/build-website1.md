@@ -18,7 +18,7 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 ## Step 1: Install Theme and Plugins
 
-1. Log in to your WordPress Dashboard (`[yourdomain.com/wp-admin](https://yourdomain.com/wp-admin)`).
+1. Log in to your WordPress Dashboard (`[yourdomain.com/wp-admin](http://wordpress:8000/wp-admin)`).
 2. **Install the Theme:**
 * Go to **Appearance → Themes**.
 * Locate or search for **Twenty Twenty-Five**, click **Activate**.
@@ -129,12 +129,12 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-10.png" alt="image" style="max-width: 80%;width: 600px;">
 
 
-10. At the top of your site layout/page, click the **`+` (Add block)** icon.
+10. At the top of your site layout/page, click the **`+` (Add block)** icon and Search for **`Learn Menu`** and select it to insert your newly created menu block. If there are any previous menu/header versions showing, delete them so only your new **Learn Menu** remains.
 
 <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-11.png" alt="image" style="max-width: 100%;width: 600px;">
 
 
-11. Search for **`Learn Menu`** and select it to insert your newly created menu block. If there are any previous menu/header versions showing, delete them so only your new **Learn Menu** remains.
+
 
 
 ---
