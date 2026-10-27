@@ -83,20 +83,19 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 ---
 
 
-
-## Step 3: Build the Global Header (Logo & Navigation)
-
-*Note: In the Twenty Twenty-Five block theme, headers are global elements edited through the Site Editor.*
+## Step 3: Create & Apply Custom Header Pattern ("Learn Menu")
 
 1. Go to **Appearance → Editor**.
-2. Click on **Patterns** (or **Template Parts**), then select **Header**.
-3. Click the edit icon.
-4. Set up a **Row** or **Group** block with **Space Between** alignment:
-* **Left Side:** Add an **Image** block and upload your **LEARN** logo image (with the blue text underneath).
-* **Right Side:** Add a **Navigation** block, and add menu links pointing to **About**, **Contact Us**, and **Services**.
-
-
-5. Click **Save**.
+2. Click on **Patterns**, then click the **Add Pattern** drop-down (the `+` icon next to Patterns) and select **Add Pattern**.
+3. Set Pattern Name to **`Learn Menu`**, set Categories to **`Headers`**, and click **Create / Add**.
+4. In the editor space (`Type / to choose a block`), click the **`+`** icon on the right side and select **Columns**.
+5. Choose the **33 / 66** layout split.
+6. **Left Column (33%):** Click the **`+`** icon → select **Site Logo** (under Media) or **Image**, and upload/select the LEARN logo.
+7. **Right Column (66%):** Click the **`+`** icon → select **Navigation**, and add your page links (**About**, **Contact Us**, **Services**).
+8. Click **Save**.
+9. Return to the main editor view by clicking **Dashboard** or **Edit Site**.
+10. At the top of your site layout/page, click the **`+` (Add block)** icon.
+11. Search for **`Learn Menu`** and select it to insert your newly created menu block. If there are any previous menu/header versions showing, delete them so only your new **Learn Menu** remains.
 
 ---
 
@@ -114,77 +113,60 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 ---
 
-## Step 5: Build the Homepage Content (Using Visual Editor)
+## Step 5: Build Homepage Content (Visual Editor)
 
 1. Go to **Pages → Home** and click **Edit**.
 2. Build the page section-by-section using the drag-and-drop **Visual Editor**:
 
 ### Section 1: Hero Slider
 
-* Click the **`+` (Add block)** button, search for **Shortcode**, and select it.
-* Paste your Smart Slider 3 shortcode inside (e.g., `[smartslider3 slider="1"]`).
+* Add a **Shortcode** block and paste your Smart Slider 3 shortcode inside.
 * Add a **Spacer** block underneath set to **40px**.
 
 ### Section 2: LEARN Intro Section
 
-* Add a **Columns** block and select the **50 / 50** (two equal columns) layout.
-* **Left Column:**
-* Add a **Heading** block (`H2`), type `LEARN`.
-* Add a **Paragraph** block underneath and paste the introductory text (*"Lorem ipsum dolor sit amet..."*).
-
-
-* **Right Column:**
-* Add an **Image** block and upload the **LEARN 35 Years of Excellence** badge graphic.
-
-
-* Add a **Spacer** block below the columns set to **60px**.
+* Add a **Columns** block and select the **50 / 50** layout.
+* **Left Column:** Add a **Heading** (`H2`) titled `LEARN`, then add a **Paragraph** block for the intro text below it.
+* **Right Column:** Add an **Image** block and upload the **LEARN 35 Years of Excellence** badge graphic.
+* Add a **Spacer** block below set to **60px**.
 
 ### Section 3: "Our services" Section
 
-* Add a **Heading** block, type `Our services`, and align it to the **Center**.
+* Add a **Heading** block, type `Our services`, and align to **Center**.
 * Add a **Spacer** block set to **30px**.
 * Add a **Columns** block and choose **4 Columns**.
-* Set up each of the 4 columns:
-* **Column 1 (`eduID`):** Add an **Image** block (upload round eduID image, set width/height to `180px` and style with rounded borders / 100px radius). Add a **Heading** (`H3`) titled `eduID`. Add a **Paragraph** description block.
-* **Column 2 (`LIAF`):** Add an **Image** block (upload LIAF standing icon, `180x180px`, rounded). Add a **Heading** (`H3`) titled `LIAF`. Add a **Paragraph** description block.
-* **Column 3 (`Video Conferencing`):** Add an **Image** block (upload blue screen icon, `180x180px`, rounded). Add a **Heading** (`H3`) titled `Video Conferencing`. Add a **Paragraph** description block.
-* **Column 4 (`eduVPN`):** Add an **Image** block (upload eduVPN shield icon, `180x180px`, rounded). Add a **Heading** (`H3`) titled `eduVPN`. Add a **Paragraph** description block.
-
-
-* Add a **Spacer** block below the 4 columns set to **60px**.
+* Set up each column with a rounded **Image** (`180x180px`), a **Heading** (`H3`), and a **Paragraph** description for **eduID**, **LIAF**, **Video Conferencing**, and **eduVPN**.
+* Add a **Spacer** block below set to **60px**.
 
 ### Section 4: About Section
 
-* Add a **Columns** block and choose the **50 / 50** layout.
-* **Left Column:**
-* Add an **Image** block and upload the **3D Wireframe Network Sphere** graphic.
-
-
-* **Right Column:**
-* Add a **Heading** block (`H2`), type `About`.
-* Add **Paragraph** blocks underneath containing the organization history and membership details (*"We celebrated our 30th anniversary in 2019..."* and *"LEARN currently has 16 full members..."*).
-
-
-* Click **Update / Publish** to save your homepage.
+* Add a **Columns** block and choose **50 / 50**.
+* **Left Column:** Add an **Image** block with the **3D Wireframe Network Sphere** graphic.
+* **Right Column:** Add a **Heading** (`H2`) titled `About`, followed by **Paragraph** blocks containing your organization details.
+* Click **Update / Publish**.
 
 ---
 
-## Step 6: Build the Global Footer
+## Step 6: Build Global Footer
 
-1. Go back to **Appearance → Editor**.
-2. Select **Patterns** (or **Template Parts**) → **Footer** and click **Edit**.
-3. Add the following elements centered:
-* An **Image** block with the small centered red/pink **LEARN** logo.
-* A **Paragraph** block reading: `Proudly powered by WordPress`.
-* A **Social Icons** block with links/icons for Facebook, Twitter, and WordPress.
+1. Go to **Appearance → Editor → Patterns → Footer** and click **Edit**.
+2. Centered in the layout, add:
+* Small centered red/pink **LEARN** logo.
+* **Paragraph** reading `Proudly powered by WordPress`.
+* **Social Icons** block (Facebook, Twitter, WordPress).
 
 
-4. Click **Save**.
+3. Click **Save**.
 
 ---
 
 ## Step 7: (Optional) Set Up Contact Form Page
 
-1. Go to **Contact → Contact Forms** and copy your form shortcode (e.g., `[contact-form-7 id="..."]`).
+1. Go to **Contact → Contact Forms** and copy your form shortcode.
 2. Go to **Pages → Contact Us**.
 3. Add a **Shortcode** block, paste your Contact Form 7 shortcode, and click **Publish**.
+
+Would you like help customizing the styling (colors, mobile responsiveness, or typography) for your new "Learn Menu" pattern?
+
+* Would you like step-by-step instructions on making the "Learn Menu" header sticky or fixed at the top of the page when scrolling?
+* Do you need assistance setting up the Contact Form 7 fields and email notifications for the Contact Us page?
