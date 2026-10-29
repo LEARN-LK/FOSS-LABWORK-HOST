@@ -182,12 +182,12 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-14.png?raw=true" alt="image" style="max-width: 100%;width: 600px;"> 
    
-11. Search for Smart Slider 3 (or Shortcode).  
-12. Click on the Smart Slider 3 block to add it to your page layout.  
+11. Search for **Smart Slider 3** (or Shortcode).  
+12. Click on the Smart Slider 3 block to add it to your page layout and Click the Select **Slider button** on the block. 
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-9.png" alt="image" style="max-width: 60%;width: 600px;">
 
-13. Choose your newly created slider and click Insert  &  Click Save in the top right corner.
+13. Choose your newly created slider and click **Insert**  &  Click **Save** in the top right corner.
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-10.png" alt="image" style="max-width: 60%;width: 600px;">
 
