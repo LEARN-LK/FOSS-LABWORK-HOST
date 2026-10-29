@@ -47,7 +47,7 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 2. In your WordPress dashboard, go to: **Pages → Add New**
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/001-page-add.png" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/001-page-add.png" alt="image" style="max-width: 60%;width: 600px;">
 
 3. If a setup pop-up window appears, close it.
 
@@ -55,31 +55,31 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 4. In the page title field, type: **Home**
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/003-rename-thepage.png" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/003-rename-thepage.png" alt="image" style="max-width: 60%;width: 600px;">
 
 
 5. Click the **Publish button** (top right corner).
 
 6. Once the page is published, click the **WordPress logo / Dashboard link (top-left corner)** to go back to the main Dashboard.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/005-back-todashbaord.png" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/005-back-todashbaord.png" alt="image" style="max-width: 60%;width: 600px;">
 
 
 3. Set your homepage:
 
  - Once the page is published, click the **WordPress logo / Dashboard link (top-left corner)** to go back to the main Dashboard.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/005-back-todashbaord.png" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/005-back-todashbaord.png" alt="image" style="max-width: 60%;width: 600px;">
 
  -  Go to **Settings → Reading**, select **"A static page"**, and choose **"Home"**.
   
-   <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/Reading.png" alt="image" style="max-width: 100%;width: 600px;">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/Reading.png" alt="image" style="max-width: 60%;width: 600px;">
   
-   <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/Static.png" alt="image" style="max-width: 100%;width: 600px;">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/Static.png" alt="image" style="max-width: 60%;width: 600px;">
 
  -  Click Save
 
-   <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/2.1-then-click-save.png" alt="image" style="max-width: 100%;width: 600px;">
+   <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/2.1-then-click-save.png" alt="image" style="max-width: 60%;width: 600px;">
 ---
 
 
@@ -170,24 +170,28 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-8.png" alt="image" style="max-width: 60%;width: 600px;">
 
-
-
 7. Click **Save**.
 
-
-
-9. Go to **Dashboard → Appearance → Editor (Site Editor)**.  
-10. Navigate to the **Homepage** template.  
-11. after menu section Click **+ (Add Block)** [18] and search for **Shortcode** or **Smart Slider 3 Block** [19].
+8. Go to **Dashboard → Appearance → Editor (Site Editor)**.  
+9. Navigate to the **Homepage** template.  
+10. after menu section Click **+ (Add Block)** [18] and search for **Shortcode** or **Smart Slider 3 Block** [19].
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-13.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-14.png?raw=true" alt="image" style="max-width: 100%;width: 600px;"> 
    
-12. Click on the **Smart Slider block** to add it to the page.  
-13. Click on Select Slider Button    <<image>>
-14. Choose Created slider and click insert button
-15. Now created slider appiear in Homepage
+11. Click on the **Smart Slider block** to add it to the page.  
+12. Click on Select Slider Button   
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-9.png" alt="image" style="max-width: 60%;width: 600px;">
+
+13. Choose Created slider and click insert button
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-10.png" alt="image" style="max-width: 60%;width: 600px;">
+
+14. Now created slider appiear in Homepage
+	
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-11.png" alt="image" style="max-width: 60%;width: 600px;">
 
 
 ---
