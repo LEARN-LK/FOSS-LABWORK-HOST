@@ -141,35 +141,34 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 1. Click on **Smart Slider** in your left WordPress dashboard menu and Click on Slider Dashboard.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-1.png" alt="image" style="max-width: 100%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-1.png" alt="image" style="max-width: 60%;width: 600px;">
 
 2. Click **New Project** → **Create a New Project** (Slider type: Simple, Fullwidth).
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-2.png" alt="image" style="max-width: 100%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-2.png" alt="image" style="max-width: 60%;width: 600px;">
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-3.png" alt="image" style="max-width: 100%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-3.png" alt="image" style="max-width: 60%;width: 600px;">
 
 3. Click **Add Slide → Choose image**. 
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-4.png" alt="image" style="max-width: 100%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-4.png" alt="image" style="max-width: 60%;width: 600px;">
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-5.png" alt="image" style="max-width: 100%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/silder-5.png" alt="image" style="max-width: 60%;width: 600px;">
 
 4. Upload your images (* **Background:** Upload the blue interconnected network nodes graphic.)
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-6.png" alt="image" style="max-width: 100%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-6.png" alt="image" style="max-width: 60%;width: 600px;">
 
 5. select on uplorded image and click edit button
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-6.png" alt="image" style="max-width: 100%;width: 600px;">
-
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-7.png" alt="image" style="max-width: 100%;width: 600px;">
+	
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-7.png" alt="image" style="max-width: 60%;width: 600px;">
 
 6. in the rigthside bar add images and text here
 
 * **Contents:** Add the central circular logo graphic (`LEARN 35 Years of Excellence`), a heading text block reading `Connecting Research & Education Community of Sri Lanka`, and a button widget labeled `Read More`.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-8.png" alt="image" style="max-width: 100%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-8.png" alt="image" style="max-width: 60%;width: 600px;">
 
 
 
@@ -181,9 +180,9 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 10. Navigate to the **Homepage** template.  
 11. after menu section Click **+ (Add Block)** [18] and search for **Shortcode** or **Smart Slider 3 Block** [19].
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-13.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-13.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-14.png?raw=true" alt="image" style="max-width: 100%;width: 600px;"> 
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-14.png?raw=true" alt="image" style="max-width: 100%;width: 600px;"> 
    
 12. Click on the **Smart Slider block** to add it to the page.  
 13. Click on Select Slider Button    <<image>>
