@@ -6,7 +6,7 @@ WordPress is one of the most popular and user-friendly platforms for creating we
 
 Using WordPress, build your own website. This guide covers how to create a website. First, you should have an idea of the design you want to create. In this guide, I will walk you through building a website based on the attached wireframe. 
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/%5Cwireframe.jpeg" alt="image" style="max-width: 100%;width: 600px;">
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/%5Cwireframe.jpeg" alt="image" style="max-width: 100%;width: 600px;"> 
 
 Here’s a step-by-step guide to creating your website using WordPress based on above wireframe:
 
@@ -27,8 +27,7 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 3. **Install Required Plugins:**
 * Go to **Plugins → Add New Plugin**.
 * Search for **Smart Slider 3**, click **Install Now**, and then **Activate**.
-* Search for **Contact Form 7**, click **Install Now**, and then **Activate** *(optional, for your contact page)*.
-
+* Search for **Contact Form 7**, click **Install Now**, and then **Activate** *(optional, for your contact page)*
 
 
 ---
@@ -47,35 +46,35 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 2. In your WordPress dashboard, go to: **Pages → Add New**
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/001-page-add.png" alt="image" style="max-width: 60%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/001-page-add.png" alt="image" style="max-width: 60%;width: 600px;">
 
 3. If a setup pop-up window appears, close it.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/002-close-choose-pattern.png" alt="image" style="max-width: 100%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/002-close-choose-pattern.png" alt="image" style="max-width: 100%;width: 600px;">
 
 4. In the page title field, type: **Home**
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/003-rename-thepage.png" alt="image" style="max-width: 60%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/003-rename-thepage.png" alt="image" style="max-width: 60%;width: 600px;">
 
 
 5. Click the **Publish button** (top right corner).
 
 6. Once the page is published, click the **WordPress logo / Dashboard link (top-left corner)** to go back to the main Dashboard.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/005-back-todashbaord.png" alt="image" style="max-width: 60%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/005-back-todashbaord.png" alt="image" style="max-width: 60%;width: 600px;">
 
 
-3. Set your homepage:
+7. Set your homepage:
 
  - Once the page is published, click the **WordPress logo / Dashboard link (top-left corner)** to go back to the main Dashboard.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/005-back-todashbaord.png" alt="image" style="max-width: 60%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/005-back-todashbaord.png" alt="image" style="max-width: 60%;width: 600px;">
 
  -  Go to **Settings → Reading**, select **"A static page"**, and choose **"Home"**.
   
-   <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/Reading.png" alt="image" style="max-width: 60%;width: 600px;">
+   	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/Reading.png" alt="image" style="max-width: 60%;width: 600px;">
   
-   <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/Static.png" alt="image" style="max-width: 60%;width: 600px;">
+   	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/Static.png" alt="image" style="max-width: 60%;width: 600px;">
 
  -  Click Save
 
@@ -87,59 +86,57 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 1. Go to **Appearance → Editor**.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-1.png" alt="image" style="max-width: 50%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-1.png" alt="image" style="max-width: 50%;width: 600px;">
 
 2. Click on **Patterns**, then click the **Add Pattern** drop-down (the `+` icon next to Patterns) and select **Add Pattern**.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-2.png" alt="image" style="max-width: 50%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-2.png" alt="image" style="max-width: 50%;width: 600px;">
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-3.png" alt="image" style="max-width: 85%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-3.png" alt="image" style="max-width: 85%;width: 600px;">
 
 3. Set Pattern Name to **`Learn Menu`**, set Categories to **`Headers`**, and click **Create / Add**.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-4.png" alt="image" style="max-width: 80%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-4.png" alt="image" style="max-width: 80%;width: 600px;">
 
 4. In the editor space (`Type / to choose a block`), click the **`+`** icon on the right side and select **Columns**.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-5.png" alt="image" style="max-width: 80%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-5.png" alt="image" style="max-width: 80%;width: 600px;">
 
 5. Choose the **33 / 66** layout split.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-6.png" alt="image" style="max-width: 80%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-6.png" alt="image" style="max-width: 80%;width: 600px;">
 
 6. **Left Column (33%):** Click the **`+`** icon → select **Site Logo** (under Media) or **Image**, and upload/select the LEARN logo.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-7.png" alt="image" style="max-width: 80%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-7.png" alt="image" style="max-width: 80%;width: 600px;">
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-7.1.png" alt="image" style="max-width: 50%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-7.1.png" alt="image" style="max-width: 50%;width: 600px;">
 
 
 7. **Right Column (66%):** Click the **`+`** icon → select **Navigation**, and add your page links (**About**, **Contact Us**, **Services**).
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-8.png" alt="image" style="max-width: 80%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-8.png" alt="image" style="max-width: 80%;width: 600px;">
 
 
 8. Click **Save**.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-9.png" alt="image" style="max-width: 80%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-9.png" alt="image" style="max-width: 80%;width: 600px;">
 
 
 9. Return to the main editor view by clicking **Dashboard** or **Edit Site**.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-10.png" alt="image" style="max-width: 80%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-10.png" alt="image" style="max-width: 80%;width: 600px;">
 
 
 10. At the top of your site layout/page, click the **`+` (Add block)** icon and Search for **`Learn Menu`** and select it to insert your newly created menu block. If there are any previous menu/header versions showing, delete them so only your new **Learn Menu** remains.
 
-<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-11.png" alt="image" style="max-width: 100%;width: 600px;">
-
-
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-11.png" alt="image" style="max-width: 100%;width: 600px;">
 
 ---
 
 ## Step 4: Add the Slider to the Homepage
 
-1. Click on **Smart Slider** in your left WordPress dashboard menu and Click on Slider Dashboard.
+1. Go to your WordPress Dashboard, click on Smart Slider in the left menu, and select Dashboard.
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-1.png" alt="image" style="max-width: 60%;width: 600px;">
 
@@ -159,37 +156,42 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-6.png" alt="image" style="max-width: 60%;width: 600px;">
 
-5. select on uplorded image and click edit button
+5. Hover over or click on the uploaded slide image and click the Edit button.
 
 	
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-7.png" alt="image" style="max-width: 60%;width: 600px;">
 
-6. in the rigthside bar add images and text here
+6. Use the layer settings panel on the right sidebar to add your content over the background:
 
-* **Contents:** Add the central circular logo graphic (`LEARN 35 Years of Excellence`), a heading text block reading `Connecting Research & Education Community of Sri Lanka`, and a button widget labeled `Read More`.
+	- Heading Layer: Add text Connecting Research & Education Community of Sri Lanka
+
+	- Image Layer: Add the central circular logo graphic (LEARN 35 Years of Excellence).
+
+	- Button Widget: Add a button and label it Read More.
+
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-8.png" alt="image" style="max-width: 60%;width: 600px;">
 
-7. Click **Save**.
+7. Click Save in the top right corner.
 
 8. Go to **Dashboard → Appearance → Editor (Site Editor)**.  
-9. Navigate to the **Homepage** template.  
-10. after menu section Click **+ (Add Block)** [18] and search for **Shortcode** or **Smart Slider 3 Block** [19].
+9. Select the Homepage **(or Front Page)** template.
+10. Directly below your header/menu section, click the + **+ (Add Block)** [18] and search for **Shortcode** or **Smart Slider 3 Block** [19].
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-13.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-14.png?raw=true" alt="image" style="max-width: 100%;width: 600px;"> 
    
-11. Click on the **Smart Slider block** to add it to the page.  
-12. Click on Select Slider Button   
+11. Search for Smart Slider 3 (or Shortcode).  
+12. Click on the Smart Slider 3 block to add it to your page layout.  
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-9.png" alt="image" style="max-width: 60%;width: 600px;">
 
-13. Choose Created slider and click insert button
+13. Choose your newly created slider and click Insert  &  Click Save in the top right corner.
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-10.png" alt="image" style="max-width: 60%;width: 600px;">
 
-14. Now created slider appiear in Homepage
+14.  The interactive slider will now appear on your homepage.
 	
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/slider-11.png" alt="image" style="max-width: 60%;width: 600px;">
 
