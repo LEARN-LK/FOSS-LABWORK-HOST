@@ -216,21 +216,21 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 * Click + (Add Block) and  Add a **Columns** block and select the **50 / 50** layout.
 
-	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-17.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-17.png?raw=true" alt="image" style="max-width: 50%;width: 600px;">
 
 * **Left Column:Column Settings > Layout > turn on > inner blocks use content width** 
 
-	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/section02-0-columSettigns.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/section02-0-columSettigns.png?raw=true" alt="image" style="max-width: 40%;width: 600px;">
 
 * **Add a **Heading** (`H2`) titled `LEARN`, Click **Enter** then add a **Paragraph** block for the intro text below it.
 
 
-	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/section02-3.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
-	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-18.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/section02-3.png?raw=true" alt="image" style="max-width: 70%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-18.png?raw=true" alt="image" style="max-width: 70%;width: 600px;">
 
 * **Right Column:** Add an **Image** block and upload the **LEARN 35 Years of Excellence** badge graphic
 
-	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-19.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-19.png?raw=true" alt="image" style="max-width: 80%;width: 600px;">
 
 * for full  width coloumn follow the  following steps
 
