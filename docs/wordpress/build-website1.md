@@ -201,19 +201,36 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 ## Step 5: Build Homepage Content (Visual Editor)
 
 1. Go to **Pages → Home** and click **Edit**.
-2. Build the page section-by-section using the drag-and-drop **Visual Editor**:
 
 ### Section 1: Hero Slider
+* Directly below your Slider Section, click the + **+ (Add Block)** Search **Spacer**
 
-* Add a **Shortcode** block and paste your Smart Slider 3 shortcode inside.
 * Add a **Spacer** block underneath set to **40px**.
 
 ### Section 2: LEARN Intro Section
 
 * Add a **Columns** block and select the **50 / 50** layout.
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-17.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
+
 * **Left Column:** Add a **Heading** (`H2`) titled `LEARN`, then add a **Paragraph** block for the intro text below it.
-* **Right Column:** Add an **Image** block and upload the **LEARN 35 Years of Excellence** badge graphic.
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-18.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
+
+* **Right Column:** Add an **Image** block and upload the **LEARN 35 Years of Excellence** badge graphic
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-19.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
+
+* for full  width coloumn follow the  following steps
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/fullwidth.jpeg" alt="image" style="max-width: 100%;width: 700px;">
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/fullwidth-2.jpeg" alt="image" style="max-width: 100%;width: 700px;">
+
+
 * Add a **Spacer** block below set to **60px**.
+
+* Click **Save** to apply changes. 
 
 ### Section 3: "Our services" Section
 
