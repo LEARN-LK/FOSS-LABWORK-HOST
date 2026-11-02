@@ -205,16 +205,27 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 ### Section 1: Hero Slider
 * Directly below your Slider Section, click the + **+ (Add Block)** Search **Spacer**
 
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/section02-1.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
+
 * Add a **Spacer** block underneath set to **40px**.
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/section02-2.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
+
 
 ### Section 2: LEARN Intro Section
 
-* Add a **Columns** block and select the **50 / 50** layout.
+* Click + (Add Block) and  Add a **Columns** block and select the **50 / 50** layout.
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-17.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
 
-* **Left Column:** Add a **Heading** (`H2`) titled `LEARN`, then add a **Paragraph** block for the intro text below it.
+* **Left Column:Column Settings > Layout > turn on > inner blocks use content width** 
 
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/section02-0-columSettigns.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
+
+* **Add a **Heading** (`H2`) titled `LEARN`, Click **Enter** then add a **Paragraph** block for the intro text below it.
+
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/section02-3.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-18.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
 
 * **Right Column:** Add an **Image** block and upload the **LEARN 35 Years of Excellence** badge graphic
