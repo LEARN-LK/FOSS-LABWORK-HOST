@@ -251,7 +251,8 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 * In the **Site Editor**, go to the **Homepage** template.
 * Click **+ (Add Block)** and add a Add a **Heading** block, type `Our services`, and align to **Center**
 	
-	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/section02-3.png?raw=true" alt="image" style="max-width: 50%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/section02-3.png?raw=true" alt="image" style="max-width: 48%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/services-1.png?raw=true" alt="image" style="max-width: 48%;width: 600px;">
 
 * Click **+ (Add Block)** and add a **Columns block**.
 * Select a Column Layout
@@ -279,8 +280,17 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-19.png?raw=true" alt="image" style="max-width: 60%;width: 600px;">
 
 * Add an Image block, select your uploaded image from the Media Library, open Settings in the top-right corner, go to the Styles section, and select the Rounded option.
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/services-2.png?raw=true" alt="image" style="max-width: 48%;width: 600px;">
+
 * Below the image, Click **+ (Add Block)** and insert a **Heading block** (add a hedding title)
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/section02-3.png?raw=true" alt="image" style="max-width: 50%;width: 600px;">
+
 * Below the Heading block, click **+ (Add Block)** and insert a **Paragraph block** (add a short description of the service).
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-18.png?raw=true" alt="image" style="max-width: 48%;width: 600px;">
+
 * Repeat for all 4 columns.
 * Click **Save** to apply changes.
 
