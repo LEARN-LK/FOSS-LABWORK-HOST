@@ -243,46 +243,44 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 * Click **Save** to apply changes. 
 
+
 ### Section 3: "Our services" Section
-
-
-
 
 #### **5. Our Services Section (Four Columns)**
 
 * In the **Site Editor**, go to the **Homepage** template.
 * Click **+ (Add Block)** and add a Add a **Heading** block, type `Our services`, and align to **Center**
-
+	
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/section02-3.png?raw=true" alt="image" style="max-width: 50%;width: 600px;">
-
 
 * Click **+ (Add Block)** and add a **Columns block**.
 * Select a Column Layout
-   * WordPress shows default presets: **Two columns, Three columns**, etc.
-   * Choose **Two columns** (don’t worry—you’ll adjust it next).
-
-   			<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-17.png?raw=true" alt="image" style="max-width: 60%;width: 600px;">
+* WordPress shows default presets: **Two columns, Three columns**, etc.
+* Choose **Two columns** (don’t worry—you’ll adjust it next).
+	
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-17.png?raw=true" alt="image" style="max-width: 60%;width: 600px;">
 
 * Open Column Settings
-   * Click the **Columns block** (the parent block, not the individual column).
+* Click the **Columns block** (the parent block, not the individual column).
+
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/2-colunm.png" alt="image" style="max-width: 100%;width: 700px;">
    
-   * Look at the **right sidebar** (Block settings).
-   * If you don’t see the sidebar, click the ⚙️ **settings gear** icon on the top-right.
+* Look at the **right sidebar** (Block settings).
+* If you don’t see the sidebar, click the ⚙️ **settings gear** icon on the top-right.
 * Adjust Number of Columns
-   * In the sidebar, you should see **“Columns”** or **“Number of columns”**.
-   * Use the **arrows** or **type 4** to set it to **4 columns**.
+* In the sidebar, you should see **“Columns”** or **“Number of columns”**.
+* Use the **arrows** or **type 4** to set it to **4 columns**.
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/col-settings.png" alt="image" style="max-width: 100%;width: 350px;">
 
 * Now, inside each column:
-   * Click **+ (Add Block)** and insert an **Image block** (upload a service image).
+* Click **+ (Add Block)** and insert an **Image block** (upload a service image).
+	
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-19.png?raw=true" alt="image" style="max-width: 60%;width: 600px;">
 
-   			<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-19.png?raw=true" alt="image" style="max-width: 60%;width: 600px;">
-
-   * Add an Image block, select your uploaded image from the Media Library, open Settings in the top-right corner, go to the Styles section, and select the Rounded option.
-   * Below the image, Click **+ (Add Block)** and insert a **Heading block** (add a hedding title)
-   * Below the Heading block, click **+ (Add Block)** and insert a **Paragraph block** (add a short description of the service).
+* Add an Image block, select your uploaded image from the Media Library, open Settings in the top-right corner, go to the Styles section, and select the Rounded option.
+* Below the image, Click **+ (Add Block)** and insert a **Heading block** (add a hedding title)
+* Below the Heading block, click **+ (Add Block)** and insert a **Paragraph block** (add a short description of the service).
 * Repeat for all 4 columns.
 * Click **Save** to apply changes.
 
