@@ -222,11 +222,11 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/section02-0-columSettigns.png?raw=true" alt="image" style="max-width: 80%;width: 600px;">
 
-* **Add a **Heading** (`H2`) titled `LEARN`, Click **Enter** then add a **Paragraph** block for the intro text below it.
+* **Add a Heading** (`H2`) titled `LEARN`, Click **Enter** then add a  **Paragraph**  block for the intro text below it.
 
 
-	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/section02-3.png?raw=true" alt="image" style="max-width: 70%;width: 600px;">
-	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-18.png?raw=true" alt="image" style="max-width: 70%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/section02-3.png?raw=true" alt="image" style="max-width: 48%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-18.png?raw=true" alt="image" style="max-width: 48%;width: 600px;">
 
 * **Right Column:** Add an **Image** block and upload the **LEARN 35 Years of Excellence** badge graphic
 
@@ -253,11 +253,18 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 #### **5. Our Services Section (Four Columns)**
 
 * In the **Site Editor**, go to the **Homepage** template.
-* Click **+ (Add Block)** and add a Add a **Heading** block, type `Our services`, and align to **Center**.
+* Click **+ (Add Block)** and add a Add a **Heading** block, type `Our services`, and align to **Center**
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/section02-3.png?raw=true" alt="image" style="max-width: 50%;width: 600px;">
+
+
 * Click **+ (Add Block)** and add a **Columns block**.
 * Select a Column Layout
    * WordPress shows default presets: **Two columns, Three columns**, etc.
    * Choose **Two columns** (don’t worry—you’ll adjust it next).
+
+   			<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-17.png?raw=true" alt="image" style="max-width: 60%;width: 600px;">
+
 * Open Column Settings
    * Click the **Columns block** (the parent block, not the individual column).
 
@@ -273,6 +280,9 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 * Now, inside each column:
    * Click **+ (Add Block)** and insert an **Image block** (upload a service image).
+
+   			<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-19.png?raw=true" alt="image" style="max-width: 60%;width: 600px;">
+
    * Add an Image block, select your uploaded image from the Media Library, open Settings in the top-right corner, go to the Styles section, and select the Rounded option.
    * Below the image, Click **+ (Add Block)** and insert a **Heading block** (add a hedding title)
    * Below the Heading block, click **+ (Add Block)** and insert a **Paragraph block** (add a short description of the service).
