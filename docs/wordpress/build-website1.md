@@ -248,8 +248,6 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 
 
-
-
 #### **5. Our Services Section (Four Columns)**
 
 * In the **Site Editor**, go to the **Homepage** template.
@@ -267,8 +265,7 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 * Open Column Settings
    * Click the **Columns block** (the parent block, not the individual column).
-
- 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/2-colunm.png" alt="image" style="max-width: 100%;width: 700px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/2-colunm.png" alt="image" style="max-width: 100%;width: 700px;">
    
    * Look at the **right sidebar** (Block settings).
    * If you don’t see the sidebar, click the ⚙️ **settings gear** icon on the top-right.
