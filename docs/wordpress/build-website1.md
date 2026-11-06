@@ -16,7 +16,7 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 # 🌐 Complete Step-by-Step Guide: Building the LEARN Website
 
-## Step 1: Install Theme and Plugins
+<h2 style="font-weight: 800;"> Step 1: Install Theme and Plugins </h2>
 
 1. Log in to your WordPress Dashboard (`[yourdomain.com/wp-admin](http://wordpress:8000/wp-admin)`).
 2. **Install the Theme:**
@@ -32,7 +32,10 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 ---
 
-## Step 2: Create Pages and Set Static Homepage
+
+
+
+<h2 style="font-weight: 800;"> Step 2: Create Pages and Set Static Homepage </h2>
 
 1. Go to **Pages → Add New Page**.
 2. Create and **Publish** the following four pages:
@@ -82,7 +85,7 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 ---
 
 
-## Step 3: Create & Apply Custom Header Pattern ("Learn Menu")
+<h2 style="font-weight: 800;"> Step 3: Create & Apply Custom Header Pattern ("Learn Menu")</h2>
 
 1. Go to **Appearance → Editor**.
 
@@ -134,7 +137,7 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 ---
 
-## Step 4: Add the Slider to the Homepage
+<h2 style="font-weight: 800;"> Step 4: Add the Slider to the Homepage </h2>
 
 1. Go to your WordPress Dashboard, click on Smart Slider in the left menu, and select Dashboard.
 
@@ -198,7 +201,7 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 ---
 
-## Step 5: Build Homepage Content (Visual Editor)
+<h2 style="font-weight: 800;"> Step 5: Build Homepage Content (Visual Editor) </h2>
 
 1. Go to **Pages → Home** and click **Edit**.
 
@@ -305,7 +308,7 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 ---
 
-## Step 6: Build Global Footer
+<h2 style="font-weight: 800;"> Step 6: Build Global Footer </h2>
 
 1. Go to **Appearance → Editor → Patterns → Footer** and click **Edit**.
 2. Centered in the layout, add:
@@ -318,7 +321,7 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 ---
 
-## Step 7: (Optional) Set Up Contact Form Page
+<h2 style="font-weight: 800;"> Step 7: (Optional) Set Up Contact Form Page </h2>
 
 1. Go to **Contact → Contact Forms** and copy your form shortcode.
 2. Go to **Pages → Contact Us**.
