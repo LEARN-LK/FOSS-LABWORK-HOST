@@ -368,10 +368,18 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-14.png?raw=true" alt="image" style="max-width: 50%;width: 300px;">
 
-3. Click **Save**.
+6. Click **Save**.
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-15.png?raw=true" alt="image" style="max-width: 70%;width: 600px;">
 
+7. Return to the main editor view by clicking **Dashboard** or **Edit Site**.
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/menu-10.png" alt="image" style="max-width: 80%;width: 600px;">
+
+
+8. At the bottom of your site layout/page, click the **`+` (Add block)** icon and Search for **`Learn-Footer`** and select it to insert your newly created Footer block. If there are any previous Footer versions showing, delete them so only your new **Learn Footer** remains.
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-16.png?raw=true" alt="image" style="max-width: 70%;width: 600px;">
 
 ---
 
