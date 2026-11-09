@@ -301,9 +301,24 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 ### Section 4: About Section
 
-* Add a **Columns** block and choose **50 / 50**.
+* click **+ (Add Block)** and add a **Columns** block and choose **50 / 50**.
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/about-1.png?raw=true" alt="image" style="max-width: 48%;width: 600px;">
+
+
 * **Left Column:** Add an **Image** block with the **3D Wireframe Network Sphere** graphic.
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/about-1.png?raw=true" alt="image" style="max-width: 48%;width: 600px;">
+
 * **Right Column:** Add a **Heading** (`H2`) titled `About`, followed by **Paragraph** blocks containing your organization details.
+
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/about-3.png?raw=true" alt="image" style="max-width: 48%;width: 600px;">
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/about-4.png?raw=true" alt="image" style="max-width: 48%;width: 600px;">
+
+
+
 * Click **Update / Publish**.
 
 ---
