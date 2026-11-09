@@ -308,7 +308,7 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 * **Left Column:** Add an **Image** block with the **3D Wireframe Network Sphere** graphic.
 
-	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/about-1.png?raw=true" alt="image" style="max-width: 48%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/about-2.png?raw=true" alt="image" style="max-width: 48%;width: 600px;">
 
 * **Right Column:** Add a **Heading** (`H2`) titled `About`, followed by **Paragraph** blocks containing your organization details.
 
@@ -319,20 +319,61 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 
 
-* Click **Update / Publish**.
+* Click **Save / Publish**.
 
 ---
 
 <h2 style="font-weight: 800;"> Step 6: Build Global Footer </h2>
 
-1. Go to **Appearance → Editor → Patterns → Footer** and click **Edit**.
-2. Centered in the layout, add:
+1. Go to **Appearance → Editor → Patterns***
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-1.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
+
+ <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-2.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
+
+
+2. Click on Patterns, then click the Add Pattern drop-down (the + icon next to Patterns) and select Add Pattern.
+
+ <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-3.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
+
+3. Set Pattern Name to Learn-footer, set Categories to Footers, and click Create / Add.
+
+ <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-4.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
+
+
+4. In the editor space (Type / to choose a block), click the + icon on the right side and select images.
+
+ <img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-5.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
+
+5. Centered in the layout, add:
 * Small centered red/pink **LEARN** logo.
-* **Paragraph** reading `Proudly powered by WordPress`.
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-6.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
+
+* **Paragraph** reading `Lanka Education And Research Network`.
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-7.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-8.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
+
 * **Social Icons** block (Facebook, Twitter, WordPress).
 
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-9.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-10.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-11.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-12.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-13.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-14.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
 
 3. Click **Save**.
+
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-15.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
+
 
 ---
 
