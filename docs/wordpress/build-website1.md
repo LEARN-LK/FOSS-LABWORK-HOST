@@ -362,11 +362,9 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-10.png?raw=true" alt="image" style="max-width: 60%;width: 600px;">
 
-	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-11.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
-
-	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-12.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
-
-	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-13.png?raw=true" alt="image" style="max-width: 35%;width: 600px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-11.png?raw=true" alt="image" style="max-width: 35%;width: 300px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-12.png?raw=true" alt="image" style="max-width: 35%;width: 300px;">
+	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-13.png?raw=true" alt="image" style="max-width: 35%;width: 300px;">
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/footer-14.png?raw=true" alt="image" style="max-width: 70%;width: 600px;">
 
