@@ -18,6 +18,12 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 <h2 style="font-weight: 800;"> Step 1: Install Theme and Plugins </h2>
 
+### Video Guide :  Step 1: Install Theme and Plugins
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=SHtdrA5yz" frameborder="0" allowfullscreen></iframe>
+
+
+
 1. Log in to your WordPress Dashboard (`[yourdomain.com/wp-admin](http://wordpress:8000/wp-admin)`).
 2. **Install the Theme:**
 * Go to **Appearance → Themes**.
@@ -33,9 +39,13 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 ---
 
 
-
-
 <h2 style="font-weight: 800;"> Step 2: Create Pages and Set Static Homepage </h2>
+
+### Video Guide :  Step 2: Create Pages and Set Static Homepage
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=1WtEkq4mz" frameborder="0" allowfullscreen></iframe>
+
+
 
 1. Go to **Pages → Add New Page**.
 2. Create and **Publish** the following four pages:
@@ -86,6 +96,10 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 
 <h2 style="font-weight: 800;"> Step 3: Create & Apply Custom Header Pattern ("Learn Menu")</h2>
+
+### Video Guide :  Step 3: Create & Apply Custom Header Pattern ("Learn Menu")
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=C352fyca7" frameborder="0" allowfullscreen></iframe>
 
 1. Go to **Appearance → Editor**.
 
@@ -138,6 +152,10 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 ---
 
 <h2 style="font-weight: 800;"> Step 4: Add the Slider to the Homepage </h2>
+
+### Video Guide :  Step 4: Add the Slider to the Homepage
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=2MWuw0toa" frameborder="0" allowfullscreen></iframe>
 
 1. Go to your WordPress Dashboard, click on Smart Slider in the left menu, and select Dashboard.
 
@@ -203,6 +221,10 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 <h2 style="font-weight: 800;"> Step 5: Build Homepage Content (Visual Editor) </h2>
 
+### Video Guide :  Step 5: Build Homepage Content (Visual Editor)
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=GZgxHJiJD" frameborder="0" allowfullscreen></iframe>
+
 1. Go to **Pages → Home** and click **Edit**.
 
 ### Section 1: Hero Slider
@@ -247,7 +269,15 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 * Click **Save** to apply changes. 
 
 
+
+
 ### Section 3: "Our services" Section
+
+### Video Guide :  Section 3: "Our services" Section
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=jCo8TBd1f" frameborder="0" allowfullscreen></iframe>
+
+
 
 #### **5. Our Services Section (Four Columns)**
 
@@ -301,6 +331,11 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 ### Section 4: About Section
 
+### Video Guide :  Section 4: About Section
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=H4qY0CdNh" frameborder="0" allowfullscreen></iframe>
+
+
 * click **+ (Add Block)** and add a **Columns** block and choose **50 / 50**.
 
 	<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/about-1.png?raw=true" alt="image" style="max-width: 48%;width: 600px;">
@@ -324,6 +359,12 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 ---
 
 <h2 style="font-weight: 800;"> Step 6: Build Global Footer </h2>
+
+
+### Video Guide :  Step 6: Build Global Footer
+
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=41wWDA2rm" frameborder="0" allowfullscreen></iframe>
 
 1. Go to **Appearance → Editor → Patterns***
 
@@ -383,13 +424,17 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 ---
 
-<h2 style="font-weight: 800;"> Step 7: (Optional) Set Up Contact Form Page </h2>
+Now, your homepage is fully built using the **Full Site Editor (FSE)**!
 
-1. Go to **Contact → Contact Forms** and copy your form shortcode.
-2. Go to **Pages → Contact Us**.
-3. Add a **Shortcode** block, paste your Contact Form 7 shortcode, and click **Publish**.
+### **9: Test & Launch**  
+✅ Check mobile and tablet responsiveness using **Customize → Mobile Preview**.  
+✅ Optimize the site speed using **WP Rocket or LiteSpeed Cache**.  
+✅ Deploy the website by linking your **domain name** to your **hosting provider**.  
 
-Would you like help customizing the styling (colors, mobile responsiveness, or typography) for your new "Learn Menu" pattern?
+---
 
-* Would you like step-by-step instructions on making the "Learn Menu" header sticky or fixed at the top of the page when scrolling?
-* Do you need assistance setting up the Contact Form 7 fields and email notifications for the Contact Us page?
+**"Now your WordPress website is fully built based on your wireframe! Here is the final output."** 
+
+<img src="https://raw.githubusercontent.com/LEARN-LK/Open-Source-Softwares/main/img/wp-20.png?raw=true" alt="image" style="max-width: 100%;width: 600px;">
+
+

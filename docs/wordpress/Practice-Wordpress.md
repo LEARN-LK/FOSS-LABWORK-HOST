@@ -25,6 +25,13 @@ http://wordpress:8000
 
 ## ⚙️ **Part 1 — For Intel Users (Windows) VirtualBox**
 
+
+
+### Video Guide :  For Intel Users (Windows) VirtualBox
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=mUIXiu35X" frameborder="0" allowfullscreen></iframe>
+
+
 ### **1. Download Required Files**
 
 #### 📦 From Google Drive:
@@ -114,6 +121,12 @@ If WordPress doesn’t load, restart the VM.
 
 ## ⚙️ **Part 2 — For Intel Users (Mac) VirtualBox**
 
+
+### Video Guide :  For Intel Users (Mac) VirtualBox
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=tNXuhhTva" frameborder="0" allowfullscreen></iframe>
+
+
 ### **1. Download Required Files**
 
 #### 📦 From Google Drive:
@@ -175,6 +188,12 @@ Open your browser (if not already open) and visit:
 ---
 
 ## ⚙️ **Part 3 — Setup Guide for Mac (Apple Silicon / Silver Processor)**
+
+
+### Video Guide :  Setup Guide for Mac (Apple Silicon / Silver Processor
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=BzhHpuHTx" frameborder="0" allowfullscreen></iframe>
+
 
 ### **1. Download Required Files**
 
