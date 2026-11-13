@@ -11,6 +11,10 @@ So you’re shifting your WordPress site — maybe from a test domain like `mywo
 
 ---
 
+### Video Guide :  WordPress Site Backup & Restore Using UpdraftPlus
+
+<iframe width="560" height="315" src="https://ltube.ac.lk/embed?m=kGD7qz3Y1" frameborder="0" allowfullscreen></iframe>
+
 ## First: Install UpdraftPlus Plugin
 
 You’ll need this plugin on **both** the old site and the new one.
