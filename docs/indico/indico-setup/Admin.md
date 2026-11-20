@@ -76,7 +76,7 @@ To organize conferences by university and faculty/department structure, the LEAR
 ---
 
 
-#### Step 4: Assign a Location Manager (e.g., for Department of Computer Science)
+<!-- #### Step 4: Assign a Location Manager (e.g., for Department of Computer Science) 
 
 1. Navigate to the **Department of Computer Science** category.
 2. Click the **⚙️ gear icon** (top-right) to access category settings.
@@ -88,7 +88,7 @@ To organize conferences by university and faculty/department structure, the LEAR
     * - **Moderate**: Ability to approve or reject room booking requests.
     * - **Override**: Permission to override existing bookings if needed.
 7. Click **Save** to apply the changes.
-8. Verify the assignment by checking the **Room Booking** dashboard, where Mohan Bandara should now manage rooms like "Main Auditorium" under the category.
+8. Verify the assignment by checking the **Room Booking** dashboard, where Mohan Bandara should now manage rooms like "Main Auditorium" under the category.  -->
 
 
 ---
